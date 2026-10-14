@@ -372,14 +372,14 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
   <div class="logo"><a href="julia-wisteria.html"><span class="logo-n">Julia Wisteria</span><span class="logo-t">Crafted with love · Curated with purpose</span></a></div>
   <nav><a href="shop.html" class="active">Christmas Boxes</a><a href="build.html">Customize</a><a href="corporate.html">Corporate</a><a href="about.html">Our Story</a></nav>
   <div class="icons">
-    <a href="cart.html" aria-label="Quote list" style="display:flex;align-items:flex-start">
+    <a href="cart.html" id="cartlink" aria-label="Cart" style="display:flex;align-items:flex-start">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
       <span class="cbadge" id="qbadge" style="display:none">0</span>
     </a>
     <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </div></div>
-<div class="mob-nav" id="mob-nav"><button class="mob-nav-close" id="mob-close">✕</button><a href="julia-wisteria.html" onclick="closeMobNav()">Home</a><a href="shop.html" onclick="closeMobNav()">Christmas Boxes</a><a href="build.html" onclick="closeMobNav()">Customize</a><a href="corporate.html" onclick="closeMobNav()">Corporate</a><a href="about.html" onclick="closeMobNav()">Our Story</a><a href="cart.html" onclick="closeMobNav()">Quote List</a></div>
+<div class="mob-nav" id="mob-nav"><button class="mob-nav-close" id="mob-close">✕</button><a href="julia-wisteria.html" onclick="closeMobNav()">Home</a><a href="shop.html" onclick="closeMobNav()">Christmas Boxes</a><a href="build.html" onclick="closeMobNav()">Customize</a><a href="corporate.html" onclick="closeMobNav()">Corporate</a><a href="about.html" onclick="closeMobNav()">Our Story</a><a href="cart.html" onclick="closeMobNav()">Cart</a></div>
 <section class="ph">
   <div class="x-hero-bg"><div class="blob b1"></div><div class="blob b2"></div><div class="grain"></div></div>
   <div class="crumbs rv"><a href="julia-wisteria.html">Home</a> &nbsp;/&nbsp; Christmas Boxes</div>
@@ -405,7 +405,7 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
     </div>
     <div class="fc"><h4>Boxes</h4><ul><li><a href="product.html?box=0">Coffee &amp; Planning</a></li><li><a href="product.html?box=1">Unwind &amp; Recharge</a></li><li><a href="product.html?box=2">Teatime Delight</a></li><li><a href="product.html?box=3">Light Up Your Day</a></li><li><a href="product.html?box=4">Serenity Sleep</a></li></ul></div>
     <div class="fc"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="corporate.html">Corporate Gifting</a></li><li><a href="build.html">Customize a Box</a></li></ul></div>
-    <div class="fc"><h4>Contact</h4><ul><li><a href="corporate.html#quote">Request a Quote</a></li><li><a href="cart.html">Quote List</a></li></ul></div>
+    <div class="fc"><h4>Contact</h4><ul><li><a href="corporate.html#quote">Request a Quote</a></li><li><a href="cart.html">Cart</a></li><li><a href="checkout.html">Checkout</a></li></ul></div>
   </div>
   <div class="fbot"><span class="fcp">© 2026 Julia Wisteria · Orlando, FL</span><span class="flo">Crafted with love. Inspired by family.</span></div>
 </footer>
@@ -418,13 +418,13 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
   chips.innerHTML=cats.map(function(c,i){return '<button class="chip'+(i?'':' on')+'" data-c="'+c+'">'+c+'</button>'}).join('');
   grid.innerHTML=BOXES.map(function(b,i){return '<article class="sc rv" style="--d:'+(i%3)*.1+'s" data-c="'+b.cat+'">'+
    '<a class="sc-img" href="product.html?box='+i+'"><img src="images/christmas/'+b.i+'.jpg" alt="'+JW.esc(b.t)+'" loading="lazy"><span class="bx-n">0'+(i+1)+'</span></a>'+
-   '<div class="sc-b"><span class="sc-k">'+JW.esc(b.k)+'</span><a href="product.html?box='+i+'" class="sc-t">'+JW.esc(b.t)+'</a><p class="sc-s">'+JW.esc(b.s)+'</p>'+
-   '<div class="sc-a"><a href="product.html?box='+i+'" class="btn-x sm">See what\'s inside</a><button class="btn-x sm solid" data-add="'+i+'">Add to quote</button></div></div></article>'}).join('');
+   '<div class="sc-b"><span class="sc-k">'+JW.esc(b.k)+'</span><a href="product.html?box='+i+'" class="sc-t">'+JW.esc(b.t)+'</a><span class="price">'+JW.money(b.price)+'</span><p class="sc-s">'+JW.esc(b.s)+'</p>'+
+   '<div class="sc-a"><a href="product.html?box='+i+'" class="btn-x sm">See what\'s inside</a><button class="btn-x sm solid" data-add="'+i+'">Add to cart</button></div></div></article>'}).join('');
   chips.addEventListener('click',function(e){var c=e.target.closest('.chip');if(!c)return;
     chips.querySelectorAll('.chip').forEach(function(x){x.classList.toggle('on',x===c)});
     grid.querySelectorAll('.sc').forEach(function(s){s.classList.toggle('off',c.dataset.c!=='All'&&s.dataset.c!==c.dataset.c);s.classList.add('in')})});
   grid.addEventListener('click',function(e){var b=e.target.closest('[data-add]');if(!b)return;
-    JW.add({id:+b.dataset.add,qty:10,brand:false,note:''});b.textContent='Added ✓';setTimeout(function(){b.textContent='Add to quote'},1600)});
+    JW.add({id:+b.dataset.add,qty:1,brand:false,note:''});JW.open()});
   document.querySelectorAll('.sc').forEach(function(s){if(window.IntersectionObserver)return;s.classList.add('in')});
   // observe newly rendered .rv
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});

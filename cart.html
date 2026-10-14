@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quote List — Julia Wisteria</title>
+<title>Cart — Julia Wisteria</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Sacramento&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -372,24 +372,34 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
   <div class="logo"><a href="julia-wisteria.html"><span class="logo-n">Julia Wisteria</span><span class="logo-t">Crafted with love · Curated with purpose</span></a></div>
   <nav><a href="shop.html">Christmas Boxes</a><a href="build.html">Customize</a><a href="corporate.html">Corporate</a><a href="about.html">Our Story</a></nav>
   <div class="icons">
-    <a href="cart.html" aria-label="Quote list" style="display:flex;align-items:flex-start">
+    <a href="cart.html" id="cartlink" aria-label="Cart" style="display:flex;align-items:flex-start">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
       <span class="cbadge" id="qbadge" style="display:none">0</span>
     </a>
     <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </div></div>
-<div class="mob-nav" id="mob-nav"><button class="mob-nav-close" id="mob-close">✕</button><a href="julia-wisteria.html" onclick="closeMobNav()">Home</a><a href="shop.html" onclick="closeMobNav()">Christmas Boxes</a><a href="build.html" onclick="closeMobNav()">Customize</a><a href="corporate.html" onclick="closeMobNav()">Corporate</a><a href="about.html" onclick="closeMobNav()">Our Story</a><a href="cart.html" onclick="closeMobNav()">Quote List</a></div>
+<div class="mob-nav" id="mob-nav"><button class="mob-nav-close" id="mob-close">✕</button><a href="julia-wisteria.html" onclick="closeMobNav()">Home</a><a href="shop.html" onclick="closeMobNav()">Christmas Boxes</a><a href="build.html" onclick="closeMobNav()">Customize</a><a href="corporate.html" onclick="closeMobNav()">Corporate</a><a href="about.html" onclick="closeMobNav()">Our Story</a><a href="cart.html" onclick="closeMobNav()">Cart</a></div>
 <section class="ph" style="padding-bottom:30px">
   <div class="x-hero-bg"><div class="blob b1"></div><div class="blob b2"></div><div class="grain"></div></div>
-  <div class="crumbs rv"><a href="julia-wisteria.html">Home</a> &nbsp;/&nbsp; Quote list</div>
+  <div class="crumbs rv"><a href="julia-wisteria.html">Home</a> &nbsp;/&nbsp; Cart</div>
   <span class="x-script rv">Your selection</span>
-  <h1 class="x-h1 split">Quote list</h1>
+  <h1 class="x-h1 split">Cart</h1>
 </section>
-<div class="wrap" style="max-width:980px">
-  <div class="qlist" id="ql"></div>
-  <div class="empty x-hide" id="em"><p>Your quote list is empty. Choose a box to get started.</p><a href="shop.html" class="btn-x solid">Browse the boxes <span class="ar">→</span></a></div>
-  <div class="nav-st x-hide" id="act" style="padding-bottom:120px"><a href="shop.html" class="btn-x">+ Add another box</a><a href="corporate.html#quote" class="btn-x solid">Request quote <span class="ar">→</span></a></div>
+<div class="wrap">
+  <div class="empty x-hide" id="em"><p>Your cart is empty. Choose a box to get started.</p><a href="shop.html" class="btn-x solid">Browse the boxes <span class="ar">→</span></a></div>
+  <div class="cart2 x-hide" id="full">
+    <div class="qlist" id="ql" style="padding:0"></div>
+    <aside class="tot rv">
+      <h3>Cart totals</h3>
+      <div class="tot-r"><span>Subtotal</span><b id="st"></b></div>
+      <div class="tot-r"><span>Shipping</span><span>Calculated at checkout</span></div>
+      <div class="tot-r big"><span>Total</span><span id="tt"></span></div>
+      <div id="xp" style="margin-top:18px"></div>
+      <a href="checkout.html" class="btn-x solid">Proceed to checkout <span class="ar">→</span></a>
+      <small>Ordering 25+ boxes? <a href="corporate.html#quote" style="color:var(--wine);text-decoration:underline">Request a corporate quote</a></small>
+    </aside>
+  </div>
 </div>
 <div class="nl">
   <h3 class="nl-h">Join the Julia Wisteria World</h3>
@@ -405,7 +415,7 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
     </div>
     <div class="fc"><h4>Boxes</h4><ul><li><a href="product.html?box=0">Coffee &amp; Planning</a></li><li><a href="product.html?box=1">Unwind &amp; Recharge</a></li><li><a href="product.html?box=2">Teatime Delight</a></li><li><a href="product.html?box=3">Light Up Your Day</a></li><li><a href="product.html?box=4">Serenity Sleep</a></li></ul></div>
     <div class="fc"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="corporate.html">Corporate Gifting</a></li><li><a href="build.html">Customize a Box</a></li></ul></div>
-    <div class="fc"><h4>Contact</h4><ul><li><a href="corporate.html#quote">Request a Quote</a></li><li><a href="cart.html">Quote List</a></li></ul></div>
+    <div class="fc"><h4>Contact</h4><ul><li><a href="corporate.html#quote">Request a Quote</a></li><li><a href="cart.html">Cart</a></li><li><a href="checkout.html">Checkout</a></li></ul></div>
   </div>
   <div class="fbot"><span class="fcp">© 2026 Julia Wisteria · Orlando, FL</span><span class="flo">Crafted with love. Inspired by family.</span></div>
 </footer>
@@ -414,12 +424,14 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
 <script>
 (function(){
   var ql=document.getElementById('ql');
-  function draw(){var l=JW.get();document.getElementById('em').classList.toggle('x-hide',l.length>0);document.getElementById('act').classList.toggle('x-hide',!l.length);
-    ql.innerHTML=l.map(function(x,n){var b=BOXES[x.id];return '<div class="qi" data-n="'+n+'"><img src="images/christmas/'+b.i+'.jpg" alt=""><div><h3>'+JW.esc(b.t)+'</h3><small>'+(x.brand?'Custom branding':'No branding')+(x.note?' · “'+JW.esc(x.note)+'”':'')+'</small><button class="rm" data-rm="'+n+'">Remove</button></div><div class="stepper"><button data-d="-1" data-n="'+n+'">−</button><input value="'+x.qty+'" data-q="'+n+'" type="number" min="1"><button data-d="1" data-n="'+n+'">+</button></div></div>'}).join('');JW.badge()}
+  function draw(){var l=JW.get();document.getElementById('em').classList.toggle('x-hide',l.length>0);document.getElementById('full').classList.toggle('x-hide',!l.length);
+    ql.innerHTML=l.map(function(x,n){var b=BOXES[x.id];return '<div class="qi"><img src="images/christmas/'+b.i+'.jpg" alt=""><div><h3>'+JW.esc(b.t)+'</h3><span class="lp">'+JW.money(b.price*x.qty)+'</span><small>'+JW.money(b.price)+' each'+(x.brand?' · Custom branding':'')+(x.note?' · “'+JW.esc(x.note)+'”':'')+'</small><button class="rm" data-rm="'+n+'">Remove</button></div><div class="stepper"><button data-d="-1" data-n="'+n+'">−</button><input value="'+x.qty+'" data-q="'+n+'" type="number" min="1" aria-label="Quantity"><button data-d="1" data-n="'+n+'">+</button></div></div>'}).join('');
+    document.getElementById('st').textContent=JW.money(JW.subtotal());document.getElementById('tt').textContent=JW.money(JW.subtotal());JW.badge()}
   ql.addEventListener('click',function(e){var l=JW.get(),d=e.target.closest('[data-d]'),r=e.target.closest('[data-rm]');
     if(d){var n=+d.dataset.n;l[n].qty=Math.max(1,l[n].qty+ +d.dataset.d);JW.set(l);draw()}
     if(r){var n2=+r.dataset.rm,row=r.closest('.qi');row.classList.add('gone');setTimeout(function(){l.splice(n2,1);JW.set(l);draw()},420)}});
   ql.addEventListener('change',function(e){var i=e.target.dataset.q;if(i==null)return;var l=JW.get();l[+i].qty=Math.max(1,+e.target.value||1);JW.set(l);draw()});
+  JW.express(document.getElementById('xp'),JW.subtotal);
   draw();
 })();
 </script>
