@@ -8,7 +8,9 @@ body{overflow-x:hidden;background:#fff}
 
 /* ---------- header ---------- */
 .jw-ann .elementor-heading-title b{color:var(--jw-rosel);font-weight:400}
-.jw-bar{backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4)}
+/* El blur va en un pseudo-elemento: un backdrop-filter en .jw-bar haría que el panel
+   fixed del Menu Cart (y su overlay) quedaran recortados dentro del header. */
+.jw-bar::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4)}
 .jw-bar.elementor-sticky--effects{box-shadow:0 10px 30px -18px rgba(74,29,39,.35)}
 .jw-progress{pointer-events:none}
 .jw-progress .elementor-scrolling-tracker{background:transparent!important;border:0!important;height:2px!important;border-radius:0!important}
@@ -74,7 +76,7 @@ body{overflow-x:hidden;background:#fff}
 .jw-badge .e-text-path{animation:jwSpin 18s linear infinite}
 .jw-badge .e-text-path svg{width:100%!important;height:100%!important}
 @keyframes jwSpin{to{transform:rotate(360deg)}}
-.jw-badge .elementor-heading-title b{display:block;font-size:24px;font-style:italic;font-weight:500}
+.jw-badge-c .elementor-heading-title b{display:block;font-size:24px;font-style:italic;font-weight:500}
 
 /* marquee */
 .jw-mq{overflow:hidden}
@@ -184,3 +186,16 @@ body{overflow-x:hidden;background:#fff}
 
 /* menu cart toggle sin borde */
 .elementor-menu-cart__toggle .elementor-button{border:0!important;background:transparent!important}
+
+/* panel de la canasta (Menu Cart) */
+.elementor-menu-cart__main{background:var(--jw-cream)!important;box-shadow:-30px 0 60px -30px rgba(74,29,39,.35)}
+.elementor-menu-cart__product-name a{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--jw-brown)!important}
+.elementor-menu-cart__product-image img{border-radius:12px}
+.elementor-menu-cart__subtotal{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--jw-brown)}
+.elementor-menu-cart__footer-buttons .elementor-button{border-radius:999px!important;font-family:'Jost',sans-serif;font-size:10px!important;letter-spacing:2.4px;text-transform:uppercase;font-weight:500;transition:background .35s,color .35s!important}
+.elementor-menu-cart__footer-buttons .elementor-button--view-cart{background:transparent!important;border:1px solid var(--jw-brown)!important;color:var(--jw-brown)!important}
+.elementor-menu-cart__footer-buttons .elementor-button--view-cart:hover{background:var(--jw-brown)!important;color:var(--jw-cream)!important}
+.elementor-menu-cart__footer-buttons .elementor-button--checkout{background:var(--jw-wine)!important;color:#fff!important}
+.elementor-menu-cart__footer-buttons .elementor-button--checkout:hover{background:var(--jw-brown)!important}
+.elementor-menu-cart__close-button{transition:transform .4s var(--jw-ease)}
+.elementor-menu-cart__close-button:hover{transform:rotate(90deg)}
