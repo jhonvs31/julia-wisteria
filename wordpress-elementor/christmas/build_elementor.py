@@ -737,6 +737,7 @@ def quickview_settings():
             'close_button_horizontal': u(16), 'close_button_color': C['brown'], 'close_button_background_color': '#FFFFFF',
             'close_button_hover_color': C['wine'], 'icon_size': u(16),
             'entrance_animation': 'fadeIn', 'entrance_animation_duration': u(0.5), 'exit_animation': 'fadeIn',
+            'exit_animation_duration': u(0.5),
             'prevent_scroll': 'yes', 'avoid_multiple_popups': 'yes', 'classes': 'jw-qv-popup',
             'padding': box4(0, 0, 0, 0)}
 

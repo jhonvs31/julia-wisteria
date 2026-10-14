@@ -78,7 +78,8 @@ home_js='''<script>
     document.getElementById('mdl-l').innerHTML=b.inc.map(function(x){return '<li>'+JW.esc(x)+'</li>'}).join('');
     document.getElementById('mdl-go').href='product.html?box='+i;document.getElementById('mdl-p').textContent=JW.money(b.price);
     m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
-  function close(){m.classList.remove('open');m.setAttribute('aria-hidden','true');document.body.style.overflow=''}
+  function close(){if(!m.classList.contains('open')||m.classList.contains('closing'))return;m.classList.add('closing');m.setAttribute('aria-hidden','true');
+    setTimeout(function(){m.classList.remove('open','closing');document.body.style.overflow=''},520)}
   document.querySelectorAll('[data-box]').forEach(function(b){b.addEventListener('click',function(){open(+b.dataset.box)})});
   document.getElementById('mdl-x').addEventListener('click',close);
   m.addEventListener('click',function(e){if(e.target===m)close()});
