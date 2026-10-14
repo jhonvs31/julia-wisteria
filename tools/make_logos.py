@@ -48,9 +48,18 @@ save(word, 'logo-julia-wisteria.png', 900)
 save(light(word), 'logo-julia-wisteria-light.png', 900)
 save(mono, 'monogram-jw.png', 600)
 save(light(mono), 'monogram-jw-light.png', 600)
-# favicons: monograma centrado sobre fondo crema (se ve bien en pestañas claras y oscuras)
+# favicons REDONDOS: disco crema con el monograma y transparencia fuera del círculo.
+# apple-touch-icon queda cuadrado (iOS no admite transparencia y ya redondea las esquinas).
+from PIL import ImageDraw
 m = Image.fromarray(mono); side = max(m.size)
 sq = Image.new('RGBA', (side, side), (245, 238, 229, 255)); sq.alpha_composite(m, ((side - m.width) // 2, (side - m.height) // 2))
-for n, s in [('favicon-32.png', 32), ('favicon-192.png', 192), ('apple-touch-icon.png', 180), ('site-icon-512.png', 512)]:
-    sq.resize((s, s), Image.LANCZOS).convert('RGB').save(os.path.join(OUT, n), optimize=True)
-print('OK', os.listdir(OUT))
+def round_icon(size):
+    big = size * 4                                   # supersampling para un borde suave
+    disc = sq.resize((big, big), Image.LANCZOS)
+    mask = Image.new('L', (big, big), 0); ImageDraw.Draw(mask).ellipse((0, 0, big - 1, big - 1), fill=255)
+    disc.putalpha(mask)
+    return disc.resize((size, size), Image.LANCZOS)
+for n, s in [('favicon-32.png', 32), ('favicon-192.png', 192), ('site-icon-512.png', 512)]:
+    round_icon(s).save(os.path.join(OUT, n), optimize=True)
+sq.resize((180, 180), Image.LANCZOS).convert('RGB').save(os.path.join(OUT, 'apple-touch-icon.png'), optimize=True)
+print('OK', sorted(os.listdir(OUT)))

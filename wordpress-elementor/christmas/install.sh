@@ -13,6 +13,7 @@ python3 "$DIR/build_elementor.py"                               # genera out/*.j
 "${WP[@]}" eval-file "$DIR/apply_elementor.php" --user=1       # páginas, plantillas, Site Settings
 MU="$("${WP[@]}" eval 'echo WPMU_PLUGIN_DIR;')"
 cp "$DIR/jw-motion.php" "$MU/jw-motion.php"                     # capa de movimiento
+cp "$DIR/jw-brand.php" "$MU/jw-brand.php"                       # apple-touch-icon cuadrado
 "${WP[@]}" plugin is-installed woocommerce-gateway-stripe || "${WP[@]}" plugin install woocommerce-gateway-stripe
 "${WP[@]}" plugin activate woocommerce-gateway-stripe
 "${WP[@]}" eval-file "$DIR/setup_payments.php" --user=1      # Stripe: tarjetas, ACH, Apple Pay / Google Pay

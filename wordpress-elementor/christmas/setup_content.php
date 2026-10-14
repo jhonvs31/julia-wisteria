@@ -33,8 +33,10 @@ $ids['img']['wisteria'] = jw_media("$dir/wisteria.svg", 'wisteria', 'Wisteria fl
 $ids['img']['logo']       = jw_media("$dir/brand/logo-julia-wisteria.png", 'logo', 'Julia Wisteria — The Art of Artisan Gifting');
 $ids['img']['logo-light'] = jw_media("$dir/brand/logo-julia-wisteria-light.png", 'logo-light', 'Julia Wisteria — The Art of Artisan Gifting');
 $ids['img']['monogram']   = jw_media("$dir/brand/monogram-jw.png", 'monogram', 'Julia Wisteria monogram');
-$ids['img']['site-icon']  = jw_media("$dir/brand/site-icon-512.png", 'site-icon', 'Julia Wisteria');
-update_option('site_icon', $ids['img']['site-icon']);   // favicon / icono de app
+$ids['img']['site-icon']  = jw_media("$dir/brand/site-icon-512.png", 'site-icon-round', 'Julia Wisteria');   // redondo, con transparencia
+$ids['img']['apple-icon'] = jw_media("$dir/brand/apple-touch-icon.png", 'apple-touch', 'Julia Wisteria');   // cuadrado para iOS
+update_option('site_icon', $ids['img']['site-icon']);   // favicon
+update_option('jw_apple_touch_icon', $ids['img']['apple-icon']);
 
 // ---------- categorías ----------
 $cats = ['Christmas Season' => 'christmas-season', 'Corporate' => 'corporate', 'Wellness' => 'wellness', 'Tea' => 'tea', 'Desk' => 'desk', 'Rest' => 'rest'];

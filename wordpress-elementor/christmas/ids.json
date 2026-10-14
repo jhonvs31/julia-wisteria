@@ -9,7 +9,8 @@
         "logo": 135,
         "logo-light": 136,
         "monogram": 137,
-        "site-icon": 138
+        "site-icon": 139,
+        "apple-icon": 140
     },
     "product": {
         "coffee-planning": 119,
@@ -43,6 +44,7 @@
         "logo": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/logo-julia-wisteria.png",
         "logo-light": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/logo-julia-wisteria-light.png",
         "monogram": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/monogram-jw.png",
-        "site-icon": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/site-icon-512.png"
+        "site-icon": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/site-icon-512-1.png",
+        "apple-icon": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/apple-touch-icon.png"
     }
 }
