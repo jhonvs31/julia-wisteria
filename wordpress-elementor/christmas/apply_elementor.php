@@ -66,6 +66,16 @@ $settings['custom_css']                  = file_get_contents("$dir/jw-site.css")
 update_post_meta($kit_id, '_elementor_page_settings', $settings);
 delete_post_meta($kit_id, '_elementor_css');
 
+// Menú principal: Our Story primero
+$menu = wp_get_nav_menu_object('principal');
+if ($menu) {
+    $order = ['Our Story', 'Christmas Boxes', 'Customize', 'Corporate'];
+    foreach (wp_get_nav_menu_items($menu->term_id) as $item) {
+        $pos = array_search($item->title, $order, true);
+        if ($pos !== false) wp_update_post(['ID' => $item->ID, 'menu_order' => $pos + 1]);
+    }
+}
+
 // Plantillas antiguas sin uso → papelera
 foreach ([67, 70, 73, 82] as $old) { if (get_post($old)) wp_trash_post($old); }
 

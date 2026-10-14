@@ -14,11 +14,11 @@ about_mid=about[about.index('<!-- HERO -->'):about.index('<div class="nl">')]
 about_mid=about_mid.replace('<!-- NEWSLETTER -->','')
 
 def nav(active,pre=''):
-    items=[('shop.html','Christmas Boxes','shop'),('build.html','Customize','build'),('corporate.html','Corporate','corp'),('about.html','Our Story','about')]
+    items=[('about.html','Our Story','about'),('shop.html','Christmas Boxes','shop'),('build.html','Customize','build'),('corporate.html','Corporate','corp')]
     AC=' class="active"'
     return ''.join('<a href="%s"%s>%s</a>'%(h,AC if k==active else '',t) for h,t,k in items)
 def mob():
-    return '<a href="julia-wisteria.html" onclick="closeMobNav()">Home</a>'+''.join(f'<a href="{h}" onclick="closeMobNav()">{t}</a>' for h,t in [('shop.html','Christmas Boxes'),('build.html','Customize'),('corporate.html','Corporate'),('about.html','Our Story'),('cart.html','Cart')])
+    return '<a href="julia-wisteria.html" onclick="closeMobNav()">Home</a>'+''.join(f'<a href="{h}" onclick="closeMobNav()">{t}</a>' for h,t in [('about.html','Our Story'),('shop.html','Christmas Boxes'),('build.html','Customize'),('corporate.html','Corporate'),('cart.html','Cart')])
 def top(active):
     return f'''<body>
 <div class="progress"></div><div class="glow"></div><div class="fall" aria-hidden="true"></div>
