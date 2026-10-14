@@ -1,0 +1,2045 @@
+{
+ "version": "0.4",
+ "title": "JW – Our Story",
+ "type": "page",
+ "content": [
+  {
+   "id": "jw000a4",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "background_background": "gradient",
+    "background_color": "#F9F2EB",
+    "background_color_b": "#F0E6D9",
+    "background_gradient_type": "linear",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 160,
+     "sizes": []
+    },
+    "flex_align_items": "center",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "48",
+     "bottom": "96",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "72",
+     "right": "36",
+     "bottom": "72",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "58",
+     "right": "20",
+     "bottom": "58",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw000a0",
+     "elType": "widget",
+     "settings": {
+      "title": "Our Journey",
+      "header_size": "div",
+      "title_color": "#B88889",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 32,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 29,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 24,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000a1",
+     "elType": "widget",
+     "settings": {
+      "title": "Crafted with <em>Purpose</em>",
+      "header_size": "h1",
+      "title_color": "#5A4642",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 58,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 48,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000a2",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 8,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw000a3",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Julia Wisteria began as a simple idea — that a gift should feel like an embrace. Born in Orlando, Florida, our story is one of passion, artisanship, and the belief that every moment deserves to be celebrated beautifully.</p>",
+      "text_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13.5,
+       "sizes": []
+      },
+      "typography_font_weight": "300",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.95,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "text-editor"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw000ab",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "48",
+     "bottom": "80",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "60",
+     "right": "36",
+     "bottom": "60",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw000a5",
+     "elType": "widget",
+     "settings": {
+      "title": "Our Mission",
+      "header_size": "div",
+      "title_color": "#B88889",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 25,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 21,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000a6",
+     "elType": "widget",
+     "settings": {
+      "title": "More Than a Gift Box",
+      "header_size": "h2",
+      "title_color": "#5A4642",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000a7",
+     "elType": "widget",
+     "settings": {
+      "title": "",
+      "header_size": "div",
+      "title_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 11,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000a8",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>We exist to make people feel seen, celebrated, and loved — through the art of thoughtful gifting. Every ribbon tied, every item curated, every box sealed with intention is our way of helping you speak when words fall short.</p>",
+      "text_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13.5,
+       "sizes": []
+      },
+      "typography_font_weight": "300",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.95,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "jw000a9",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 8,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw000aa",
+     "elType": "widget",
+     "settings": {
+      "title": "Orlando, Florida",
+      "header_size": "div",
+      "title_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 10,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw000b6",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "row",
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0"
+    },
+    "flex_direction_mobile": "column"
+   },
+   "elements": [
+    {
+     "id": "jw000ae",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 45,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "background_background": "gradient",
+      "background_color": "#CABAAE",
+      "background_color_b": "#A89086",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": {
+       "unit": "deg",
+       "size": 145,
+       "sizes": []
+      },
+      "min_height": {
+       "unit": "px",
+       "size": 520,
+       "sizes": []
+      },
+      "min_height_mobile": {
+       "unit": "px",
+       "size": 320,
+       "sizes": []
+      },
+      "flex_justify_content": "center"
+     },
+     "elements": [
+      {
+       "id": "jw000ac",
+       "elType": "widget",
+       "settings": {
+        "title": "J",
+        "header_size": "div",
+        "title_color": "rgba(249,242,235,0.45)",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Cormorant Garamond",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 112,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 92,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 65,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw000ad",
+       "elType": "widget",
+       "settings": {
+        "title": "Julia",
+        "header_size": "div",
+        "title_color": "rgba(249,242,235,0.4)",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Sacramento",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_font_weight": "400"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "jw000b5",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 55,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "background_background": "classic",
+      "background_color": "#F0E6D9",
+      "flex_justify_content": "center",
+      "padding": {
+       "unit": "px",
+       "top": "72",
+       "right": "72",
+       "bottom": "72",
+       "left": "60",
+       "isLinked": false
+      },
+      "padding_tablet": {
+       "unit": "px",
+       "top": "54",
+       "right": "36",
+       "bottom": "54",
+       "left": "36",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "43",
+       "right": "20",
+       "bottom": "43",
+       "left": "20",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "jw000af",
+       "elType": "widget",
+       "settings": {
+        "title": "Meet the Founder",
+        "header_size": "div",
+        "title_color": "#B88889",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Sacramento",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 25,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 21,
+         "sizes": []
+        },
+        "typography_font_weight": "400"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw000b0",
+       "elType": "widget",
+       "settings": {
+        "title": "Julia's <em>Vision</em>",
+        "header_size": "h2",
+        "title_color": "#5A4642",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Cormorant Garamond",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 42,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 34,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "300"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw000b1",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Julia grew up surrounded by the warmth of handmade things — her grandmother's kitchen, her mother's garden, the artisan markets of downtown Orlando. When she began creating gift boxes in 2020, it wasn't a business plan. It was a love language made tangible.</p>",
+        "text_color": "#8B7B78",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13.5,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.95,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "jw000b2",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Today, Julia Wisteria is a reflection of everything she believed a gift could be: intentional, beautiful, and deeply personal. Every artisan partner is chosen by Julia herself, every product tested at her own table, every box approved before it leaves the studio. Her standard is simple — if she wouldn't be moved to receive it, it doesn't ship.</p>",
+        "text_color": "#8B7B78",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13.5,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.95,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "jw000b3",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Based in Orlando, Florida, Julia's mission is to keep gifting local, keep it artisan, and keep it extraordinary — one perfectly tied ribbon at a time.</p>",
+        "text_color": "#8B7B78",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13.5,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.95,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "jw000b4",
+       "elType": "widget",
+       "settings": {
+        "title": "Julia",
+        "header_size": "div",
+        "title_color": "#B88889",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Sacramento",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 40,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 33,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "typography_font_weight": "400"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw000c4",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "48",
+     "bottom": "80",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "60",
+     "right": "36",
+     "bottom": "60",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw000b7",
+     "elType": "widget",
+     "settings": {
+      "title": "The Heart of Everything We Do",
+      "header_size": "div",
+      "title_color": "#B88889",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 25,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 21,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000b8",
+     "elType": "widget",
+     "settings": {
+      "title": "What We Stand For",
+      "header_size": "h2",
+      "title_color": "#5A4642",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000b9",
+     "elType": "widget",
+     "settings": {
+      "title": "Four principles that guide every box we build",
+      "header_size": "div",
+      "title_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 11,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000ba",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw000c3",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28"
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "jw000bc",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 25,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw000bb",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-bullseye",
+           "library": "fa-solid"
+          },
+          "title_text": "Intentionality",
+          "description_text": "Every item is chosen with purpose. We believe in quality over quantity and meaning over trends. Nothing enters a Julia Wisteria box by accident.",
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "position": "top",
+          "text_align": "left",
+          "primary_color": "#B88889",
+          "title_color": "#5A4642",
+          "description_color": "#8B7B78",
+          "icon_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Cormorant Garamond",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "title_typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "title_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "title_typography_font_weight": "400",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Jost",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "description_typography_font_weight": "300",
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.9,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-box"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw000be",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 25,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw000bd",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-heart",
+           "library": "fa-solid"
+          },
+          "title_text": "Connection",
+          "description_text": "Gifts are bridges between hearts. We help you strengthen relationships that matter most — with clients, colleagues, family, and friends.",
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "position": "top",
+          "text_align": "left",
+          "primary_color": "#B88889",
+          "title_color": "#5A4642",
+          "description_color": "#8B7B78",
+          "icon_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Cormorant Garamond",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "title_typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "title_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "title_typography_font_weight": "400",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Jost",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "description_typography_font_weight": "300",
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.9,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-box"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw000c0",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 25,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw000bf",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-map-marker-alt",
+           "library": "fa-solid"
+          },
+          "title_text": "Local Love",
+          "description_text": "We partner exclusively with Orlando-based artisans, keeping our community thriving. Every purchase supports a local maker and their craft.",
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "position": "top",
+          "text_align": "left",
+          "primary_color": "#B88889",
+          "title_color": "#5A4642",
+          "description_color": "#8B7B78",
+          "icon_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Cormorant Garamond",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "title_typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "title_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "title_typography_font_weight": "400",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Jost",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "description_typography_font_weight": "300",
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.9,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-box"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw000c2",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 25,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw000c1",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-award",
+           "library": "fa-solid"
+          },
+          "title_text": "Excellence",
+          "description_text": "From packaging to product, we hold every detail to the highest standard of luxury. Because you deserve to give — and receive — nothing less.",
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "position": "top",
+          "text_align": "left",
+          "primary_color": "#B88889",
+          "title_color": "#5A4642",
+          "description_color": "#8B7B78",
+          "icon_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Cormorant Garamond",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "title_typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "title_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "title_typography_font_weight": "400",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Jost",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "description_typography_font_weight": "300",
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.9,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-box"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw000db",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_color": "#F9F2EB",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "48",
+     "bottom": "56",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "60",
+     "right": "36",
+     "bottom": "42",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "34",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw000c5",
+     "elType": "widget",
+     "settings": {
+      "title": "Then & Now",
+      "header_size": "div",
+      "title_color": "#B88889",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 25,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 21,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000c6",
+     "elType": "widget",
+     "settings": {
+      "title": "Our Journey",
+      "header_size": "h2",
+      "title_color": "#5A4642",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000c7",
+     "elType": "widget",
+     "settings": {
+      "title": "From a kitchen table in Orlando to gifting over 500 families",
+      "header_size": "div",
+      "title_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 11,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000c8",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw000d1",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28"
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "jw000cc",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "24",
+         "bottom": "32",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "0",
+         "right": "24",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "0",
+         "right": "20",
+         "bottom": "19",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "jw000c9",
+         "elType": "widget",
+         "settings": {
+          "title": "2020",
+          "header_size": "div",
+          "title_color": "#B88889",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Cormorant Garamond",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 34,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_weight": "300"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw000ca",
+         "elType": "widget",
+         "settings": {
+          "title": "The First Box",
+          "header_size": "h3",
+          "title_color": "#5A4642",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Cormorant Garamond",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "typography_font_weight": "400"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw000cb",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>Julia assembles the very first gift box in her Orlando kitchen, gifting it to a friend who had just gone through a difficult month. The response changes everything — three orders follow within a week, all from word of mouth alone.</p>",
+          "text_color": "#8B7B78",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "300",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.95,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw000d0",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "24",
+         "bottom": "32",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "0",
+         "right": "24",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "0",
+         "right": "20",
+         "bottom": "19",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "jw000cd",
+         "elType": "widget",
+         "settings": {
+          "title": "2021",
+          "header_size": "div",
+          "title_color": "#B88889",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Cormorant Garamond",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 34,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_weight": "300"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw000ce",
+         "elType": "widget",
+         "settings": {
+          "title": "Going Official",
+          "header_size": "h3",
+          "title_color": "#5A4642",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Cormorant Garamond",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "typography_font_weight": "400"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw000cf",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>Julia Wisteria is born as a formal business. The first 50 orders are hand-delivered across Orlando in Julia's own car, each box accompanied by a personally written card. The brand's voice — warm, artisan, intentional — is established from day one.</p>",
+          "text_color": "#8B7B78",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "300",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.95,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "jw000da",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28"
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "jw000d5",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "24",
+         "bottom": "32",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "0",
+         "right": "24",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "0",
+         "right": "20",
+         "bottom": "19",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "jw000d2",
+         "elType": "widget",
+         "settings": {
+          "title": "2022",
+          "header_size": "div",
+          "title_color": "#B88889",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Cormorant Garamond",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 34,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_weight": "300"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw000d3",
+         "elType": "widget",
+         "settings": {
+          "title": "Corporate Discovery",
+          "header_size": "h3",
+          "title_color": "#5A4642",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Cormorant Garamond",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "typography_font_weight": "400"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw000d4",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>Local businesses begin requesting custom branded boxes for client gifts and employee milestones. Corporate gifting becomes a pillar of the brand, opening a new chapter of scale without ever sacrificing the handmade touch.</p>",
+          "text_color": "#8B7B78",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "300",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.95,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw000d9",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "24",
+         "bottom": "32",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "0",
+         "right": "24",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "0",
+         "right": "20",
+         "bottom": "19",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "jw000d6",
+         "elType": "widget",
+         "settings": {
+          "title": "2024",
+          "header_size": "div",
+          "title_color": "#B88889",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Cormorant Garamond",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 34,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 28,
+           "sizes": []
+          },
+          "typography_font_weight": "300"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw000d7",
+         "elType": "widget",
+         "settings": {
+          "title": "Growing Family",
+          "header_size": "h3",
+          "title_color": "#5A4642",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Cormorant Garamond",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "typography_font_weight": "400"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw000d8",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>The team expands to 8 artisans — each a specialist in their craft, each sharing Julia's obsession with quality. Over 500 boxes delivered. Still every box made with the same love as the first one assembled on that kitchen table.</p>",
+          "text_color": "#8B7B78",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "300",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.95,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw000df",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "48",
+     "bottom": "80",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "60",
+     "right": "36",
+     "bottom": "60",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw000dc",
+     "elType": "widget",
+     "settings": {
+      "title": "The Hands Behind the Magic",
+      "header_size": "div",
+      "title_color": "#B88889",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 25,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 21,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000dd",
+     "elType": "widget",
+     "settings": {
+      "title": "Our Local Artisans",
+      "header_size": "h2",
+      "title_color": "#5A4642",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw000de",
+     "elType": "widget",
+     "settings": {
+      "title": "Every product inside a Julia Wisteria box is made by someone you can name",
+      "header_size": "div",
+      "title_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 11,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

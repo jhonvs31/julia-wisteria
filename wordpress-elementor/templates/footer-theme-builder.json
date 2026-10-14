@@ -1,0 +1,854 @@
+{
+ "version": "0.4",
+ "title": "JW – Footer",
+ "type": "footer",
+ "content": [
+  {
+   "id": "jw00037",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_color": "#F0E6D9",
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "52",
+     "bottom": "36",
+     "left": "52",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "54",
+     "right": "36",
+     "bottom": "27",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "43",
+     "right": "20",
+     "bottom": "22",
+     "left": "20",
+     "isLinked": false
+    },
+    "flex_gap": {
+     "unit": "px",
+     "size": 52,
+     "column": "52",
+     "row": "52"
+    }
+   },
+   "elements": [
+    {
+     "id": "jw00031",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "unit": "px",
+       "size": 48,
+       "column": "48",
+       "row": "48"
+      },
+      "flex_wrap_tablet": "wrap",
+      "flex_wrap_mobile": "wrap"
+     },
+     "elements": [
+      {
+       "id": "jw00015",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 40,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw0000d",
+         "elType": "widget",
+         "settings": {
+          "title": "JULIA WISTERIA",
+          "header_size": "div",
+          "title_color": "#5A4642",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Cormorant Garamond",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 4,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw0000e",
+         "elType": "widget",
+         "settings": {
+          "title": "The Art of Artisan Gifting",
+          "header_size": "div",
+          "title_color": "#B88889",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Sacramento",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "typography_font_weight": "400"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw0000f",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>Thoughtfully crafted gift boxes celebrating life's most meaningful moments, delivered across Orlando, FL and beyond.</p>",
+          "text_color": "#8B7B78",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 12.5,
+           "sizes": []
+          },
+          "typography_font_weight": "300",
+          "typography_line_height": {
+           "unit": "em",
+           "size": 1.95,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "text-editor"
+        },
+        {
+         "id": "jw00014",
+         "elType": "widget",
+         "settings": {
+          "social_icon_list": [
+           {
+            "_id": "jw00010",
+            "social_icon": {
+             "value": "fab fa-instagram",
+             "library": "fa-brands"
+            },
+            "link": {
+             "url": "#"
+            }
+           },
+           {
+            "_id": "jw00011",
+            "social_icon": {
+             "value": "fab fa-facebook-f",
+             "library": "fa-brands"
+            },
+            "link": {
+             "url": "#"
+            }
+           },
+           {
+            "_id": "jw00012",
+            "social_icon": {
+             "value": "fab fa-pinterest-p",
+             "library": "fa-brands"
+            },
+            "link": {
+             "url": "#"
+            }
+           },
+           {
+            "_id": "jw00013",
+            "social_icon": {
+             "value": "fab fa-linkedin-in",
+             "library": "fa-brands"
+            },
+            "link": {
+             "url": "#"
+            }
+           }
+          ],
+          "shape": "square",
+          "align": "left",
+          "icon_color": "custom",
+          "icon_primary_color": "rgba(0,0,0,0)",
+          "icon_secondary_color": "#5A4642",
+          "icon_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "social-icons"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw0001e",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 20,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw00016",
+         "elType": "widget",
+         "settings": {
+          "title": "Shop",
+          "header_size": "h4",
+          "title_color": "#5A4642",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 9,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 3,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw00017",
+         "elType": "widget",
+         "settings": {
+          "space": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "spacer"
+        },
+        {
+         "id": "jw0001d",
+         "elType": "widget",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "jw00018",
+            "text": "All Collections",
+            "link": {
+             "url": "/shop/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw00019",
+            "text": "Gift Boxes",
+            "link": {
+             "url": "/shop/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw0001a",
+            "text": "Corporate Gifts",
+            "link": {
+             "url": "/corporate/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw0001b",
+            "text": "Custom Orders",
+            "link": {
+             "url": "/build-your-box/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw0001c",
+            "text": "Seasonal Editions",
+            "link": {
+             "url": "/shop/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           }
+          ],
+          "text_color": "#8B7B78",
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Jost",
+          "icon_typography_font_size": {
+           "unit": "px",
+           "size": 12.5,
+           "sizes": []
+          },
+          "icon_typography_font_weight": "300"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-list"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw00027",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 20,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw0001f",
+         "elType": "widget",
+         "settings": {
+          "title": "Company",
+          "header_size": "h4",
+          "title_color": "#5A4642",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 9,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 3,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw00020",
+         "elType": "widget",
+         "settings": {
+          "space": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "spacer"
+        },
+        {
+         "id": "jw00026",
+         "elType": "widget",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "jw00021",
+            "text": "Our Story",
+            "link": {
+             "url": "/our-story/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw00022",
+            "text": "Our Artisans",
+            "link": {
+             "url": "/our-story/",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw00023",
+            "text": "Press",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw00024",
+            "text": "Careers",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw00025",
+            "text": "Contact Us",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           }
+          ],
+          "text_color": "#8B7B78",
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Jost",
+          "icon_typography_font_size": {
+           "unit": "px",
+           "size": 12.5,
+           "sizes": []
+          },
+          "icon_typography_font_weight": "300"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-list"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw00030",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 20,
+         "sizes": []
+        },
+        "width_tablet": {
+         "unit": "%",
+         "size": 30,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 50,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw00028",
+         "elType": "widget",
+         "settings": {
+          "title": "Support",
+          "header_size": "h4",
+          "title_color": "#5A4642",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 9,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 3,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        },
+        {
+         "id": "jw00029",
+         "elType": "widget",
+         "settings": {
+          "space": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "spacer"
+        },
+        {
+         "id": "jw0002f",
+         "elType": "widget",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "jw0002a",
+            "text": "Shipping & Delivery",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw0002b",
+            "text": "Returns & Exchanges",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw0002c",
+            "text": "FAQ",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw0002d",
+            "text": "Privacy Policy",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           },
+           {
+            "_id": "jw0002e",
+            "text": "Terms of Service",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "selected_icon": {
+             "value": "",
+             "library": ""
+            }
+           }
+          ],
+          "text_color": "#8B7B78",
+          "space_between": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "icon_typography_typography": "custom",
+          "icon_typography_font_family": "Jost",
+          "icon_typography_font_size": {
+           "unit": "px",
+           "size": 12.5,
+           "sizes": []
+          },
+          "icon_typography_font_weight": "300"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-list"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "jw00036",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28"
+      },
+      "flex_direction_mobile": "column",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "1",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "rgba(90,70,66,0.1)",
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "padding_tablet": {
+       "unit": "px",
+       "top": "21",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "17",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "jw00033",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 60,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw00032",
+         "elType": "widget",
+         "settings": {
+          "editor": "<p>© 2025 Julia Wisteria LLC · All rights reserved · Orlando, Florida</p>",
+          "text_color": "#8B7B78",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 11,
+           "sizes": []
+          },
+          "typography_font_weight": "300"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw00035",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 40,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "flex_align_items": "flex-end"
+       },
+       "elements": [
+        {
+         "id": "jw00034",
+         "elType": "widget",
+         "settings": {
+          "title": "Orlando, Florida ✦",
+          "header_size": "div",
+          "title_color": "#B88889",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_family": "Sacramento",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          },
+          "typography_font_size_tablet": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": 15,
+           "sizes": []
+          },
+          "typography_font_weight": "400"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

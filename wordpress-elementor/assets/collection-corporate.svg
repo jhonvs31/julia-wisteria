@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="ct2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F2EDE8"/><stop offset="100%" stop-color="#E0D4C8"/></linearGradient></defs>
+        <rect width="400" height="400" fill="url(#ct2)"/>
+        <ellipse cx="200" cy="380" rx="120" ry="20" fill="rgba(90,70,66,0.1)"/>
+        <!-- Dark executive box -->
+        <rect x="110" y="195" width="185" height="148" fill="#5A4642" rx="1"/>
+        <rect x="295" y="195" width="42" height="148" fill="#4A3632"/>
+        <rect x="104" y="165" width="198" height="38" fill="#6A5652" rx="1"/>
+        <rect x="295" y="173" width="38" height="30" fill="#5A4642"/>
+        <rect x="193" y="158" width="16" height="190" fill="#C1C099"/>
+        <rect x="102" y="179" width="200" height="14" fill="#C1C099"/>
+        <ellipse cx="201" cy="170" rx="32" ry="18" fill="#A8B888" transform="rotate(-18 201 170)"/>
+        <ellipse cx="201" cy="170" rx="32" ry="18" fill="#A8B888" transform="rotate(18 201 170)"/>
+        <circle cx="201" cy="170" r="12" fill="#B8C898"/>
+        <!-- Pen diagonal -->
+        <rect x="305" y="140" width="8" height="80" fill="#C4B898" transform="rotate(-30 305 140)" rx="2"/>
+        <rect x="305" y="140" width="8" height="12" fill="#8A7A60" transform="rotate(-30 305 140)" rx="1"/>
+        <!-- Journal edge -->
+        <rect x="88" y="220" width="28" height="90" fill="#7A6654" rx="1"/>
+        <rect x="88" y="220" width="4" height="90" fill="#6A5644"/>
+        <!-- Eucalyptus -->
+        <path d="M310 390 Q304 330 290 270" stroke="rgba(140,160,120,0.5)" stroke-width="2" fill="none"/>
+        <ellipse cx="290" cy="270" rx="15" ry="8" fill="rgba(140,160,120,0.4)" transform="rotate(-35 290 270)"/>
+        <ellipse cx="296" cy="250" rx="13" ry="7" fill="rgba(140,160,120,0.36)" transform="rotate(25 296 250)"/>
+        <ellipse cx="300" cy="232" rx="11" ry="6" fill="rgba(140,160,120,0.32)" transform="rotate(-15 300 232)"/>
+      </svg>

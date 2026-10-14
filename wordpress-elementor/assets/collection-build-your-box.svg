@@ -1,0 +1,25 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="ct4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#EEF0E8"/><stop offset="100%" stop-color="#DDE0D0"/></linearGradient></defs>
+        <rect width="400" height="400" fill="url(#ct4)"/>
+        <ellipse cx="200" cy="380" rx="120" ry="20" fill="rgba(90,70,66,0.08)"/>
+        <!-- Open box -->
+        <rect x="115" y="230" width="180" height="130" fill="#EAE4D8" rx="1"/>
+        <rect x="295" y="230" width="38" height="130" fill="#D8D0C0"/>
+        <!-- Lid open/raised -->
+        <rect x="108" y="140" width="194" height="36" fill="#E0D8C8" rx="1" transform="rotate(-15 108 160)"/>
+        <rect x="294" y="148" width="36" height="28" fill="#CCC4B0" transform="rotate(-15 294 160)"/>
+        <!-- Sage ribbon -->
+        <rect x="196" y="224" width="14" height="138" fill="#C1C099"/>
+        <rect x="113" y="240" width="184" height="12" fill="#C1C099"/>
+        <!-- Items inside box (peeking) -->
+        <rect x="140" y="215" width="40" height="25" fill="#D4A4A6" opacity=".8" rx="1"/><!-- pink item -->
+        <rect x="188" y="218" width="35" height="20" fill="#C1C099" opacity=".8" rx="1"/><!-- sage item -->
+        <rect x="232" y="212" width="38" height="28" fill="#C0A888" opacity=".7" rx="1"/><!-- warm item -->
+        <!-- Plus symbol (customize) -->
+        <circle cx="200" cy="360" r="20" stroke="#C1C099" stroke-width="1.5" fill="none"/>
+        <line x1="200" y1="352" x2="200" y2="368" stroke="#C1C099" stroke-width="1.5"/>
+        <line x1="192" y1="360" x2="208" y2="360" stroke="#C1C099" stroke-width="1.5"/>
+        <!-- Botanical -->
+        <path d="M80 390 Q90 310 110 240" stroke="rgba(193,192,153,0.55)" stroke-width="2" fill="none"/>
+        <ellipse cx="110" cy="240" rx="12" ry="30" fill="rgba(200,200,170,0.45)" transform="rotate(-6 110 240)"/>
+      </svg>

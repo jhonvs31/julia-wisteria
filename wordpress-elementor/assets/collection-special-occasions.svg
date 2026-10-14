@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="ct3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F8F4E8"/><stop offset="100%" stop-color="#EAE2CC"/></linearGradient></defs>
+        <rect width="400" height="400" fill="url(#ct3)"/>
+        <ellipse cx="200" cy="380" rx="120" ry="20" fill="rgba(90,70,66,0.08)"/>
+        <!-- Champagne/gold box -->
+        <rect x="115" y="200" width="178" height="140" fill="#F2E8D4" rx="1"/>
+        <rect x="293" y="200" width="40" height="140" fill="#DED0B4"/>
+        <rect x="108" y="170" width="192" height="38" fill="#EAE0C8" rx="1"/>
+        <rect x="293" y="178" width="37" height="30" fill="#D4C4A4"/>
+        <!-- Gold ribbon -->
+        <rect x="194" y="163" width="16" height="180" fill="#C4A870"/>
+        <rect x="106" y="183" width="196" height="14" fill="#C4A870"/>
+        <ellipse cx="202" cy="174" rx="34" ry="19" fill="#B89860" transform="rotate(-20 202 174)"/>
+        <ellipse cx="202" cy="174" rx="34" ry="19" fill="#B89860" transform="rotate(20 202 174)"/>
+        <circle cx="202" cy="174" r="13" fill="#C8A870"/>
+        <!-- JW monogram on box -->
+        <text x="183" y="250" font-family="serif" font-size="28" fill="rgba(180,150,80,0.4)" font-style="italic">JW</text>
+        <!-- Wax seal -->
+        <circle cx="310" cy="310" r="18" fill="#C4A870" opacity=".7"/>
+        <circle cx="310" cy="310" r="13" fill="#B89860" opacity=".8"/>
+        <text x="304" y="315" font-family="serif" font-size="10" fill="rgba(255,255,255,0.8)">JW</text>
+        <!-- Stars -->
+        <text x="128" y="168" font-size="14" fill="rgba(196,168,112,0.5)">✦</text>
+        <text x="290" y="200" font-size="10" fill="rgba(196,168,112,0.45)">✦</text>
+        <text x="108" y="300" font-size="8" fill="rgba(196,168,112,0.4)">✦</text>
+      </svg>

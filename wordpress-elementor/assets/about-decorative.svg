@@ -1,0 +1,17 @@
+<svg viewBox="0 0 480 500" xmlns="http://www.w3.org/2000/svg">
+      <defs><filter id="abl"><feGaussianBlur stdDeviation="2"/></filter></defs>
+      <!-- Decorative botanical circles -->
+      <circle cx="240" cy="250" r="160" stroke="rgba(249,242,235,0.12)" stroke-width="1.5" fill="none"/>
+      <circle cx="240" cy="250" r="120" stroke="rgba(249,242,235,0.1)" stroke-width="1" fill="none"/>
+      <circle cx="240" cy="250" r="80" stroke="rgba(184,136,137,0.15)" stroke-width="1" fill="none"/>
+      <!-- Petals -->
+      <path d="M240 90 Q268 170 240 250 Q212 170 240 90Z" stroke="rgba(193,192,153,0.2)" stroke-width="1" fill="rgba(193,192,153,0.06)"/>
+      <path d="M240 410 Q268 330 240 250 Q212 330 240 410Z" stroke="rgba(193,192,153,0.2)" stroke-width="1" fill="rgba(193,192,153,0.06)"/>
+      <path d="M80 250 Q160 278 240 250 Q160 222 80 250Z" stroke="rgba(193,192,153,0.2)" stroke-width="1" fill="rgba(193,192,153,0.06)"/>
+      <path d="M400 250 Q320 278 240 250 Q320 222 400 250Z" stroke="rgba(193,192,153,0.2)" stroke-width="1" fill="rgba(193,192,153,0.06)"/>
+      <!-- Diagonal petals -->
+      <path d="M127 137 Q184 194 240 250 Q184 178 127 137Z" stroke="rgba(184,136,137,0.15)" fill="rgba(184,136,137,0.04)"/>
+      <path d="M353 137 Q296 194 240 250 Q296 178 353 137Z" stroke="rgba(184,136,137,0.15)" fill="rgba(184,136,137,0.04)"/>
+      <path d="M127 363 Q184 306 240 250 Q184 322 127 363Z" stroke="rgba(184,136,137,0.15)" fill="rgba(184,136,137,0.04)"/>
+      <path d="M353 363 Q296 306 240 250 Q296 322 353 363Z" stroke="rgba(184,136,137,0.15)" fill="rgba(184,136,137,0.04)"/>
+    </svg>

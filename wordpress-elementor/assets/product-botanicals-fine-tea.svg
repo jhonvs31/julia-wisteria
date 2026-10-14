@@ -1,0 +1,44 @@
+<svg viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="p2bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F4F0F8"/><stop offset="60%" stop-color="#E4DCF0"/><stop offset="100%" stop-color="#D8D0E8"/></linearGradient>
+          <filter id="p2ds"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(70,50,44,0.2)"/></filter>
+        </defs>
+        <rect width="400" height="533" fill="url(#p2bg)"/>
+        <ellipse cx="200" cy="505" rx="130" ry="22" fill="rgba(90,70,66,0.09)" filter="url(#bl2)"/>
+        <!-- Box body lavender -->
+        <rect x="110" y="295" width="190" height="160" fill="#D8D0E8" rx="1" filter="url(#p2ds)"/>
+        <rect x="300" y="295" width="42" height="160" fill="#C8C0D8"/>
+        <!-- Lid -->
+        <rect x="104" y="262" width="202" height="40" fill="#DDDAEA" rx="1" filter="url(#p2ds)"/>
+        <rect x="300" y="270" width="38" height="32" fill="#CCCAE2"/>
+        <!-- Sage ribbon -->
+        <rect x="195" y="256" width="18" height="202" fill="#B4BC96"/>
+        <rect x="102" y="274" width="204" height="16" fill="#B4BC96"/>
+        <!-- Tissue -->
+        <path d="M118 260 Q148 234 178 250 Q208 222 238 240 Q268 214 296 232 L316 260Z" fill="rgba(255,255,255,0.58)"/>
+        <!-- Bow sage -->
+        <ellipse cx="204" cy="268" rx="38" ry="21" fill="#A8B484" transform="rotate(-20 204 268)"/>
+        <ellipse cx="204" cy="268" rx="38" ry="21" fill="#A8B484" transform="rotate(20 204 268)"/>
+        <circle cx="204" cy="268" r="14" fill="#B8C494"/>
+        <circle cx="204" cy="268" r="6" fill="#8A9870"/>
+        <!-- TEA TIN (cylinder) left -->
+        <ellipse cx="128" cy="240" rx="22" ry="10" fill="#C8C0D4"/>
+        <rect x="106" y="240" width="44" height="50" fill="#BEB8D0"/>
+        <ellipse cx="128" cy="290" rx="22" ry="10" fill="#B4AEC4"/>
+        <rect x="112" y="254" width="32" height="22" fill="rgba(255,255,255,0.25)"/><!-- label -->
+        <!-- Tea cup right -->
+        <ellipse cx="298" cy="248" rx="20" ry="9" fill="#E4DDF0"/>
+        <path d="M278 248 Q278 278 298 282 Q318 278 318 248" fill="#DDD8EC"/>
+        <path d="M318 258 Q330 258 330 268 Q330 278 318 274" stroke="#CCC8E4" stroke-width="1.5" fill="none"/>
+        <ellipse cx="298" cy="282" rx="22" ry="6" fill="#D0CCE4"/>
+        <!-- Lavender stems -->
+        <path d="M82 533 Q94 420 120 310" stroke="rgba(168,154,180,0.6)" stroke-width="2.5" fill="none"/>
+        <ellipse cx="124" cy="306" rx="8" ry="24" fill="rgba(168,154,180,0.45)" transform="rotate(-5 124 306)"/>
+        <ellipse cx="120" cy="325" rx="7" ry="18" fill="rgba(168,154,180,0.38)" transform="rotate(4 120 325)"/>
+        <path d="M96 533 Q110 432 136 330" stroke="rgba(168,154,180,0.45)" stroke-width="1.8" fill="none"/>
+        <!-- Right botanical -->
+        <path d="M340 533 Q330 430 308 330 Q318 296 328 248" stroke="rgba(130,150,110,0.5)" stroke-width="2" fill="none"/>
+        <ellipse cx="308" cy="330" rx="15" ry="8" fill="rgba(130,150,110,0.38)" transform="rotate(-32 308 330)"/>
+        <ellipse cx="315" cy="310" rx="13" ry="7" fill="rgba(130,150,110,0.34)" transform="rotate(22 315 310)"/>
+        <ellipse cx="320" cy="292" rx="11" ry="6" fill="rgba(130,150,110,0.3)" transform="rotate(-14 320 292)"/>
+      </svg>

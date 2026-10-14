@@ -1,0 +1,63 @@
+<svg viewBox="0 0 560 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="fgl" cx="40%" cy="35%" r="60%"><stop offset="0%" stop-color="rgba(255,255,255,0.22)"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+        <filter id="fds"><feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="rgba(70,50,44,0.3)"/></filter>
+        <filter id="fbl"><feGaussianBlur stdDeviation="3"/></filter>
+      </defs>
+      <rect width="560" height="480" fill="url(#fgl)"/>
+      <ellipse cx="280" cy="455" rx="190" ry="28" fill="rgba(70,50,44,0.15)" filter="url(#fbl)"/>
+      <!-- LARGE BOX -->
+      <rect x="148" y="228" width="248" height="198" fill="#F2E8DE" rx="1" filter="url(#fds)"/>
+      <rect x="396" y="228" width="58" height="198" fill="#E0CEBC"/>
+      <!-- Lid -->
+      <rect x="140" y="186" width="262" height="50" fill="#EAE0D2" rx="1" filter="url(#fds)"/>
+      <rect x="396" y="194" width="52" height="42" fill="#D4C4AE"/>
+      <!-- Ribbon V -->
+      <rect x="258" y="180" width="24" height="250" fill="#C89A9C"/>
+      <!-- Ribbon H -->
+      <rect x="138" y="203" width="266" height="20" fill="#C89A9C"/>
+      <!-- Tissue -->
+      <path d="M152 184 Q192 152 230 172 Q268 140 306 162 Q344 132 380 154 L408 184Z" fill="rgba(255,255,255,0.62)"/>
+      <!-- Big bow -->
+      <ellipse cx="270" cy="196" rx="52" ry="28" fill="#B88889" transform="rotate(-22 270 196)"/>
+      <ellipse cx="270" cy="196" rx="52" ry="28" fill="#B88889" transform="rotate(22 270 196)"/>
+      <circle cx="270" cy="196" r="20" fill="#C89A9C"/>
+      <circle cx="270" cy="196" r="10" fill="#A87878"/>
+      <!-- Roses big -->
+      <circle cx="210" cy="148" r="36" fill="#D4A4A6"/>
+      <ellipse cx="210" cy="112" rx="16" ry="10" fill="#D4A4A6"/>
+      <ellipse cx="238" cy="122" rx="16" ry="10" fill="#D4A4A6" transform="rotate(45 210 148)"/>
+      <ellipse cx="246" cy="148" rx="16" ry="10" fill="#D4A4A6" transform="rotate(90 210 148)"/>
+      <ellipse cx="238" cy="174" rx="16" ry="10" fill="#D4A4A6" transform="rotate(135 210 148)"/>
+      <ellipse cx="210" cy="182" rx="16" ry="10" fill="#D4A4A6" transform="rotate(180 210 148)"/>
+      <ellipse cx="182" cy="174" rx="16" ry="10" fill="#D4A4A6" transform="rotate(225 210 148)"/>
+      <ellipse cx="174" cy="148" rx="16" ry="10" fill="#D4A4A6" transform="rotate(270 210 148)"/>
+      <ellipse cx="182" cy="122" rx="16" ry="10" fill="#D4A4A6" transform="rotate(315 210 148)"/>
+      <circle cx="210" cy="148" r="23" fill="#C89294"/>
+      <circle cx="210" cy="148" r="14" fill="#B88486"/>
+      <circle cx="210" cy="148" r="7" fill="#A47476"/>
+      <!-- Rose 2 -->
+      <circle cx="360" cy="162" r="24" fill="#D4A8A6"/>
+      <circle cx="360" cy="162" r="15" fill="#C89296"/>
+      <circle cx="360" cy="162" r="8" fill="#A87478"/>
+      <!-- Pampas left -->
+      <path d="M58 480 Q78 360 108 240" stroke="rgba(193,192,153,0.65)" stroke-width="3.5" fill="none"/>
+      <path d="M46 480 Q70 374 98 258" stroke="rgba(193,192,153,0.42)" stroke-width="2" fill="none"/>
+      <ellipse cx="108" cy="240" rx="20" ry="52" fill="rgba(215,212,188,0.52)" transform="rotate(-9 108 240)"/>
+      <ellipse cx="98" cy="266" rx="13" ry="34" fill="rgba(215,212,188,0.38)" transform="rotate(7 98 266)"/>
+      <!-- Eucalyptus right -->
+      <path d="M490 480 Q476 370 448 268 Q462 228 474 172" stroke="rgba(140,160,120,0.52)" stroke-width="2.5" fill="none"/>
+      <ellipse cx="448" cy="268" rx="20" ry="11" fill="rgba(140,160,120,0.4)" transform="rotate(-38 448 268)"/>
+      <ellipse cx="457" cy="244" rx="18" ry="10" fill="rgba(140,160,120,0.36)" transform="rotate(28 457 244)"/>
+      <ellipse cx="463" cy="222" rx="16" ry="9" fill="rgba(140,160,120,0.32)" transform="rotate(-18 463 222)"/>
+      <ellipse cx="469" cy="202" rx="14" ry="8" fill="rgba(140,160,120,0.28)" transform="rotate(12 469 202)"/>
+      <!-- Petals -->
+      <ellipse cx="430" cy="350" rx="9" ry="5" fill="rgba(210,162,162,0.42)" transform="rotate(44 430 350)"/>
+      <ellipse cx="130" cy="380" rx="8" ry="4.5" fill="rgba(210,162,162,0.38)" transform="rotate(-26 130 380)"/>
+      <ellipse cx="460" cy="430" rx="10" ry="5" fill="rgba(210,162,162,0.35)" transform="rotate(58 460 430)"/>
+      <!-- Gift card -->
+      <rect x="126" y="380" width="46" height="62" fill="rgba(255,255,255,0.85)" rx="1"/>
+      <rect x="130" y="392" width="38" height="1" fill="rgba(90,70,66,0.2)"/>
+      <rect x="130" y="400" width="30" height="1" fill="rgba(90,70,66,0.15)"/>
+      <rect x="130" y="407" width="34" height="1" fill="rgba(90,70,66,0.15)"/>
+    </svg>

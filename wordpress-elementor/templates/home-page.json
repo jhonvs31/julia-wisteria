@@ -1,0 +1,3152 @@
+{
+ "version": "0.4",
+ "title": "JW – Home",
+ "type": "page",
+ "content": [
+  {
+   "id": "jw00040",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "min_height": {
+     "unit": "vh",
+     "size": 85,
+     "sizes": []
+    },
+    "flex_justify_content": "center",
+    "background_background": "gradient",
+    "background_color": "#EDD9C6",
+    "background_color_b": "#BAA088",
+    "background_gradient_type": "linear",
+    "background_gradient_angle": {
+     "unit": "deg",
+     "size": 120,
+     "sizes": []
+    },
+    "background_overlay_background": "gradient",
+    "background_overlay_color": "rgba(40,28,26,0.58)",
+    "background_overlay_color_b": "rgba(40,28,26,0)",
+    "background_overlay_gradient_type": "linear",
+    "background_overlay_gradient_angle": {
+     "unit": "deg",
+     "size": 90,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "80",
+     "bottom": "80",
+     "left": "80",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "60",
+     "right": "36",
+     "bottom": "60",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw00038",
+     "elType": "widget",
+     "settings": {
+      "title": "Welcome to",
+      "header_size": "div",
+      "title_color": "rgba(249,242,235,0.85)",
+      "align": "left",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 34,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 31,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw00039",
+     "elType": "widget",
+     "settings": {
+      "title": "The Art of <em>Artisan</em> Gifting.",
+      "header_size": "h1",
+      "title_color": "#FFFFFF",
+      "align": "left",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 68,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 56,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 39,
+       "sizes": []
+      },
+      "typography_font_weight": "300",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.06,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw0003a",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 8,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw0003b",
+     "elType": "widget",
+     "settings": {
+      "title": "Premium handcrafted gift boxes for every milestone — curated for Orlando's most memorable moments",
+      "header_size": "div",
+      "title_color": "rgba(249,242,235,0.72)",
+      "align": "left",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 11,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw0003c",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw0003f",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "unit": "px",
+       "size": 14,
+       "column": "14",
+       "row": "14"
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "jw0003d",
+       "elType": "widget",
+       "settings": {
+        "text": "Shop the Collection",
+        "link": {
+         "url": "/shop/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "button_text_color": "#5A4642",
+        "align": "left",
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "15",
+         "right": "40",
+         "bottom": "15",
+         "left": "40",
+         "isLinked": false
+        },
+        "hover_color": "#FFFFFF",
+        "button_background_hover_color": "#B88889",
+        "background_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "typography_font_weight": "500",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "button"
+      },
+      {
+       "id": "jw0003e",
+       "elType": "widget",
+       "settings": {
+        "text": "Corporate Gifting",
+        "link": {
+         "url": "/corporate/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "button_text_color": "rgba(255,255,255,0.85)",
+        "align": "left",
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "15",
+         "right": "40",
+         "bottom": "15",
+         "left": "40",
+         "isLinked": false
+        },
+        "hover_color": "#FFFFFF",
+        "button_background_hover_color": "#B88889",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(255,255,255,0.55)",
+        "background_color": "rgba(0,0,0,0)",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "typography_font_weight": "500",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "button"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw00042",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_color": "#5A4642",
+    "padding": {
+     "unit": "px",
+     "top": "12",
+     "right": "16",
+     "bottom": "12",
+     "left": "16",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw00041",
+     "elType": "widget",
+     "settings": {
+      "title": "Artisan Crafted ✦ Same-Day Orlando Delivery ✦ Corporate Specialists ✦ Fully Customizable ✦ Premium Local Products ✦ Gift Wrapping Included ✦ Handwritten Notecards",
+      "header_size": "div",
+      "title_color": "#F9F2EB",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 9.5,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw0004a",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "52",
+     "right": "48",
+     "bottom": "52",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "39",
+     "right": "36",
+     "bottom": "39",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "31",
+     "right": "20",
+     "bottom": "31",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw00049",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28"
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "jw00044",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 33,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw00043",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-gift",
+           "library": "fa-solid"
+          },
+          "title_text": "Individual Gift Boxes",
+          "description_text": "We help you surprise the people who matter most with thoughtfully curated artisan boxes for every occasion — birthdays, anniversaries, baby showers, and beyond.",
+          "link": {
+           "url": "/shop/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "position": "top",
+          "text_align": "left",
+          "primary_color": "#B88889",
+          "title_color": "#5A4642",
+          "description_color": "#8B7B78",
+          "icon_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Cormorant Garamond",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "title_typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "title_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "title_typography_font_weight": "400",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Jost",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "description_typography_font_weight": "300",
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.9,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-box"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw00046",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 33,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw00045",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-briefcase",
+           "library": "fa-solid"
+          },
+          "title_text": "Corporate Gifting",
+          "description_text": "We revolutionize corporate gifting culture. Custom branded boxes for clients, employees, and events — white-glove service with a personal touch that leaves a lasting impression.",
+          "link": {
+           "url": "/corporate/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "position": "top",
+          "text_align": "left",
+          "primary_color": "#B88889",
+          "title_color": "#5A4642",
+          "description_color": "#8B7B78",
+          "icon_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Cormorant Garamond",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "title_typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "title_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "title_typography_font_weight": "400",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Jost",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "description_typography_font_weight": "300",
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.9,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-box"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw00048",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 33,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "jw00047",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-plus-circle",
+           "library": "fa-solid"
+          },
+          "title_text": "Build Your Own Box",
+          "description_text": "Curate something completely yours. Choose from our selection of premium local products and create a fully personalized gift box that tells your unique story.",
+          "link": {
+           "url": "/build-your-box/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "position": "top",
+          "text_align": "left",
+          "primary_color": "#B88889",
+          "title_color": "#5A4642",
+          "description_color": "#8B7B78",
+          "icon_size": {
+           "unit": "px",
+           "size": 38,
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Cormorant Garamond",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 24,
+           "sizes": []
+          },
+          "title_typography_font_size_tablet": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "title_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "title_typography_font_weight": "400",
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Jost",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "description_typography_font_weight": "300",
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.9,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "icon-box"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw00050",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "48",
+     "bottom": "80",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "60",
+     "right": "36",
+     "bottom": "60",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw0004b",
+     "elType": "widget",
+     "settings": {
+      "title": "Shop by Collection",
+      "header_size": "div",
+      "title_color": "#B88889",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 25,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 21,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw0004c",
+     "elType": "widget",
+     "settings": {
+      "title": "Find the Perfect Box",
+      "header_size": "h2",
+      "title_color": "#5A4642",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw0004d",
+     "elType": "widget",
+     "settings": {
+      "title": "Thoughtfully organized for every occasion and recipient",
+      "header_size": "div",
+      "title_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 11,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw0004e",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw0004f",
+     "elType": "widget",
+     "settings": {
+      "number": "4",
+      "columns": "4",
+      "columns_tablet": "2",
+      "columns_mobile": "2"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "wc-categories"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw00058",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "48",
+     "bottom": "80",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "60",
+     "right": "36",
+     "bottom": "60",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "20",
+     "bottom": "48",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw00051",
+     "elType": "widget",
+     "settings": {
+      "title": "Our Curated Selection",
+      "header_size": "div",
+      "title_color": "#B88889",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 25,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 21,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw00052",
+     "elType": "widget",
+     "settings": {
+      "title": "Signature Gift Boxes",
+      "header_size": "h2",
+      "title_color": "#5A4642",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw00053",
+     "elType": "widget",
+     "settings": {
+      "title": "Each box assembled by hand with premium artisanal products — made for Orlando's most meaningful moments",
+      "header_size": "div",
+      "title_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 11,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw00054",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw00055",
+     "elType": "widget",
+     "settings": {
+      "columns": 3,
+      "columns_tablet": 2,
+      "columns_mobile": 2,
+      "rows": 2,
+      "paginate": "",
+      "orderby": "date",
+      "order": "desc"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "woocommerce-products"
+    },
+    {
+     "id": "jw00056",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw00057",
+     "elType": "widget",
+     "settings": {
+      "text": "View All Collections",
+      "link": {
+       "url": "/shop/",
+       "is_external": "",
+       "nofollow": ""
+      },
+      "button_text_color": "#F9F2EB",
+      "align": "center",
+      "border_radius": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "text_padding": {
+       "unit": "px",
+       "top": "15",
+       "right": "40",
+       "bottom": "15",
+       "left": "40",
+       "isLinked": false
+      },
+      "hover_color": "#FFFFFF",
+      "button_background_hover_color": "#B88889",
+      "background_color": "#5A4642",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 10,
+       "sizes": []
+      },
+      "typography_font_weight": "500",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 3,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "button"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw0006d",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "row",
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0"
+    },
+    "flex_direction_mobile": "column",
+    "background_background": "classic",
+    "background_color": "#F9F2EB"
+   },
+   "elements": [
+    {
+     "id": "jw0005a",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 53,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "background_background": "gradient",
+      "background_color": "#EAD6C2",
+      "background_color_b": "#C6AA90",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": {
+       "unit": "deg",
+       "size": 145,
+       "sizes": []
+      },
+      "min_height": {
+       "unit": "px",
+       "size": 580,
+       "sizes": []
+      },
+      "min_height_mobile": {
+       "unit": "px",
+       "size": 320,
+       "sizes": []
+      },
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "60",
+       "right": "60",
+       "bottom": "60",
+       "left": "60",
+       "isLinked": false
+      },
+      "padding_tablet": {
+       "unit": "px",
+       "top": "45",
+       "right": "36",
+       "bottom": "45",
+       "left": "36",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "36",
+       "right": "20",
+       "bottom": "36",
+       "left": "20",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "jw00059",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "",
+         "id": ""
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "image"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "jw0006c",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 47,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "flex_justify_content": "center",
+      "padding": {
+       "unit": "px",
+       "top": "80",
+       "right": "72",
+       "bottom": "80",
+       "left": "60",
+       "isLinked": false
+      },
+      "padding_tablet": {
+       "unit": "px",
+       "top": "60",
+       "right": "36",
+       "bottom": "60",
+       "left": "36",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "48",
+       "right": "20",
+       "bottom": "48",
+       "left": "20",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "jw0005b",
+       "elType": "widget",
+       "settings": {
+        "title": "● Featured Collection",
+        "header_size": "div",
+        "title_color": "#8B7B78",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 9.5,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2.5,
+         "sizes": []
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 2,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw0005c",
+       "elType": "widget",
+       "settings": {
+        "title": "Most Loved",
+        "header_size": "div",
+        "title_color": "#B88889",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Sacramento",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 25,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 21,
+         "sizes": []
+        },
+        "typography_font_weight": "400"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw0005d",
+       "elType": "widget",
+       "settings": {
+        "title": "The Romance Box",
+        "header_size": "h2",
+        "title_color": "#5A4642",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Cormorant Garamond",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 44,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.12,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw0005e",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Our signature bestseller — a love letter in a box. Artisan-curated with premium dried florals, hand-poured candles, and indulgent local treats. The gift that never fails to move hearts.</p>",
+        "text_color": "#8B7B78",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13.5,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.95,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "jw0005f",
+       "elType": "widget",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 8,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "spacer"
+      },
+      {
+       "id": "jw00060",
+       "elType": "widget",
+       "settings": {
+        "title": "WHAT'S INSIDE",
+        "header_size": "h4",
+        "title_color": "#5A4642",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 9,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2.5,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw00066",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "jw00061",
+          "text": "Hand-poured soy candle — Rose & Jasmine",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "jw00062",
+          "text": "Artisan dried floral arrangement",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "jw00063",
+          "text": "Premium chocolate truffles (6 pc)",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "jw00064",
+          "text": "Herbal bath salts & body oil",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "jw00065",
+          "text": "Handwritten personalized notecard",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "icon_color": "#B88889",
+        "text_color": "#8B7B78",
+        "icon_size": {
+         "unit": "px",
+         "size": 5,
+         "sizes": []
+        },
+        "space_between": {
+         "unit": "px",
+         "size": 8,
+         "sizes": []
+        },
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "Jost",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 12.5,
+         "sizes": []
+        },
+        "icon_typography_font_weight": "300"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "icon-list"
+      },
+      {
+       "id": "jw00067",
+       "elType": "widget",
+       "settings": {
+        "title": "$89.00",
+        "header_size": "div",
+        "title_color": "#5A4642",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Cormorant Garamond",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 27,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "500"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw00068",
+       "elType": "widget",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 8,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "spacer"
+      },
+      {
+       "id": "jw0006b",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "flex_direction_mobile": "column"
+       },
+       "elements": [
+        {
+         "id": "jw00069",
+         "elType": "widget",
+         "settings": {
+          "text": "Add to Cart",
+          "link": {
+           "url": "/product/the-romance-box/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "button_text_color": "#F9F2EB",
+          "align": "left",
+          "border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "15",
+           "right": "40",
+           "bottom": "15",
+           "left": "40",
+           "isLinked": false
+          },
+          "hover_color": "#FFFFFF",
+          "button_background_hover_color": "#B88889",
+          "background_color": "#5A4642",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "typography_font_weight": "500",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 3,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "button"
+        },
+        {
+         "id": "jw0006a",
+         "elType": "widget",
+         "settings": {
+          "text": "View Details",
+          "link": {
+           "url": "/product/the-romance-box/",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "button_text_color": "#5A4642",
+          "align": "left",
+          "border_radius": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "15",
+           "right": "40",
+           "bottom": "15",
+           "left": "40",
+           "isLinked": false
+          },
+          "hover_color": "#FFFFFF",
+          "button_background_hover_color": "#B88889",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#5A4642",
+          "background_color": "rgba(0,0,0,0)",
+          "typography_typography": "custom",
+          "typography_font_family": "Jost",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "typography_font_weight": "500",
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 3,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "button"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw00080",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "row",
+    "flex_gap": {
+     "unit": "px",
+     "size": 0,
+     "column": "0",
+     "row": "0"
+    },
+    "flex_direction_mobile": "column"
+   },
+   "elements": [
+    {
+     "id": "jw00070",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 50,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "background_background": "gradient",
+      "background_color": "#CABAAE",
+      "background_color_b": "#A89086",
+      "background_gradient_type": "linear",
+      "background_gradient_angle": {
+       "unit": "deg",
+       "size": 145,
+       "sizes": []
+      },
+      "min_height": {
+       "unit": "px",
+       "size": 500,
+       "sizes": []
+      },
+      "min_height_mobile": {
+       "unit": "px",
+       "size": 300,
+       "sizes": []
+      },
+      "flex_justify_content": "center"
+     },
+     "elements": [
+      {
+       "id": "jw0006e",
+       "elType": "widget",
+       "settings": {
+        "title": "J",
+        "header_size": "div",
+        "title_color": "rgba(249,242,235,0.45)",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Cormorant Garamond",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 112,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 92,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 65,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw0006f",
+       "elType": "widget",
+       "settings": {
+        "title": "Wisteria",
+        "header_size": "div",
+        "title_color": "rgba(249,242,235,0.4)",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Sacramento",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_font_weight": "400"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "jw0007f",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "width": {
+       "unit": "%",
+       "size": 50,
+       "sizes": []
+      },
+      "width_mobile": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "background_background": "classic",
+      "background_color": "#F0E6D9",
+      "flex_justify_content": "center",
+      "padding": {
+       "unit": "px",
+       "top": "80",
+       "right": "80",
+       "bottom": "80",
+       "left": "80",
+       "isLinked": false
+      },
+      "padding_tablet": {
+       "unit": "px",
+       "top": "60",
+       "right": "36",
+       "bottom": "60",
+       "left": "36",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "48",
+       "right": "20",
+       "bottom": "48",
+       "left": "20",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "jw00071",
+       "elType": "widget",
+       "settings": {
+        "title": "Our Philosophy",
+        "header_size": "div",
+        "title_color": "#B88889",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Sacramento",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 25,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 21,
+         "sizes": []
+        },
+        "typography_font_weight": "400"
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw00072",
+       "elType": "widget",
+       "settings": {
+        "title": "Gifting as an <em>Art Form</em>",
+        "header_size": "h2",
+        "title_color": "#5A4642",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Cormorant Garamond",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 42,
+         "sizes": []
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 34,
+         "sizes": []
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.12,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "heading"
+      },
+      {
+       "id": "jw00073",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Every Julia Wisteria box is a love letter. We believe the most meaningful gifts aren't just beautiful — they tell a story. Sourced from local Orlando artisans and curated with an unwavering eye for quality, each box is designed to leave a lasting impression long after the ribbon is untied.</p>",
+        "text_color": "#8B7B78",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13.5,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.95,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "jw00074",
+       "elType": "widget",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "spacer"
+      },
+      {
+       "id": "jw0007c",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_gap": {
+         "unit": "px",
+         "size": 28,
+         "column": "28",
+         "row": "28"
+        },
+        "flex_direction_mobile": "column"
+       },
+       "elements": [
+        {
+         "id": "jw00076",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 33,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "jw00075",
+           "elType": "widget",
+           "settings": {
+            "starting_number": 0,
+            "ending_number": 500,
+            "suffix": "+",
+            "title": "Boxes delivered",
+            "number_color": "#5A4642",
+            "title_color": "#8B7B78",
+            "typography_number_typography": "custom",
+            "typography_number_font_family": "Cormorant Garamond",
+            "typography_number_font_size": {
+             "unit": "px",
+             "size": 38,
+             "sizes": []
+            },
+            "typography_number_font_size_tablet": {
+             "unit": "px",
+             "size": 34,
+             "sizes": []
+            },
+            "typography_number_font_size_mobile": {
+             "unit": "px",
+             "size": 28,
+             "sizes": []
+            },
+            "typography_number_font_weight": "300",
+            "typography_title_typography": "custom",
+            "typography_title_font_family": "Jost",
+            "typography_title_font_size": {
+             "unit": "px",
+             "size": 9.5,
+             "sizes": []
+            },
+            "typography_title_font_weight": "400",
+            "typography_title_text_transform": "uppercase",
+            "typography_title_letter_spacing": {
+             "unit": "px",
+             "size": 2,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false,
+           "widgetType": "counter"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "jw00078",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 33,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "jw00077",
+           "elType": "widget",
+           "settings": {
+            "starting_number": 0,
+            "ending_number": 100,
+            "suffix": "%",
+            "title": "Handcrafted",
+            "number_color": "#5A4642",
+            "title_color": "#8B7B78",
+            "typography_number_typography": "custom",
+            "typography_number_font_family": "Cormorant Garamond",
+            "typography_number_font_size": {
+             "unit": "px",
+             "size": 38,
+             "sizes": []
+            },
+            "typography_number_font_size_tablet": {
+             "unit": "px",
+             "size": 34,
+             "sizes": []
+            },
+            "typography_number_font_size_mobile": {
+             "unit": "px",
+             "size": 28,
+             "sizes": []
+            },
+            "typography_number_font_weight": "300",
+            "typography_title_typography": "custom",
+            "typography_title_font_family": "Jost",
+            "typography_title_font_size": {
+             "unit": "px",
+             "size": 9.5,
+             "sizes": []
+            },
+            "typography_title_font_weight": "400",
+            "typography_title_text_transform": "uppercase",
+            "typography_title_letter_spacing": {
+             "unit": "px",
+             "size": 2,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false,
+           "widgetType": "counter"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "jw0007b",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+           "unit": "%",
+           "size": 33,
+           "sizes": []
+          },
+          "width_mobile": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          }
+         },
+         "elements": [
+          {
+           "id": "jw00079",
+           "elType": "widget",
+           "settings": {
+            "title": "Local",
+            "header_size": "div",
+            "title_color": "#5A4642",
+            "align": "left",
+            "typography_typography": "custom",
+            "typography_font_family": "Cormorant Garamond",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 38,
+             "sizes": []
+            },
+            "typography_font_size_tablet": {
+             "unit": "px",
+             "size": 34,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 28,
+             "sizes": []
+            },
+            "typography_font_weight": "300"
+           },
+           "elements": [],
+           "isInner": false,
+           "widgetType": "heading"
+          },
+          {
+           "id": "jw0007a",
+           "elType": "widget",
+           "settings": {
+            "title": "Orlando artisans",
+            "header_size": "div",
+            "title_color": "#8B7B78",
+            "align": "left",
+            "typography_typography": "custom",
+            "typography_font_family": "Jost",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 9.5,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 2,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 2,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false,
+           "widgetType": "heading"
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw0007d",
+       "elType": "widget",
+       "settings": {
+        "space": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "spacer"
+      },
+      {
+       "id": "jw0007e",
+       "elType": "widget",
+       "settings": {
+        "text": "Discover Our Story",
+        "link": {
+         "url": "/our-story/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "button_text_color": "#F9F2EB",
+        "align": "left",
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "15",
+         "right": "40",
+         "bottom": "15",
+         "left": "40",
+         "isLinked": false
+        },
+        "hover_color": "#FFFFFF",
+        "button_background_hover_color": "#B88889",
+        "background_color": "#5A4642",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "typography_font_weight": "500",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "button"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw0008f",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "48",
+     "bottom": "88",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "66",
+     "right": "36",
+     "bottom": "66",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "53",
+     "right": "20",
+     "bottom": "53",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw00081",
+     "elType": "widget",
+     "settings": {
+      "title": "Client Stories",
+      "header_size": "div",
+      "title_color": "#B88889",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 25,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 21,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw00082",
+     "elType": "widget",
+     "settings": {
+      "title": "Words from Our Community",
+      "header_size": "h2",
+      "title_color": "#5A4642",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw00083",
+     "elType": "widget",
+     "settings": {
+      "title": "Trusted by Orlando's finest individuals and businesses",
+      "header_size": "div",
+      "title_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 11,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw00084",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw0008e",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "unit": "px",
+       "size": 28,
+       "column": "28",
+       "row": "28"
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "jw00087",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 33,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "36",
+         "bottom": "40",
+         "left": "36",
+         "isLinked": false
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "30",
+         "right": "36",
+         "bottom": "30",
+         "left": "36",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "24",
+         "right": "20",
+         "bottom": "24",
+         "left": "20",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "jw00085",
+         "elType": "widget",
+         "settings": {
+          "rating": 5,
+          "star_style": "star_fontawesome",
+          "stars_color": "#C1C099",
+          "stars_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "align": "left"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "star-rating"
+        },
+        {
+         "id": "jw00086",
+         "elType": "widget",
+         "settings": {
+          "testimonial_content": "The most stunning gift box I've ever received. Every detail was perfect — from the packaging to the artisanal treats inside. Julia Wisteria truly elevated our corporate gifting.",
+          "testimonial_name": "Sarah M. — Marketing Director, Orlando",
+          "testimonial_job": "",
+          "testimonial_image": {
+           "url": "",
+           "id": ""
+          },
+          "testimonial_alignment": "left",
+          "content_content_color": "#5A4642",
+          "name_text_color": "#5A4642",
+          "job_text_color": "#8B7B78",
+          "content_typography_typography": "custom",
+          "content_typography_font_family": "Cormorant Garamond",
+          "content_typography_font_size": {
+           "unit": "px",
+           "size": 17,
+           "sizes": []
+          },
+          "content_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "content_typography_font_weight": "300",
+          "content_typography_line_height": {
+           "unit": "em",
+           "size": 1.8,
+           "sizes": []
+          },
+          "content_typography_font_style": "italic",
+          "job_typography_typography": "custom",
+          "job_typography_font_family": "Jost",
+          "job_typography_font_size": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "job_typography_font_weight": "400",
+          "job_typography_text_transform": "uppercase",
+          "job_typography_letter_spacing": {
+           "unit": "px",
+           "size": 2,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "testimonial"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw0008a",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 33,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "36",
+         "bottom": "40",
+         "left": "36",
+         "isLinked": false
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "30",
+         "right": "36",
+         "bottom": "30",
+         "left": "36",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "24",
+         "right": "20",
+         "bottom": "24",
+         "left": "20",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "jw00088",
+         "elType": "widget",
+         "settings": {
+          "rating": 5,
+          "star_style": "star_fontawesome",
+          "stars_color": "#C1C099",
+          "stars_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "align": "left"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "star-rating"
+        },
+        {
+         "id": "jw00089",
+         "elType": "widget",
+         "settings": {
+          "testimonial_content": "We ordered 50 boxes for our annual client appreciation event. The response was overwhelming. Our clients are still talking about it months later. Absolutely world-class.",
+          "testimonial_name": "James R. — CEO, Florida Tech Group",
+          "testimonial_job": "",
+          "testimonial_image": {
+           "url": "",
+           "id": ""
+          },
+          "testimonial_alignment": "left",
+          "content_content_color": "#5A4642",
+          "name_text_color": "#5A4642",
+          "job_text_color": "#8B7B78",
+          "content_typography_typography": "custom",
+          "content_typography_font_family": "Cormorant Garamond",
+          "content_typography_font_size": {
+           "unit": "px",
+           "size": 17,
+           "sizes": []
+          },
+          "content_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "content_typography_font_weight": "300",
+          "content_typography_line_height": {
+           "unit": "em",
+           "size": 1.8,
+           "sizes": []
+          },
+          "content_typography_font_style": "italic",
+          "job_typography_typography": "custom",
+          "job_typography_font_family": "Jost",
+          "job_typography_font_size": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "job_typography_font_weight": "400",
+          "job_typography_text_transform": "uppercase",
+          "job_typography_letter_spacing": {
+           "unit": "px",
+           "size": 2,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "testimonial"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "jw0008d",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "width": {
+         "unit": "%",
+         "size": 33,
+         "sizes": []
+        },
+        "width_mobile": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "36",
+         "bottom": "40",
+         "left": "36",
+         "isLinked": false
+        },
+        "padding_tablet": {
+         "unit": "px",
+         "top": "30",
+         "right": "36",
+         "bottom": "30",
+         "left": "36",
+         "isLinked": false
+        },
+        "padding_mobile": {
+         "unit": "px",
+         "top": "24",
+         "right": "20",
+         "bottom": "24",
+         "left": "20",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "jw0008b",
+         "elType": "widget",
+         "settings": {
+          "rating": 5,
+          "star_style": "star_fontawesome",
+          "stars_color": "#C1C099",
+          "stars_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "align": "left"
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "star-rating"
+        },
+        {
+         "id": "jw0008c",
+         "elType": "widget",
+         "settings": {
+          "testimonial_content": "Absolutely magical. The attention to detail is unparalleled. I sent the Romance Box for my best friend's birthday and she was moved to tears. This is gifting perfected.",
+          "testimonial_name": "Natalie V. — Orlando, FL",
+          "testimonial_job": "",
+          "testimonial_image": {
+           "url": "",
+           "id": ""
+          },
+          "testimonial_alignment": "left",
+          "content_content_color": "#5A4642",
+          "name_text_color": "#5A4642",
+          "job_text_color": "#8B7B78",
+          "content_typography_typography": "custom",
+          "content_typography_font_family": "Cormorant Garamond",
+          "content_typography_font_size": {
+           "unit": "px",
+           "size": 17,
+           "sizes": []
+          },
+          "content_typography_font_size_mobile": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "content_typography_font_weight": "300",
+          "content_typography_line_height": {
+           "unit": "em",
+           "size": 1.8,
+           "sizes": []
+          },
+          "content_typography_font_style": "italic",
+          "job_typography_typography": "custom",
+          "job_typography_font_family": "Jost",
+          "job_typography_font_size": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "job_typography_font_weight": "400",
+          "job_typography_text_transform": "uppercase",
+          "job_typography_letter_spacing": {
+           "unit": "px",
+           "size": 2,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false,
+         "widgetType": "testimonial"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw00098",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_color": "#5A4642",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "48",
+     "bottom": "96",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "72",
+     "right": "36",
+     "bottom": "72",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "58",
+     "right": "20",
+     "bottom": "58",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw00090",
+     "elType": "widget",
+     "settings": {
+      "title": "For Businesses",
+      "header_size": "div",
+      "title_color": "#C1C099",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Sacramento",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 25,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 21,
+       "sizes": []
+      },
+      "typography_font_weight": "400"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw00091",
+     "elType": "widget",
+     "settings": {
+      "title": "Elevate Your Corporate Gifting",
+      "header_size": "h2",
+      "title_color": "#F9F2EB",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 26,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw00093",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>From client appreciation to employee milestones, Julia Wisteria transforms corporate gifting into an unforgettable experience. Custom branded boxes, bulk orders, and white-glove delivery — tailored to represent your brand with elegance.</p>",
+      "text_color": "rgba(249,242,235,0.62)",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "300",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.95,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "jw00094",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw00097",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "unit": "px",
+       "size": 14,
+       "column": "14",
+       "row": "14"
+      },
+      "flex_direction_mobile": "column",
+      "flex_justify_content": "center"
+     },
+     "elements": [
+      {
+       "id": "jw00095",
+       "elType": "widget",
+       "settings": {
+        "text": "Request a Custom Quote",
+        "link": {
+         "url": "/corporate/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "button_text_color": "#FFFFFF",
+        "align": "left",
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "15",
+         "right": "40",
+         "bottom": "15",
+         "left": "40",
+         "isLinked": false
+        },
+        "hover_color": "#FFFFFF",
+        "button_background_hover_color": "#9E7373",
+        "background_color": "#B88889",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "typography_font_weight": "500",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "button"
+      },
+      {
+       "id": "jw00096",
+       "elType": "widget",
+       "settings": {
+        "text": "Learn More",
+        "link": {
+         "url": "/corporate/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "button_text_color": "rgba(249,242,235,0.8)",
+        "align": "left",
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "15",
+         "right": "40",
+         "bottom": "15",
+         "left": "40",
+         "isLinked": false
+        },
+        "hover_color": "#FFFFFF",
+        "button_background_hover_color": "#B88889",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(249,242,235,0.4)",
+        "background_color": "rgba(0,0,0,0)",
+        "typography_typography": "custom",
+        "typography_font_family": "Jost",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "typography_font_weight": "500",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "button"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "jw0009f",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_color": "#F9F2EB",
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "48",
+     "bottom": "72",
+     "left": "48",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "54",
+     "right": "36",
+     "bottom": "54",
+     "left": "36",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "43",
+     "right": "20",
+     "bottom": "43",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "jw00099",
+     "elType": "widget",
+     "settings": {
+      "title": "Join the Julia Wisteria World",
+      "header_size": "h3",
+      "title_color": "#5A4642",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Cormorant Garamond",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_size_tablet": {
+       "unit": "px",
+       "size": 32,
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 27,
+       "sizes": []
+      },
+      "typography_font_weight": "300"
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw0009a",
+     "elType": "widget",
+     "settings": {
+      "title": "Early access to new collections, seasonal boxes & gifting inspiration",
+      "header_size": "div",
+      "title_color": "#8B7B78",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Jost",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 11,
+       "sizes": []
+      },
+      "typography_font_weight": "400",
+      "typography_text_transform": "uppercase",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 2,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 2,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "heading"
+    },
+    {
+     "id": "jw0009b",
+     "elType": "widget",
+     "settings": {
+      "space": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false,
+     "widgetType": "spacer"
+    },
+    {
+     "id": "jw0009e",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "width": {
+       "unit": "px",
+       "size": 440,
+       "sizes": []
+      },
+      "align_self": "center"
+     },
+     "elements": [
+      {
+       "id": "jw0009d",
+       "elType": "widget",
+       "settings": {
+        "form_name": "Newsletter",
+        "form_fields": [
+         {
+          "_id": "jw0009c",
+          "custom_id": "email",
+          "field_type": "email",
+          "required": "true",
+          "placeholder": "your@email.com",
+          "field_label": "Email",
+          "width": "70"
+         }
+        ],
+        "show_labels": "",
+        "button_text": "SUBSCRIBE",
+        "button_width": "30",
+        "button_background_color": "#5A4642",
+        "button_text_color": "#F9F2EB",
+        "button_border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        }
+       },
+       "elements": [],
+       "isInner": false,
+       "widgetType": "form"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}
