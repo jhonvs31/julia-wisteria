@@ -51,10 +51,37 @@ a palabra (`jw-split`) y botones magnéticos. Respeta *prefers-reduced-motion* y
 Para cambiar textos o productos, edita `boxes.json` o `build_elementor.py` y vuelve a ejecutar `install.sh`;
 o edita directamente en Elementor (regenerar sobrescribe esos cambios).
 
+## Pagos (Stripe + Apple Pay / Google Pay)
+
+Pasarela: **WooCommerce Stripe Payment Gateway** (plugin oficial gratuito). `setup_payments.php` lo deja configurado:
+
+| Método | Dónde aparece | Comisión EE. UU. (estándar de Stripe) |
+|---|---|---|
+| Apple Pay / Google Pay | Botones *Express Checkout* en ficha, carrito y checkout | Igual que tarjeta |
+| Tarjeta de crédito/débito + Link | Checkout | 2.9% + 30¢ |
+| ACH Direct Debit (cuenta bancaria) | Checkout | 0.8%, tope $5 — ideal para pedidos corporativos grandes |
+| Wire transfer (BACS) | Checkout | Sin comisión; manual. Desactivar si no se usa |
+
+"Cash on Delivery" queda desactivado. En el WordPress local Stripe no aparece en el checkout hasta conectar una cuenta.
+
+### Activar en producción (lo hace la cliente o con su acceso)
+
+1. La web debe estar en su **dominio con HTTPS** (Apple Pay no funciona en `http` ni en `localhost`).
+2. WooCommerce › Settings › Payments › **Stripe › Connect** → iniciar sesión / crear la cuenta Stripe de la empresa
+   (datos fiscales y bancarios de la cliente). Primero en *test mode* para probar.
+3. En el **Dashboard de Stripe › Settings › Payment methods**: activar *Cards, Apple Pay, Google Pay, Link* y
+   *ACH Direct Debit*. El plugin sincroniza esa lista.
+4. Stripe › *Express checkout* → comprobar que el dominio aparece **verificado** (Apple Pay). Si no, pulsar
+   *Re-verify domain* o añadirlo en Dashboard › Settings › Payment method domains.
+5. Probar: Google Pay en Chrome con una tarjeta guardada; Apple Pay en Safari (iPhone/Mac) con Wallet.
+   Tarjeta de prueba: `4242 4242 4242 4242`.
+6. Desactivar *test mode* y hacer una compra real pequeña; reembolsarla desde el pedido.
+
 ## Pendiente antes de publicar
 
 - **Precios**: $95 / $85 / $75 / $80 / $90 son **de ejemplo**. Confírmalos con la cliente (Productos › editar).
-- **Pagos**: activar una pasarela en WooCommerce › Ajustes › Pagos.
+- **Stripe**: conectar la cuenta de la cliente (ver arriba).
+- **Impuestos (sales tax)**: configurar WooCommerce Tax o Stripe Tax según los estados donde venda.
 - **Email de formularios**: Corporate y Customize envían al email de administración de WordPress.
 - **Dominio**: las imágenes guardan URLs `http://localhost:8081`. Tras migrar, usa
   Elementor › Herramientas › Reemplazar URL.

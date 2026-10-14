@@ -275,3 +275,11 @@ body{overflow-x:hidden;background:#fff}
 .jw-wc .shop_table .product-thumbnail img{border-radius:14px}
 .jw-wc .woocommerce-message,.jw-wc .woocommerce-info,.woocommerce-notices-wrapper .woocommerce-message{border-radius:18px;border:0;background:var(--jw-lilacl);color:var(--jw-brown);font-family:'Jost',sans-serif}
 .woocommerce-message::before,.woocommerce-info::before{color:var(--jw-wine)!important}
+
+/* ---------- Stripe: Apple Pay / Google Pay (Express Checkout) y formulario de tarjeta ---------- */
+#wc-stripe-express-checkout-element{margin:6px 0 4px}
+#wc-stripe-express-checkout-element iframe{border-radius:999px!important}
+#wc-stripe-express-checkout-button-separator{display:flex!important;align-items:center;gap:14px;margin:14px 0!important;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:2.4px;text-transform:uppercase;color:var(--jw-muted)}
+#wc-stripe-express-checkout-button-separator::before,#wc-stripe-express-checkout-button-separator::after{content:'';flex:1;height:1px;background:rgba(90,70,66,.15)}
+.jw-wc .wc-stripe-upe-element,.jw-wc #wc-stripe-upe-form{padding:4px 0}
+.jw-wc .payment_method_stripe label img,.jw-wc .payment_method_stripe_us_bank_account label img{max-height:22px}
