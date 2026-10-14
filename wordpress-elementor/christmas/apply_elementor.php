@@ -21,6 +21,9 @@ foreach ($manifest as $name => $post_id) {
     delete_post_meta($post_id, '_elementor_css');
     delete_post_meta($post_id, '_elementor_element_cache');
     delete_post_meta($post_id, '_elementor_page_assets');
+    if (file_exists("$dir/out/$name.settings.json")) {
+        update_post_meta($post_id, '_elementor_page_settings', json_decode(file_get_contents("$dir/out/$name.settings.json"), true));
+    }
     if (in_array($name, $pages, true)) {
         update_post_meta($post_id, '_wp_page_template', 'elementor_header_footer');
         update_post_meta($post_id, '_elementor_template_type', 'wp-page');

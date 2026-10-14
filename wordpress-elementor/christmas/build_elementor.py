@@ -280,7 +280,9 @@ def hero_bg(extra=None):
 
 
 def box_tile(b, n, minh, minh_t, delay):
+    popup_tag = '[elementor-tag id="jwqv%04d" name="popup" settings="%%7B%%22popup%%22%%3A%%22%d%%22%%7D"]' % (n, IDS['popup'][b['i']])
     return con({'html_tag': 'a', 'link': {'url': PRODUCT_URL[b['i']], 'is_external': '', 'nofollow': ''},
+                '__dynamic__': {'link': popup_tag},
                 'min_height': u(minh), 'min_height_tablet': u(minh_t), 'min_height_mobile': u(320),
                 'flex_justify_content': 'space-between', 'background_background': 'classic', 'background_color': C['brown'],
                 'border_radius': radius(30), **pad(22, 30, 28, 30), 'flex_grow': 1,
@@ -697,6 +699,46 @@ def build_wc_page(eyebrow, title, widget, settings):
     return [hero, body]
 
 
+
+# ════════════════════════════════════════════════════════════════════
+# QUICK VIEW (Popups de Elementor Pro, uno por caja)
+def build_quickview(b):
+    img = col([image(IDS['img'][b['i']], cls='jw-qv-img', size='large', h=640, ht=520, hm=260)], 50, tablet=50, mobile=100,
+              s={'flex_justify_content': 'center'})
+    body = col([
+        script(b['k'], size=28, cls='jw-qv-in'),
+        heading(b['t'], 'h3', C['brown'], cls='jw-qv-in', family=SERIF, size=36, weight=300, lh=1.08, m=28),
+        text(b['d'], size=13.5, lh=1.9, cls='jw-qv-in'),
+        label('Includes', C['brown'], size=9.5, spacing=3, cls='jw-qv-in', extra={'_margin': box4(8, 0, 0, 0)}),
+        W('icon-list', {'icon_list': [{'_id': nid(), 'text': t, 'selected_icon': {'value': 'fas fa-circle', 'library': 'fa-solid'}}
+                                      for t in b['inc']],
+                        'icon_color': C['lilac'], 'icon_size': u(6), 'text_color': C['brownl'], 'space_between': u(10),
+                        'text_indent': u(10), **typo('icon_typography', family=SANS, size=12.5, weight=300, lh=1.5)},
+          'jw-qv-in jw-qv-list'),
+        heading(b['q'], 'div', C['wine'], cls='jw-qv-in', family=SERIF, size=21, weight=400, style='italic',
+                extra={'_margin': box4(6, 0, 10, 0)}),
+        con({'flex_direction': 'row', 'flex_gap': gap(12), 'flex_wrap': 'wrap'}, [
+            button('View & add to cart', PRODUCT_URL[b['i']], solid=True),
+            button('Request a quote', '/corporate/#quote', icon=False)], cls='jw-qv-in'),
+    ], 50, tablet=50, mobile=100, s={'flex_gap': gap(12), 'padding': box4(46, 44, 46, 44),
+                                     'padding_mobile': box4(30, 24, 34, 24), 'flex_justify_content': 'center'})
+    return [con({'flex_direction': 'row', 'flex_direction_mobile': 'column', 'flex_gap': gap(0),
+                 'flex_align_items': 'stretch'}, [img, body], inner=False, cls='jw-qv')]
+
+
+def quickview_settings():
+    return {'width': u(1020), 'width_tablet': u(92, 'vw'), 'width_mobile': u(92, 'vw'), 'height_type': 'auto',
+            'horizontal_position': 'center', 'vertical_position': 'center',
+            'overlay': 'yes', 'overlay_background_background': 'classic', 'overlay_background_color': 'rgba(40,20,24,0.55)',
+            'background_background': 'classic', 'background_color': C['cream'], 'border_radius': radius(30),
+            'close_button': 'yes', 'close_button_position': 'inside', 'close_button_vertical': u(16),
+            'close_button_horizontal': u(16), 'close_button_color': C['brown'], 'close_button_background_color': '#FFFFFF',
+            'close_button_hover_color': C['wine'], 'icon_size': u(16),
+            'entrance_animation': 'fadeIn', 'entrance_animation_duration': u(0.5), 'exit_animation': 'fadeIn',
+            'prevent_scroll': 'yes', 'avoid_multiple_popups': 'yes', 'classes': 'jw-qv-popup',
+            'padding': box4(0, 0, 0, 0)}
+
+
 TARGETS = {
     'header': (79, build_header), 'footer': (76, build_footer), 'home': (45, build_home), 'about': (46, build_about),
     'corporate': (47, build_corporate), 'customize': (48, build_customize), 'shop-archive': (85, build_shop_archive),
@@ -707,6 +749,9 @@ TARGETS = {
 
 if __name__ == '__main__':
     manifest = {}
+    for b in BOXES:
+        TARGETS['quickview-' + b['i']] = (IDS['popup'][b['i']], (lambda b=b: build_quickview(b)))
+        json.dump(quickview_settings(), open(os.path.join(OUT, 'quickview-%s.settings.json' % b['i']), 'w'))
     for name, (pid, fn) in TARGETS.items():
         data = fn()
         path = os.path.join(OUT, name + '.json')

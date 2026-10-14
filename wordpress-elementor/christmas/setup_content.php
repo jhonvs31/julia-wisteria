@@ -74,6 +74,17 @@ foreach ($boxes as $n => $b) {
     $ids['product'][$b['i']] = $pid;
 }
 
+// ---------- popups de vista rápida (contenido lo pone apply_elementor.php) ----------
+$ids['popup'] = [];
+foreach ($boxes as $b) {
+    $found = get_posts(['post_type' => 'elementor_library', 'meta_key' => '_jw_qv', 'meta_value' => $b['i'], 'numberposts' => 1, 'post_status' => 'any', 'fields' => 'ids']);
+    $pid = $found ? (int) $found[0] : wp_insert_post(['post_type' => 'elementor_library', 'post_status' => 'publish', 'post_title' => 'JW – Quick view: ' . $b['t']]);
+    update_post_meta($pid, '_jw_qv', $b['i']);
+    update_post_meta($pid, '_elementor_template_type', 'popup');
+    wp_set_object_terms($pid, 'popup', 'elementor_library_type');
+    $ids['popup'][$b['i']] = (int) $pid;
+}
+
 $ids['url'] = [];
 foreach ($ids['img'] as $k => $aid) { $ids['url'][$k] = wp_get_attachment_url($aid); }
 file_put_contents("$dir/ids.json", json_encode($ids, JSON_PRETTY_PRINT));

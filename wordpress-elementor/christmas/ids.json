@@ -22,6 +22,13 @@
         "Desk": 29,
         "Rest": 30
     },
+    "popup": {
+        "coffee-planning": 130,
+        "unwind-recharge": 131,
+        "teatime-delight": 132,
+        "light-up-your-day": 133,
+        "serenity-sleep": 134
+    },
     "url": {
         "coffee-planning": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/coffee-planning.jpg",
         "unwind-recharge": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/unwind-recharge.jpg",
