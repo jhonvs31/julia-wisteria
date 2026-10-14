@@ -323,3 +323,8 @@ body{overflow-x:hidden;background:#fff}
 .jwt-x:hover{transform:rotate(90deg)}
 @media(max-width:768px){.jwt{left:16px;right:16px;bottom:16px;width:auto}}
 @media (prefers-reduced-motion:reduce){.jwt.in,.jwt.out{animation-duration:.01s}}
+
+/* ---------- sin scroll horizontal en móvil (Safari iOS) ---------- */
+html,body{overflow-x:hidden;max-width:100%}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+.jw-hero,.jw-cta,.jw-mq,.jw-fall,.jw-bx,.jw-frame .elementor-widget-container{contain:paint}

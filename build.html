@@ -363,11 +363,12 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
   .stats{flex-wrap:wrap;gap:20px}
 }
 </style>
-<link rel="stylesheet" href="assets/motion.css">
+<link rel="stylesheet" href="assets/motion.css?v=aedae496">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/brand/favicon-192.png">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
 <meta name="theme-color" content="#F9F2EB">
+<style id="critical">.mdl,.drw,.paysh,.jwt{position:fixed}.mdl:not(.open){visibility:hidden;pointer-events:none}.mdl img,.jwt img{max-width:100%}</style>
 </head>
 <body>
 <div class="progress"></div><div class="glow"></div><div class="fall" aria-hidden="true"></div>
@@ -430,8 +431,8 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
   </div>
   <div class="fbot"><span class="fcp">© 2026 Julia Wisteria · Orlando, FL</span><span class="flo">Crafted with love. Inspired by family.</span></div>
 </footer>
-<script src="assets/site.js"></script>
-<script src="assets/motion.js"></script>
+<script src="assets/site.js?v=ca823141"></script>
+<script src="assets/motion.js?v=cc7d9c39"></script>
 <script>
 (function(){
   var sel=-1,st=document.getElementById('steps2').children;
@@ -452,7 +453,7 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
   if(window.IntersectionObserver){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});pick.querySelectorAll('.rv').forEach(function(x){io.observe(x)})}else pick.querySelectorAll('.rv').forEach(function(x){x.classList.add('in')});
 })();
 </script>
-<script src="assets/toast.js"></script>
+<script src="assets/toast.js?v=c2eeba62"></script>
 <script>
 (function(){
   var list=BOXES.map(function(b,n){return {kicker:'Featured this season',title:b.t,sub:JW.money(b.price)+' · '+b.s,img:'images/christmas/'+b.i+'.jpg',href:'product.html?box='+n}});

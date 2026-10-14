@@ -60,7 +60,7 @@ FAVICONS='''<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/f
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
 <meta name="theme-color" content="#F9F2EB">
 '''
-TOAST='''<script src="assets/toast.js"></script>
+TOAST='''<script src="assets/toast.js?v=@@TV@@"></script>
 <script>
 (function(){
   var list=BOXES.map(function(b,n){return {kicker:'Featured this season',title:b.t,sub:JW.money(b.price)+' · '+b.s,img:'images/christmas/'+b.i+'.jpg',href:'product.html?box='+n}});
@@ -72,12 +72,21 @@ TOAST='''<script src="assets/toast.js"></script>
 })();
 </script>
 '''
+import hashlib
+def ver(path):
+    """Huella del archivo para forzar al navegador a descargar la versión nueva (cache busting)."""
+    return hashlib.md5(open(R+path,'rb').read()).hexdigest()[:8]
 def page(fn,title,active,body,js=''):
     h=HEAD.replace('@@TITLE@@',title)
+    h=re.sub(r'href="assets/motion\.css(\?v=[0-9a-f]+)?"','href="assets/motion.css?v=%s"'%ver('assets/motion.css'),h)
+    # CSS crítico: aunque motion.css no cargue (caché o red), las ventanas flotantes no
+    # entran en el flujo de la página ni la ensanchan en el móvil.
+    if 'id="critical"' not in h:
+        h=h.replace('</head>','<style id="critical">.mdl,.drw,.paysh,.jwt{position:fixed}.mdl:not(.open){visibility:hidden;pointer-events:none}.mdl img,.jwt img{max-width:100%}</style>\n</head>',1)
     if 'rel="icon"' not in h:
         h=h.replace('</head>',FAVICONS+'</head>',1)
-    toast='' if fn=='checkout.html' else TOAST
-    out=h+top(active)+body+BOT+'<script src="assets/site.js"></script>\n<script src="assets/motion.js"></script>\n'+js+toast+'</body>\n</html>\n'
+    toast='' if fn=='checkout.html' else TOAST.replace('@@TV@@',ver('assets/toast.js'))
+    out=h+top(active)+body+BOT+'<script src="assets/site.js?v=%s"></script>\n<script src="assets/motion.js?v=%s"></script>\n'%(ver('assets/site.js'),ver('assets/motion.js'))+js+toast+'</body>\n</html>\n'
     open(R+fn,'w',encoding='utf8').write(out)
 
 # ---------- HOME ----------

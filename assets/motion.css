@@ -448,3 +448,11 @@ footer .fsoc a.fsoc-t:hover{background:none!important;color:#fff!important}
 .jwt-x:hover{transform:rotate(90deg)}
 @media(max-width:768px){.jwt{left:16px;right:16px;bottom:16px;width:auto}}
 @media (prefers-reduced-motion:reduce){.jwt.in,.jwt.out{animation-duration:.01s}}
+
+/* ===== sin scroll horizontal en móvil (Safari iOS) =====
+   Safari puede no recortar hijos animados con filter:blur dentro de overflow:hidden y
+   los usa para ensanchar la página. contain:paint obliga a recortar; clip evita el
+   desplazamiento lateral sin romper el header sticky. */
+html,body{overflow-x:hidden;max-width:100%}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+.x-hero-bg,.ph,.xcta,.mq,.fall,.boxes,.story,.symb,.purpose-img,.sc-img,.bx,.mdl-c{contain:paint}
