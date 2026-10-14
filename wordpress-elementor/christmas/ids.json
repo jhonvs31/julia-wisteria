@@ -1,0 +1,33 @@
+{
+    "img": {
+        "coffee-planning": 113,
+        "unwind-recharge": 114,
+        "teatime-delight": 115,
+        "light-up-your-day": 116,
+        "serenity-sleep": 117,
+        "wisteria": 118
+    },
+    "product": {
+        "coffee-planning": 119,
+        "unwind-recharge": 120,
+        "teatime-delight": 121,
+        "light-up-your-day": 122,
+        "serenity-sleep": 123
+    },
+    "cat": {
+        "Christmas Season": 31,
+        "Corporate": 17,
+        "Wellness": 21,
+        "Tea": 28,
+        "Desk": 29,
+        "Rest": 30
+    },
+    "url": {
+        "coffee-planning": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/coffee-planning.jpg",
+        "unwind-recharge": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/unwind-recharge.jpg",
+        "teatime-delight": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/teatime-delight.jpg",
+        "light-up-your-day": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/light-up-your-day.jpg",
+        "serenity-sleep": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/serenity-sleep.jpg",
+        "wisteria": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/wisteria.svg"
+    }
+}

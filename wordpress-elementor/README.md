@@ -1,5 +1,8 @@
 # Julia Wisteria — Kit de migración a WordPress + Elementor + WooCommerce
 
+> **Actualización (Christmas Season, oct. 2026):** el diseño vigente está en [`christmas/`](christmas/README.md). Este kit (`templates/`, `generate_templates.py`, `woocommerce/productos.csv`) corresponde al diseño anterior y queda solo como referencia.
+
+
 Este kit convierte el diseño HTML estático en un sitio WordPress montado **100 % con widgets nativos de Elementor** (sin bloques de HTML personalizado).
 
 ## Contenido del kit
