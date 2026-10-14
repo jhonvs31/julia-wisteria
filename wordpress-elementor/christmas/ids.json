@@ -5,7 +5,11 @@
         "teatime-delight": 115,
         "light-up-your-day": 116,
         "serenity-sleep": 117,
-        "wisteria": 118
+        "wisteria": 118,
+        "logo": 135,
+        "logo-light": 136,
+        "monogram": 137,
+        "site-icon": 138
     },
     "product": {
         "coffee-planning": 119,
@@ -35,6 +39,10 @@
         "teatime-delight": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/teatime-delight.jpg",
         "light-up-your-day": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/light-up-your-day.jpg",
         "serenity-sleep": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/serenity-sleep.jpg",
-        "wisteria": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/wisteria.svg"
+        "wisteria": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/wisteria.svg",
+        "logo": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/logo-julia-wisteria.png",
+        "logo-light": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/logo-julia-wisteria-light.png",
+        "monogram": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/monogram-jw.png",
+        "site-icon": "http:\/\/localhost:8081\/wp-content\/uploads\/2026\/10\/site-icon-512.png"
     }
 }

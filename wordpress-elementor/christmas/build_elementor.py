@@ -173,10 +173,10 @@ def build_header():
           'jw-progress', {'_position': 'fixed', '_offset_x': u(0), '_offset_y': u(0), '_element_width': 'initial',
                           '_element_custom_width': u(100, '%'), '_z_index': 999}),
     ])
-    logo = con({'width': u(28, '%'), 'width_tablet': u(60, '%'), 'width_mobile': u(70, '%'), 'flex_gap': gap(2)}, [
-        heading('Julia Wisteria', 'div', C['brown'], link='/', family=SERIF, size=17, weight=600, spacing=4.5,
-                transform='uppercase', m=14),
-        heading('Crafted with love · Curated with purpose', 'div', C['rose'], link='/', family=SCRIPT, size=13, weight=400),
+    logo = con({'width': u(28, '%'), 'width_tablet': u(60, '%'), 'width_mobile': u(70, '%'), 'flex_justify_content': 'center'}, [
+        W('image', {'image': {'id': IDS['img']['logo'], 'url': URLS.get(IDS['img']['logo'], '')}, 'image_size': 'full',
+                    'align': 'left', 'width': u(118), 'width_mobile': u(96), 'link_to': 'custom', 'link': {'url': '/'},
+                    'hover_animation': 'grow'}, 'jw-logo'),
     ])
     menu = con({'width': u(52, '%'), 'width_tablet': u(20, '%'), 'width_mobile': u(15, '%'),
                 'flex_align_items': 'center', 'flex_justify_content': 'center'}, [
@@ -204,7 +204,7 @@ def build_header():
     ])
     bar = section({'flex_direction': 'row', 'flex_align_items': 'center', 'flex_wrap': 'nowrap',
                    'background_background': 'classic', 'background_color': 'rgba(249,242,235,0.82)',
-                   'min_height': u(74), 'min_height_mobile': u(64), **pad(0, 52, 0, 52),
+                   'min_height': u(84), 'min_height_mobile': u(70), **pad(0, 52, 0, 52),
                    'border_border': 'solid', 'border_width': box4(0, 0, 1, 0), 'border_color': 'rgba(90,70,66,0.07)',
                    'sticky': 'top', 'sticky_on': ['desktop', 'tablet', 'mobile'], 'sticky_offset': 0,
                    'sticky_effects_offset': 0, 'z_index': 200}, [logo, menu, cart], cls='jw-bar')
@@ -242,8 +242,8 @@ def build_footer():
         ], 18, tablet=30, mobile=50)
 
     brand = col([
-        heading('Julia Wisteria', 'div', C['cream'], family=SERIF, size=16, weight=600, spacing=4, transform='uppercase'),
-        heading('Corporate Gifting, Crafted with Meaning', 'div', C['lilac'], family=SCRIPT, size=16, weight=400),
+        W('image', {'image': {'id': IDS['img']['logo-light'], 'url': URLS.get(IDS['img']['logo-light'], '')}, 'image_size': 'full',
+                    'align': 'left', 'width': u(230), 'width_mobile': u(190)}, extra={'_margin': box4(0, 0, 8, 0)}),
         text('Curated artisan gifts for corporate events, VIP experiences, employee recognition, incentive travel and destination programs. Orlando, Florida.',
              'rgba(249,242,235,0.6)', size=12.5, lh=1.85, extra={'_element_width': 'initial', '_element_custom_width': u(280)}),
         W('social-icons', {'social_icon_list': [

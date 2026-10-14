@@ -24,7 +24,7 @@ def top(active):
 <div class="progress"></div><div class="glow"></div><div class="fall" aria-hidden="true"></div>
 <div class="ann">Christmas Season 2026 &nbsp;<b>·</b>&nbsp; Corporate gifting, crafted with meaning <b>·</b>&nbsp; Orlando, Florida</div>
 <div class="hdr-wrap"><div class="hdr">
-  <div class="logo"><a href="julia-wisteria.html"><span class="logo-n">Julia Wisteria</span><span class="logo-t">Crafted with love · Curated with purpose</span></a></div>
+  <div class="logo"><a href="julia-wisteria.html" aria-label="Julia Wisteria — Home"><img class="logo-img" src="assets/brand/logo-julia-wisteria.png" alt="Julia Wisteria — The Art of Artisan Gifting" width="900" height="472"></a></div>
   <nav>{nav(active)}</nav>
   <div class="icons">
     <a href="cart.html" id="cartlink" aria-label="Cart" style="display:flex;align-items:flex-start">
@@ -44,7 +44,7 @@ BOT='''<div class="nl">
 <footer>
   <div class="fg">
     <div>
-      <span class="fb-n">Julia Wisteria</span><span class="fb-t">Corporate Gifting, Crafted with Meaning</span>
+      <img class="fb-logo" src="assets/brand/logo-julia-wisteria-light.png" alt="Julia Wisteria — The Art of Artisan Gifting" width="900" height="472" loading="lazy">
       <p class="fb-p">Curated artisan gifts for corporate events, VIP experiences, employee recognition, incentive travel and destination programs. Orlando, Florida.</p>
       <div class="fsoc"><a href="#">ig</a><a href="#">fb</a><a href="#">in</a></div>
     </div>
@@ -55,8 +55,15 @@ BOT='''<div class="nl">
   <div class="fbot"><span class="fcp">© 2026 Julia Wisteria · Orlando, FL</span><span class="flo">Crafted with love. Inspired by family.</span></div>
 </footer>
 '''
+FAVICONS='''<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/brand/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#F9F2EB">
+'''
 def page(fn,title,active,body,js=''):
     h=HEAD.replace('@@TITLE@@',title)
+    if 'rel="icon"' not in h:
+        h=h.replace('</head>',FAVICONS+'</head>',1)
     out=h+top(active)+body+BOT+'<script src="assets/site.js"></script>\n<script src="assets/motion.js"></script>\n'+js+'</body>\n</html>\n'
     open(R+fn,'w',encoding='utf8').write(out)
 

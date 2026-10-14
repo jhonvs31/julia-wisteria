@@ -402,3 +402,11 @@ footer .fsoc a{border-color:rgba(255,255,255,.2)!important;color:var(--cream)!im
 .co-ok .x-script{font-size:50px}
 @media(max-width:1024px){.cart2,.co{grid-template-columns:1fr}.tot{position:static}}
 @media(max-width:768px){.co-g{grid-template-columns:1fr}.co-s{padding:24px 20px}.xp{grid-template-columns:1fr}}
+
+/* logos de la cliente */
+.hdr{height:84px!important}
+.logo a{display:block}
+.logo-img{height:62px;width:auto;display:block;transition:transform .5s var(--ease)}
+.logo a:hover .logo-img{transform:scale(1.04) rotate(-1deg)}
+.fb-logo{width:230px;height:auto;display:block;margin-bottom:18px}
+@media(max-width:768px){.hdr{height:70px!important}.logo-img{height:50px}.fb-logo{width:190px}}
