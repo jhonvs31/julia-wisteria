@@ -367,51 +367,19 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
 </head>
 <body>
 <div class="progress"></div><div class="glow"></div><div class="fall" aria-hidden="true"></div>
-
-<!-- ANNOUNCEMENT -->
 <div class="ann">Christmas Season 2026 &nbsp;<b>·</b>&nbsp; Corporate gifting, crafted with meaning <b>·</b>&nbsp; Orlando, Florida</div>
-
-<!-- HEADER -->
-<div class="hdr-wrap">
-<div class="hdr">
-  <div class="logo">
-    <span class="logo-n">Julia Wisteria</span>
-    <span class="logo-t">The Art of Artisan Gifting</span>
-  </div>
-  <nav>
-    <a href="#boxes">Christmas Boxes</a>
-    <a href="#story">Our Story</a>
-    <a href="corporate.html">Corporate</a>
-    <a href="about.html">About</a>
-  </nav>
+<div class="hdr-wrap"><div class="hdr">
+  <div class="logo"><a href="julia-wisteria.html"><span class="logo-n">Julia Wisteria</span><span class="logo-t">Crafted with love · Curated with purpose</span></a></div>
+  <nav><a href="shop.html">Christmas Boxes</a><a href="build.html">Customize</a><a href="corporate.html">Corporate</a><a href="about.html">Our Story</a></nav>
   <div class="icons">
-    <a href="#">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    </a>
-    <a href="#">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-    </a>
-    <a href="cart.html" style="display:flex;align-items:flex-start">
+    <a href="cart.html" aria-label="Quote list" style="display:flex;align-items:flex-start">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-      <span class="cbadge">2</span>
+      <span class="cbadge" id="qbadge" style="display:none">0</span>
     </a>
-    <button class="ham" id="ham" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
-</div>
-</div>
-
-<!-- MOBILE NAV OVERLAY -->
-<div class="mob-nav" id="mob-nav">
-  <button class="mob-nav-close" id="mob-close">✕</button>
-  <a href="shop.html" onclick="closeMobNav()">Shop All</a>
-  <a href="shop.html" onclick="closeMobNav()">Curated Boxes</a>
-  <a href="build.html" onclick="closeMobNav()">Build Your Box</a>
-  <a href="corporate.html" onclick="closeMobNav()">Corporate</a>
-  <a href="about.html" onclick="closeMobNav()">Our Story</a>
-</div>
-
+</div></div>
+<div class="mob-nav" id="mob-nav"><button class="mob-nav-close" id="mob-close">✕</button><a href="julia-wisteria.html" onclick="closeMobNav()">Home</a><a href="shop.html" onclick="closeMobNav()">Christmas Boxes</a><a href="build.html" onclick="closeMobNav()">Customize</a><a href="corporate.html" onclick="closeMobNav()">Corporate</a><a href="about.html" onclick="closeMobNav()">Our Story</a><a href="cart.html" onclick="closeMobNav()">Quote List</a></div>
 <!-- HERO -->
 <section style="position:relative">
 <div class="x-hero-bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grain"></div></div>
@@ -530,111 +498,41 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
       <h4>Includes</h4>
       <ul id="mdl-l"></ul>
       <p class="mdl-q" id="mdl-q"></p>
-      <a href="corporate.html#quote" class="btn-x solid">Request this box <span class="ar">→</span></a>
+      <a id="mdl-go" href="product.html" class="btn-x solid">View &amp; add to quote <span class="ar">→</span></a>
     </div>
   </div>
 </div>
 
-<!-- NEWSLETTER -->
 <div class="nl">
   <h3 class="nl-h">Join the Julia Wisteria World</h3>
-  <p class="nl-p">Early access to new collections, seasonal boxes & gifting inspiration</p>
-  <div class="nl-form">
-    <input class="nl-i" type="email" placeholder="your@email.com">
-    <button class="nl-btn">Subscribe</button>
-  </div>
+  <p class="nl-p">Early access to new collections, seasonal boxes &amp; gifting inspiration</p>
+  <div class="nl-form"><input class="nl-i" type="email" placeholder="your@email.com" aria-label="Email"><button class="nl-btn">Subscribe</button></div>
 </div>
-
-<!-- FOOTER -->
 <footer>
   <div class="fg">
     <div>
-      <span class="fb-n">Julia Wisteria</span>
-      <span class="fb-t">The Art of Artisan Gifting</span>
-      <p class="fb-p">Thoughtfully crafted gift boxes celebrating life's most meaningful moments, delivered across Orlando, FL and beyond.</p>
-      <div class="fsoc">
-        <a href="#">ig</a>
-        <a href="#">fb</a>
-        <a href="#">pi</a>
-        <a href="#">in</a>
-      </div>
-      <div class="pay">
-        <span>VISA</span><span>MC</span><span>AMEX</span><span>PayPal</span>
-      </div>
+      <span class="fb-n">Julia Wisteria</span><span class="fb-t">Corporate Gifting, Crafted with Meaning</span>
+      <p class="fb-p">Curated artisan gifts for corporate events, VIP experiences, employee recognition, incentive travel and destination programs. Orlando, Florida.</p>
+      <div class="fsoc"><a href="#">ig</a><a href="#">fb</a><a href="#">in</a></div>
     </div>
-    <div class="fc">
-      <h4>Shop</h4>
-      <ul>
-        <li><a href="#">All Collections</a></li>
-        <li><a href="#">Gift Boxes</a></li>
-        <li><a href="#">Corporate Gifts</a></li>
-        <li><a href="#">Custom Orders</a></li>
-        <li><a href="#">Seasonal Editions</a></li>
-      </ul>
-    </div>
-    <div class="fc">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">Our Artisans</a></li>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="fc">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="#">Shipping & Delivery</a></li>
-        <li><a href="#">Returns & Exchanges</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul>
-    </div>
+    <div class="fc"><h4>Boxes</h4><ul><li><a href="product.html?box=0">Coffee &amp; Planning</a></li><li><a href="product.html?box=1">Unwind &amp; Recharge</a></li><li><a href="product.html?box=2">Teatime Delight</a></li><li><a href="product.html?box=3">Light Up Your Day</a></li><li><a href="product.html?box=4">Serenity Sleep</a></li></ul></div>
+    <div class="fc"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="corporate.html">Corporate Gifting</a></li><li><a href="build.html">Customize a Box</a></li></ul></div>
+    <div class="fc"><h4>Contact</h4><ul><li><a href="corporate.html#quote">Request a Quote</a></li><li><a href="cart.html">Quote List</a></li></ul></div>
   </div>
-  <div class="fbot">
-    <span class="fcp">© 2025 Julia Wisteria LLC · All rights reserved · Orlando, Florida</span>
-    <span class="flo">Orlando, Florida ✦</span>
-  </div>
+  <div class="fbot"><span class="fcp">© 2026 Julia Wisteria · Orlando, FL</span><span class="flo">Crafted with love. Inspired by family.</span></div>
 </footer>
-
-<script>
-const ham = document.getElementById('ham');
-const mobNav = document.getElementById('mob-nav');
-const mobClose = document.getElementById('mob-close');
-
-function openMobNav(){
-  ham.classList.add('open');
-  mobNav.classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeMobNav(){
-  ham.classList.remove('open');
-  mobNav.classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-ham.addEventListener('click', () => {
-  ham.classList.contains('open') ? closeMobNav() : openMobNav();
-});
-mobClose.addEventListener('click', closeMobNav);
-</script>
+<script src="assets/site.js"></script>
 <script src="assets/motion.js"></script>
 <script>
-var BOXES=[{"i": "coffee-planning", "k": "Corporate", "t": "The Coffee & Planning Gift Box", "d": "Pairs premium specialty coffee with an artisan ceramic mug, an elegant gold coffee scoop, and a 2027 dated planner — a beautiful daily ritual for planning goals while enjoying a favorite cup of coffee. Complete with mini sticky notes and a personalized welcome card, it is ideal for employee appreciation, client gifting, executive gifts, onboarding, welcome programs, and New Year celebrations.", "inc": ["Premium specialty coffee", "Artisan ceramic mug", "Gold coffee scoop", "2027 Dated Planner – classic, simple, and playful", "Mini sticky notes", "Pens", "Personalized welcome card", "Luxury gift box packaging", "Optional custom branding"], "q": "Plan the year. Enjoy the moment. Start with great coffee."}, {"i": "unwind-recharge", "k": "Wellness Gift Collection", "t": "Unwind & Recharge Box", "d": "Combines artisan body-care essentials with calming organic tea and an aromatherapy shower steamer. Rose & lime soap, grapefruit lip balm, nourishing hand cream, and the soothing notes of lavender, chamomile, and cedar create a comforting ritual for both body and mind. Perfect for wellness programs, executive retreats, employee appreciation, conference speakers, VIP guests, and thoughtful client gifting.", "inc": ["Artisan Rose & Lime Soap", "Natural Grapefruit Lip Balm", "Luxury Hand Cream", "Meditative Mind organic tea", "Peace Shower Steamer – organic lavender, chamomile & cedar aromatherapy", "Towel", "Personalized welcome card", "Luxury gift box packaging"], "q": "Sip. Breathe. Recharge."}, {"i": "teatime-delight", "k": "Tea, Honey & Mug Gift Experience", "t": "Teatime Delight Box", "d": "A cozy gift created for slow, comforting moments. A premium tea selection pairs with artisan honey and a signature ceramic mug, while a Blooming Lilacs candle adds a soft floral touch. Perfect for conference speakers, VIP guests, executive retreats, wellness programs, hotel arrivals, employee appreciation, and client gifting.", "inc": ["Premium tea selection", "Artisan honey jar", "Honey dipper", "Signature ceramic mug", "Blooming Lilacs candle", "Personalized welcome card", "Luxury gift packaging"], "q": "Tea, honey, candlelight — and a moment to unwind."}, {"i": "light-up-your-day", "k": "Candle, Planner & Desk Gift Experience", "t": "Light Up Your Day Box", "d": "Combines a hand-poured artisan candle with a mini succulent, a 2027 dated planner, and bear gummies — a cheerful collection for the desk, home, or office. Thoughtful and practical, perfect for employee appreciation, client thank-yous, onboarding, New Year gifting, speakers, and corporate celebrations.", "inc": ["Hand-poured artisan candle", "Mini succulent", "2027 Dated Planner – classic, simple, and playful", "Gummy bears", "Premium gift box packaging", "Personalized message card"], "q": "Light the candle. Make a plan. Grow something beautiful."}, {"i": "serenity-sleep", "k": "Relaxation & Rest Wellness Gift Box", "t": "Serenity Sleep Box", "d": "Thoughtfully curated for rest and relaxation: a therapeutic eye mask, lavender body scrub, botanical body oil, natural lip balm, organic tea, and a playful beaded daisy keychain. Every element encourages the recipient to slow down, recharge, and enjoy a well-deserved moment of calm. Perfect for wellness programs, VIP guests, employee appreciation, retreats, speakers, and holiday gifting.", "inc": ["Beaded Daisy Keychain", "Meditative Mind organic tea", "Therapeutic Eye Mask", "Lavender Body Scrub", "Relaxing Botanical Body Oil", "Natural Lip Balm", "Personalized gift card"], "q": "Rest. Relax. Recharge."}];
 (function(){
   var m=document.getElementById('mdl');
   function open(i){var b=BOXES[i];
-    document.getElementById('mdl-img').src='images/christmas/'+b.i+'.jpg';
-    document.getElementById('mdl-img').alt=b.t;
-    document.getElementById('mdl-k').textContent=b.k;
-    document.getElementById('mdl-t').textContent=b.t;
-    document.getElementById('mdl-d').textContent=b.d;
-    document.getElementById('mdl-q').textContent=b.q;
-    document.getElementById('mdl-l').innerHTML=b.inc.map(function(x){return '<li>'+x.replace(/&/g,'&amp;')+'</li>'}).join('');
-    m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
-  }
+    document.getElementById('mdl-img').src='images/christmas/'+b.i+'.jpg';document.getElementById('mdl-img').alt=b.t;
+    document.getElementById('mdl-k').textContent=b.k;document.getElementById('mdl-t').textContent=b.t;
+    document.getElementById('mdl-d').textContent=b.d;document.getElementById('mdl-q').textContent=b.q;
+    document.getElementById('mdl-l').innerHTML=b.inc.map(function(x){return '<li>'+JW.esc(x)+'</li>'}).join('');
+    document.getElementById('mdl-go').href='product.html?box='+i;
+    m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
   function close(){m.classList.remove('open');m.setAttribute('aria-hidden','true');document.body.style.overflow=''}
   document.querySelectorAll('[data-box]').forEach(function(b){b.addEventListener('click',function(){open(+b.dataset.box)})});
   document.getElementById('mdl-x').addEventListener('click',close);

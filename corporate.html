@@ -4,17 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Corporate Gifting — Julia Wisteria</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Sacramento&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Sacramento&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#F9F2EB;--cream-d:#F0E6D9;--brown:#5A4642;--brown-l:#7A6460;--rose:#B88889;--rose-l:#D4B4B5;--sage:#C1C099;--white:#fff;--muted:#8B7B78}
+:root{
+  --cream:#F9F2EB;--cream-d:#F0E6D9;--brown:#5A4642;--brown-l:#7A6460;
+  --rose:#B88889;--rose-l:#D4B4B5;--lav:#A89A9E;--sage:#C1C099;
+  --white:#fff;--muted:#8B7B78;
+}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--white);color:var(--brown);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
+
+/* ── ANNOUNCEMENT ── */
 .ann{background:var(--brown);color:var(--cream);text-align:center;padding:9px;font-size:10.5px;letter-spacing:2.5px;text-transform:uppercase}
 .ann b{color:var(--rose-l);font-weight:400}
+
+/* ── HEADER ── */
 .hdr-wrap{position:sticky;top:0;z-index:200;background:rgba(249,242,235,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(90,70,66,.07)}
 .hdr{max-width:1440px;margin:0 auto;padding:0 52px;height:74px;display:flex;align-items:center}
 .logo{flex-shrink:0;margin-right:auto}
@@ -22,22 +28,137 @@ a{text-decoration:none;color:inherit}
 .logo-t{font-family:'Sacramento',cursive;font-size:12px;color:var(--rose);display:block;margin-top:2px}
 nav{display:flex;align-items:center;gap:32px;margin:0 auto}
 nav a{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;color:var(--brown);transition:color .25s;white-space:nowrap}
-nav a:hover,nav a.active{color:var(--rose)}
+nav a:hover{color:var(--rose)}
 .icons{display:flex;align-items:center;gap:18px;margin-left:auto;flex-shrink:0}
 .icons a,.icons button{background:none;border:none;cursor:pointer;color:var(--brown);display:flex;align-items:center;transition:color .25s}
 .icons a:hover,.icons button:hover{color:var(--rose)}
 .icons svg{width:20px;height:20px}
 .cbadge{background:var(--rose);color:#fff;border-radius:50%;font-size:8px;font-weight:700;width:14px;height:14px;display:flex;align-items:center;justify-content:center;margin-left:-5px;margin-top:-12px}
-.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;margin-left:16px}
-.ham span{display:block;width:22px;height:1.5px;background:var(--brown);transition:all .3s}
-.ham.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
-.ham.open span:nth-child(2){opacity:0}
-.ham.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-.mob-nav{display:none;position:fixed;inset:0;z-index:190;background:rgba(249,242,235,.98);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:36px}
-.mob-nav.open{display:flex}
-.mob-nav a{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--brown);letter-spacing:1px;transition:color .25s}
-.mob-nav a:hover{color:var(--rose)}
-.mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;cursor:pointer;font-size:28px;color:var(--brown);line-height:1}
+
+/* ── HERO ── */
+.hero{position:relative;height:90vh;min-height:600px;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(120deg,#EDD9C6 0%,#DEC8B0 35%,#CEAE98 65%,#BAA088 100%)}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,28,26,.58) 0%,rgba(40,28,26,.22) 52%,transparent 78%)}
+.hero-scene{position:absolute;right:0;top:0;width:62%;height:100%}
+.hero-txt{position:relative;z-index:10;padding:0 80px;max-width:620px}
+.h-eye{font-family:'Sacramento',cursive;font-size:34px;color:rgba(249,242,235,.85);display:block;margin-bottom:8px}
+.h1{font-family:'Cormorant Garamond',serif;font-size:68px;font-weight:300;line-height:1.06;letter-spacing:-1px;color:#fff;margin-bottom:22px;text-shadow:0 2px 28px rgba(40,28,26,.45)}
+.h1 em{font-style:italic;color:rgba(255,255,255,.82)}
+.h-sub{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(249,242,235,.72);line-height:2.1;max-width:380px;margin-bottom:36px}
+.btns{display:flex;gap:14px}
+.btn-w{background:#fff;color:var(--brown);padding:15px 40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
+.btn-w:hover{background:var(--rose);color:#fff}
+.btn-wg{border:1px solid rgba(255,255,255,.55);color:rgba(255,255,255,.85);padding:15px 38px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
+.btn-wg:hover{border-color:#fff;color:#fff}
+
+/* ── TRUST BAR ── */
+.trust{background:var(--brown);padding:12px 0;overflow:hidden}
+.tt{display:flex;gap:56px;animation:sl 22s linear infinite;white-space:nowrap}
+.ti{font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--cream);display:flex;align-items:center;gap:12px}
+.ti::before{content:'✦';color:var(--rose-l);font-size:7px}
+@keyframes sl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── PILLARS ── */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid rgba(90,70,66,.08)}
+.pill{padding:52px 48px;border-right:1px solid rgba(90,70,66,.08);transition:background .3s;cursor:pointer}
+.pill:last-child{border-right:none}
+.pill:hover{background:var(--cream)}
+.pill-ico{width:38px;height:38px;margin-bottom:16px;color:var(--rose)}
+.pill h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;margin-bottom:10px}
+.pill p{font-size:12.5px;line-height:1.88;color:var(--muted);max-width:280px;margin-bottom:20px}
+.pill-lk{font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;border-bottom:1px solid var(--brown);padding-bottom:2px;display:inline-block;transition:color .25s,border-color .25s}
+.pill-lk:hover{color:var(--rose);border-color:var(--rose)}
+
+/* ── SECTION HEADER ── */
+.sh{text-align:center;padding:80px 48px 52px}
+.sh-eye{font-family:'Sacramento',cursive;font-size:28px;color:var(--rose);display:block;margin-bottom:4px}
+.sh-h2{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;letter-spacing:-.5px;margin-bottom:12px}
+.sh-p{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);line-height:2}
+
+/* ── COLLECTIONS TILES (4 col, demisdos style) ── */
+.ctiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:0 48px 80px;max-width:1440px;margin:0 auto}
+.ctile{position:relative;overflow:hidden;cursor:pointer;display:block}
+.ctile-img{aspect-ratio:1;overflow:hidden;position:relative}
+.ctile-img svg{width:100%;height:100%;display:block;transition:transform .6s ease}
+.ctile:hover .ctile-img svg{transform:scale(1.05)}
+.ctile-lbl{padding:14px 0 4px}
+.ctile-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;margin-bottom:4px}
+.ctile-sub{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted)}
+
+/* ── PRODUCT GRID ── */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:0 48px 16px;max-width:1440px;margin:0 auto}
+.pcard{cursor:pointer}
+.pimg{position:relative;overflow:hidden;aspect-ratio:3/4}
+.pimg svg{width:100%;height:100%;display:block;transition:transform .7s ease}
+.pcard:hover .pimg svg{transform:scale(1.04)}
+.ptag{position:absolute;top:16px;left:16px;font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:5px 11px;font-weight:500;z-index:2}
+.tg-d{background:var(--brown);color:var(--cream)}
+.tg-r{background:var(--rose);color:#fff}
+.tg-s{background:var(--sage);color:var(--brown)}
+.pinfo{padding:16px 2px 0}
+.pname{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;margin-bottom:4px}
+.psub{font-size:9.5px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.pprice{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500}
+.view-all{text-align:center;padding:48px 0 80px}
+.btn-b{background:var(--brown);color:var(--cream);padding:15px 44px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s}
+.btn-b:hover{background:var(--rose)}
+
+/* ── FEATURED PRODUCT ── */
+.feat{display:grid;grid-template-columns:1.15fr 1fr;background:var(--cream)}
+.feat-vis{position:relative;overflow:hidden;min-height:580px;display:flex;align-items:center;justify-content:center;padding:60px;background:linear-gradient(145deg,#EAD6C2,#D8C0A8,#C6AA90)}
+.feat-content{padding:80px 72px 80px 60px;display:flex;flex-direction:column;justify-content:center}
+.feat-badge{display:flex;align-items:center;gap:8px;margin-bottom:20px}
+.feat-dot{width:6px;height:6px;background:var(--rose);border-radius:50%}
+.feat-badge span{font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);font-weight:500}
+.feat-script{font-family:'Sacramento',cursive;font-size:28px;color:var(--rose);display:block;margin-bottom:4px}
+.feat-h2{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;line-height:1.12;letter-spacing:-.5px;margin-bottom:18px}
+.feat-p{font-size:13.5px;line-height:1.95;color:var(--muted);margin-bottom:22px;max-width:400px}
+.feat-inc h4{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;margin-bottom:12px}
+.feat-item{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.fid{width:4px;height:4px;background:var(--rose);border-radius:50%;flex-shrink:0}
+.feat-item span{font-size:12.5px;color:var(--muted)}
+.feat-price{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;margin:22px 0}
+.feat-btns{display:flex;gap:12px}
+.btn-br{background:var(--brown);color:var(--cream);padding:15px 36px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s}
+.btn-br:hover{background:var(--rose)}
+.btn-ol{border:1px solid var(--brown);color:var(--brown);padding:15px 36px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
+.btn-ol:hover{background:var(--brown);color:var(--cream)}
+
+/* ── ABOUT ── */
+.about{display:grid;grid-template-columns:1fr 1fr}
+.about-vis{min-height:500px;background:linear-gradient(145deg,#CABAAE,#B8A49A,#A89086);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.about-txt{padding:80px;background:var(--cream-d);display:flex;flex-direction:column;justify-content:center}
+.ab-eye{font-family:'Sacramento',cursive;font-size:28px;color:var(--rose);display:block;margin-bottom:6px}
+.ab-h2{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;line-height:1.12;margin-bottom:18px}
+.ab-h2 em{font-style:italic;color:var(--brown-l)}
+.ab-p{font-size:13.5px;line-height:1.95;color:var(--muted);max-width:400px;margin-bottom:28px}
+.stats{display:flex;gap:44px;margin-bottom:32px}
+.sn{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:var(--brown);display:block;line-height:1}
+.sl{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);display:block;margin-top:4px}
+
+/* ── TESTIMONIALS ── */
+.testi{background:var(--white);padding:88px 0}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(90,70,66,.08);margin-top:52px}
+.tc{background:var(--white);padding:40px 36px;position:relative}
+.tc::before{content:'\201C';font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:300;color:rgba(184,136,137,.13);position:absolute;top:-6px;left:22px;line-height:1;pointer-events:none}
+.ts{color:var(--sage);font-size:12px;letter-spacing:3px;margin-bottom:16px}
+.tq{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:300;line-height:1.78;color:var(--brown);font-style:italic;margin-bottom:20px}
+.ta{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted)}
+
+/* ── CORPORATE CTA ── */
+.corp{background:var(--brown);padding:96px 48px;text-align:center;position:relative;overflow:hidden}
+.corp::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 25% 50%,rgba(184,136,137,.12) 0%,transparent 65%),radial-gradient(ellipse at 75% 50%,rgba(193,192,153,.08) 0%,transparent 65%)}
+.corp>*{position:relative;z-index:1}
+.c-eye{font-family:'Sacramento',cursive;font-size:30px;color:var(--sage);display:block;margin-bottom:8px}
+.c-h2{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:var(--cream);letter-spacing:-.5px;margin-bottom:16px}
+.c-p{font-size:13px;line-height:1.9;color:rgba(249,242,235,.62);max-width:560px;margin:0 auto 36px}
+.c-btns{display:flex;gap:14px;justify-content:center}
+.btn-ro{background:var(--rose);color:#fff;padding:15px 40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s}
+.btn-ro:hover{background:#9e7373}
+.btn-gl{border:1px solid rgba(249,242,235,.4);color:rgba(249,242,235,.8);padding:15px 40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
+.btn-gl:hover{border-color:var(--cream);color:var(--cream)}
+
+/* ── NEWSLETTER ── */
 .nl{background:var(--cream);padding:72px 48px;text-align:center}
 .nl-h{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;margin-bottom:8px}
 .nl-p{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
@@ -46,6 +167,8 @@ nav a:hover,nav a.active{color:var(--rose)}
 .nl-i::placeholder{color:var(--muted)}
 .nl-btn{background:var(--brown);color:var(--cream);border:none;padding:14px 22px;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;cursor:pointer;transition:background .25s;white-space:nowrap}
 .nl-btn:hover{background:var(--rose)}
+
+/* ── FOOTER ── */
 footer{background:var(--cream-d);padding:72px 52px 36px}
 .fg{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;padding-bottom:52px;border-bottom:1px solid rgba(90,70,66,.1)}
 .fb-n{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--brown);display:block;line-height:1}
@@ -55,369 +178,271 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
 .fsoc a{width:32px;height:32px;border:1px solid rgba(90,70,66,.18);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--brown);transition:all .25s}
 .fsoc a:hover{background:var(--brown);color:var(--cream)}
 .fc h4{font-size:9px;letter-spacing:3px;text-transform:uppercase;font-weight:600;color:var(--brown);margin-bottom:20px}
-.fc ul{list-style:none}.fc li{margin-bottom:10px}
+.fc ul{list-style:none}
+.fc li{margin-bottom:10px}
 .fc a{font-size:12.5px;color:var(--muted);transition:color .25s}
 .fc a:hover{color:var(--brown)}
 .fbot{max-width:1440px;margin:0 auto;padding-top:28px;display:flex;justify-content:space-between;align-items:center}
 .fcp{font-size:11px;color:var(--muted)}
 .flo{font-family:'Sacramento',cursive;font-size:20px;color:var(--rose)}
+
+/* ── PAYMENT ICONS ── */
 .pay{display:flex;gap:8px;margin-top:16px}
 .pay span{border:1px solid rgba(90,70,66,.15);border-radius:3px;padding:4px 8px;font-size:9px;letter-spacing:1px;color:var(--muted);font-weight:500}
-.btn-b{background:var(--brown);color:var(--cream);padding:15px 44px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s;cursor:pointer;border:none}
-.btn-b:hover{background:var(--rose)}
-.btn-ro{background:var(--rose);color:#fff;padding:15px 40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s;cursor:pointer;border:none}
-.btn-ro:hover{background:#9e7373}
-.btn-ol{border:1px solid var(--brown);color:var(--brown);padding:15px 36px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s;background:none;cursor:pointer}
-.btn-ol:hover{background:var(--brown);color:var(--cream)}
-.bc{max-width:1440px;margin:0 auto;padding:20px 52px;display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
-.bc a{color:var(--muted);transition:color .25s}.bc a:hover{color:var(--brown)}
-@media(max-width:1024px){.hdr{padding:0 32px}nav{display:none}.ham{display:flex}.icons a:first-child,.icons a:nth-child(2){display:none}footer{padding:56px 36px 32px}.fg{grid-template-columns:1fr 1fr;gap:40px}}
-@media(max-width:768px){.ann{font-size:9px;padding:8px 16px}.hdr{padding:0 20px;height:64px}.logo-n{font-size:14px;letter-spacing:3px}.nl{padding:52px 24px}.nl-h{font-size:28px}.nl-form{flex-direction:column;max-width:320px}.nl-i{border-right:1px solid rgba(90,70,66,.2);border-bottom:none}footer{padding:48px 20px 28px}.fg{grid-template-columns:1fr 1fr;gap:32px;padding-bottom:40px}.fbot{flex-direction:column;gap:12px;text-align:center}.bc{padding:16px 20px}}
-@media(max-width:480px){.fg{grid-template-columns:1fr}}
 
-/* HERO */
-.corp-hero{min-height:52vh;background:linear-gradient(135deg,var(--brown) 0%,#3E2E2A 100%);position:relative;overflow:hidden;display:flex;align-items:center;padding:80px 52px}
-.corp-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%,rgba(184,136,137,.15) 0%,transparent 60%),radial-gradient(ellipse at 80% 30%,rgba(193,192,153,.08) 0%,transparent 55%)}
-.corp-hero-txt{position:relative;z-index:1;max-width:680px}
-.ch-eye{font-family:'Sacramento',cursive;font-size:32px;color:var(--sage);display:block;margin-bottom:8px}
-.ch-h1{font-family:'Cormorant Garamond',serif;font-size:60px;font-weight:300;line-height:1.08;letter-spacing:-.5px;color:var(--cream);margin-bottom:22px}
-.ch-h1 em{font-style:italic;color:rgba(249,242,235,.75)}
-.ch-p{font-size:13px;line-height:1.95;color:rgba(249,242,235,.65);max-width:480px;margin-bottom:36px}
-.ch-btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn-cream{background:var(--cream);color:var(--brown);padding:15px 40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
-.btn-cream:hover{background:var(--rose);color:#fff}
-.btn-gl{border:1px solid rgba(249,242,235,.4);color:rgba(249,242,235,.85);padding:15px 38px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
-.btn-gl:hover{border-color:var(--cream);color:var(--cream)}
-/* STATS BAR */
-.stats-bar{background:var(--cream-d);border-bottom:1px solid rgba(90,70,66,.08)}
-.stats-inner{max-width:1440px;margin:0 auto;padding:40px 52px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
-.stat-n{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:var(--brown);display:block;line-height:1}
-.stat-l{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);display:block;margin-top:4px}
-/* HOW IT WORKS */
-.hiw{max-width:1440px;margin:0 auto;padding:80px 52px}
-.sh{text-align:center;margin-bottom:56px}
-.sh-eye{font-family:'Sacramento',cursive;font-size:28px;color:var(--rose);display:block;margin-bottom:4px}
-.sh-h2{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;letter-spacing:-.5px;margin-bottom:12px}
-.sh-p{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);line-height:2}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
-.steps::before{content:'';position:absolute;top:32px;left:calc(16.66% + 24px);right:calc(16.66% + 24px);height:1px;background:rgba(90,70,66,.12);z-index:0}
-.step{text-align:center;padding:0 40px;position:relative;z-index:1}
-.step-num{width:64px;height:64px;border-radius:50%;border:1px solid rgba(90,70,66,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;background:var(--white);position:relative}
-.step-num::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--rose);opacity:.3}
-.step h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;margin-bottom:10px}
-.step p{font-size:12.5px;line-height:1.88;color:var(--muted)}
-/* PACKAGES */
-.pkgs-wrap{background:var(--cream);padding:80px 52px}
-.pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1440px;margin:0 auto;margin-top:52px}
-.pkg{background:var(--white);padding:44px 36px;border:1px solid rgba(90,70,66,.08);position:relative;transition:box-shadow .3s}
-.pkg:hover{box-shadow:0 12px 48px rgba(90,70,66,.1)}
-.pkg.featured{background:var(--brown);border-color:var(--brown)}
-.pkg-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--rose);color:#fff;font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;font-weight:500;white-space:nowrap}
-.pkg-name{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;margin-bottom:6px}
-.pkg.featured .pkg-name{color:var(--cream)}
-.pkg-sub{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:24px}
-.pkg.featured .pkg-sub{color:rgba(249,242,235,.55)}
-.pkg-price{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:var(--brown);line-height:1;margin-bottom:4px}
-.pkg.featured .pkg-price{color:var(--cream)}
-.pkg-price-note{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
-.pkg.featured .pkg-price-note{color:rgba(249,242,235,.5)}
-.pkg-divider{border:none;border-top:1px solid rgba(90,70,66,.08);margin-bottom:24px}
-.pkg.featured .pkg-divider{border-color:rgba(249,242,235,.12)}
-.pkg-item{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:12.5px;color:var(--muted)}
-.pkg.featured .pkg-item{color:rgba(249,242,235,.7)}
-.pkg-item::before{content:'✓';color:var(--sage);font-size:11px;font-weight:600;flex-shrink:0}
-.pkg-btn{display:block;text-align:center;margin-top:28px;padding:14px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;transition:all .25s;cursor:pointer;border:none;width:100%;font-family:'Jost',sans-serif}
-.pkg .pkg-btn{background:var(--cream-d);color:var(--brown)}
-.pkg .pkg-btn:hover{background:var(--brown);color:var(--cream)}
-.pkg.featured .pkg-btn{background:var(--rose);color:#fff}
-.pkg.featured .pkg-btn:hover{background:#9e7373}
-/* QUOTE FORM */
-.qsect{padding:80px 52px;background:var(--white)}
-.qinner{max-width:1000px;margin:0 auto}
-.qform{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:52px}
-.fg2{display:flex;flex-direction:column;gap:6px}
-.fg2.full{grid-column:span 2}
-.fg2 label{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:500}
-.fg2 input,.fg2 select,.fg2 textarea{border:1px solid rgba(90,70,66,.18);padding:13px 16px;font-family:'Jost',sans-serif;font-size:13px;color:var(--brown);outline:none;background:var(--white);transition:border-color .25s;width:100%;resize:none}
-.fg2 input:focus,.fg2 textarea:focus{border-color:var(--rose)}
-.fg2 input::placeholder,.fg2 textarea::placeholder{color:var(--muted)}
-.qsubmit{grid-column:span 2;background:var(--brown);color:var(--cream);border:none;padding:16px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;cursor:pointer;transition:background .25s;margin-top:8px}
-.qsubmit:hover{background:var(--rose)}
-/* CLIENTS */
-.clients{background:var(--cream-d);padding:60px 52px;text-align:center}
-.clients p{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:36px}
-.client-logos{display:flex;gap:40px;justify-content:center;align-items:center;flex-wrap:wrap}
-.cl{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;color:rgba(90,70,66,.25);letter-spacing:2px;text-transform:uppercase}
-/* TESTIMONIAL */
-.corp-testi{background:var(--white);padding:80px 52px}
-.corp-testi-inner{max-width:900px;margin:0 auto;text-align:center}
-.ct-quote{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;line-height:1.6;color:var(--brown);font-style:italic;margin:40px 0 24px}
-.ct-author{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted)}
+/* ── HAMBURGER BUTTON ── */
+.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;margin-left:16px}
+.ham span{display:block;width:22px;height:1.5px;background:var(--brown);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
 
-@media(max-width:1024px){.corp-hero{padding:60px 32px}.ch-h1{font-size:44px}.stats-inner{grid-template-columns:repeat(2,1fr);padding:32px}.hiw{padding:60px 32px}.steps{grid-template-columns:1fr}.steps::before{display:none}.step{padding:32px 0;border-bottom:1px solid rgba(90,70,66,.08)}.pkgs-wrap{padding:60px 32px}.pkgs{grid-template-columns:1fr}.qsect{padding:60px 32px}.qform{grid-template-columns:1fr}.fg2.full,.qsubmit{grid-column:span 1}.corp-testi{padding:60px 32px}.clients{padding:44px 32px}}
-@media(max-width:768px){.corp-hero{padding:48px 20px;min-height:auto}.ch-h1{font-size:34px}.ch-p{font-size:12.5px}.ch-btns{flex-direction:column;max-width:260px}.stats-inner{padding:24px 20px}.hiw{padding:48px 20px}.pkgs-wrap{padding:48px 20px}.qsect{padding:48px 20px}.clients{padding:36px 20px}.client-logos{gap:24px}.corp-testi{padding:48px 20px}.ct-quote{font-size:20px}}
+/* Mobile nav overlay */
+.mob-nav{display:none;position:fixed;inset:0;z-index:190;background:rgba(249,242,235,.98);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:36px}
+.mob-nav.open{display:flex}
+.mob-nav a{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--brown);letter-spacing:1px;transition:color .25s}
+.mob-nav a:hover{color:var(--rose)}
+.mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;cursor:pointer;font-size:28px;color:var(--brown);line-height:1}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — TABLET (≤1024px)
+════════════════════════════════════════ */
+@media(max-width:1024px){
+  /* Header */
+  .hdr{padding:0 32px}
+  nav{display:none}
+  .ham{display:flex}
+  .icons a:first-child,.icons a:nth-child(2){display:none}
+
+  /* Hero */
+  .hero{height:72vh;min-height:520px}
+  .hero-txt{padding:0 48px;max-width:520px}
+  .h1{font-size:54px}
+  .hero-scene{width:52%}
+
+  /* Pillars */
+  .pillars{grid-template-columns:1fr}
+  .pill{border-right:none;border-bottom:1px solid rgba(90,70,66,.08);padding:40px 36px}
+  .pill:last-child{border-bottom:none}
+
+  /* Collections */
+  .ctiles{grid-template-columns:repeat(2,1fr);padding:0 32px 60px}
+
+  /* Products */
+  .pgrid{grid-template-columns:repeat(2,1fr);gap:20px;padding:0 32px 16px}
+
+  /* Featured */
+  .feat{grid-template-columns:1fr}
+  .feat-vis{min-height:400px}
+  .feat-content{padding:52px 48px}
+
+  /* About */
+  .about{grid-template-columns:1fr}
+  .about-vis{min-height:320px}
+  .about-txt{padding:56px 48px}
+
+  /* Testimonials */
+  .tgrid{grid-template-columns:1fr}
+
+  /* Corporate */
+  .corp{padding:72px 36px}
+  .c-h2{font-size:38px}
+
+  /* Section headers */
+  .sh{padding:60px 32px 40px}
+  .sh-h2{font-size:36px}
+
+  /* Footer */
+  footer{padding:56px 36px 32px}
+  .fg{grid-template-columns:1fr 1fr;gap:40px}
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — MOBILE (≤768px)
+════════════════════════════════════════ */
+@media(max-width:768px){
+  /* Announcement */
+  .ann{font-size:9px;letter-spacing:1.5px;padding:8px 16px}
+
+  /* Header */
+  .hdr{padding:0 20px;height:64px}
+  .logo-n{font-size:14px;letter-spacing:3px}
+  .logo-t{font-size:11px}
+
+  /* Hero */
+  .hero{height:auto;min-height:0;padding:100px 0 60px}
+  .hero-bg{background:linear-gradient(160deg,#DEC8B0 0%,#CEAE98 50%,#BAA088 100%)}
+  .hero-ov{background:linear-gradient(180deg,rgba(40,28,26,.5) 0%,rgba(40,28,26,.35) 100%)}
+  .hero-scene{display:none}
+  .hero-txt{padding:0 24px;max-width:100%}
+  .h-eye{font-size:26px}
+  .h1{font-size:42px;letter-spacing:-.5px}
+  .h-sub{font-size:10px;max-width:100%;margin-bottom:28px}
+  .btns{flex-direction:column;gap:10px;max-width:260px}
+  .btn-w,.btn-wg{padding:14px 24px;text-align:center;font-size:9.5px}
+
+  /* Trust bar */
+  .trust{padding:10px 0}
+  .ti{font-size:8.5px;letter-spacing:2px}
+
+  /* Pillars */
+  .pill{padding:32px 24px}
+  .pill h3{font-size:22px}
+
+  /* Section headers */
+  .sh{padding:52px 20px 36px}
+  .sh-eye{font-size:24px}
+  .sh-h2{font-size:30px}
+  .sh-p{font-size:10px;letter-spacing:1.5px}
+
+  /* Collections tiles */
+  .ctiles{grid-template-columns:repeat(2,1fr);gap:10px;padding:0 20px 52px}
+  .ctile-name{font-size:15px}
+
+  /* Product grid */
+  .pgrid{grid-template-columns:repeat(2,1fr);gap:14px;padding:0 20px 16px}
+  .pname{font-size:16px}
+  .pprice{font-size:15px}
+  .view-all{padding:36px 0 52px}
+
+  /* Featured */
+  .feat{grid-template-columns:1fr}
+  .feat-vis{min-height:280px}
+  .feat-content{padding:40px 24px}
+  .feat-h2{font-size:34px}
+  .feat-p{font-size:13px}
+  .feat-price{font-size:26px}
+  .feat-btns{flex-direction:column;gap:10px}
+  .btn-br,.btn-ol{padding:14px 24px;text-align:center}
+
+  /* About */
+  .about{grid-template-columns:1fr}
+  .about-vis{min-height:200px}
+  .about-txt{padding:40px 24px}
+  .ab-h2{font-size:32px}
+  .ab-p{font-size:13px}
+  .stats{gap:28px}
+  .sn{font-size:30px}
+
+  /* Testimonials */
+  .testi{padding:52px 0}
+  .tgrid{grid-template-columns:1fr}
+  .tc{padding:32px 24px}
+
+  /* Corporate CTA */
+  .corp{padding:56px 24px}
+  .c-eye{font-size:24px}
+  .c-h2{font-size:30px}
+  .c-p{font-size:12.5px}
+  .c-btns{flex-direction:column;align-items:center;gap:10px}
+  .btn-ro,.btn-gl{padding:14px 32px;text-align:center;width:100%;max-width:280px}
+
+  /* Newsletter */
+  .nl{padding:52px 24px}
+  .nl-h{font-size:28px}
+  .nl-form{flex-direction:column;max-width:320px}
+  .nl-i{border-right:1px solid rgba(90,70,66,.2);border-bottom:none}
+  .nl-btn{padding:14px;font-size:9px}
+
+  /* Footer */
+  footer{padding:48px 20px 28px}
+  .fg{grid-template-columns:1fr 1fr;gap:32px;padding-bottom:40px}
+  .fb-n{font-size:14px}
+  .fbot{flex-direction:column;gap:12px;text-align:center}
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (≤480px)
+════════════════════════════════════════ */
+@media(max-width:480px){
+  .h1{font-size:36px}
+  .ctiles{grid-template-columns:1fr}
+  .pgrid{grid-template-columns:1fr;max-width:340px;margin:0 auto}
+  .sh-h2{font-size:26px}
+  .fg{grid-template-columns:1fr}
+  .stats{flex-wrap:wrap;gap:20px}
+}
 </style>
+<link rel="stylesheet" href="assets/motion.css">
 </head>
 <body>
-
-<!-- ANNOUNCEMENT BAR -->
-<div class="ann">Free local delivery in Orlando on orders over $75 &nbsp;<b>·</b>&nbsp; Same-day gifting available <b>·</b>&nbsp; Corporate gifting specialists</div>
-
-<!-- HEADER -->
+<div class="progress"></div><div class="glow"></div><div class="fall" aria-hidden="true"></div>
+<div class="ann">Christmas Season 2026 &nbsp;<b>·</b>&nbsp; Corporate gifting, crafted with meaning <b>·</b>&nbsp; Orlando, Florida</div>
 <div class="hdr-wrap"><div class="hdr">
-  <div class="logo"><a href="julia-wisteria.html"><span class="logo-n">Julia Wisteria</span><span class="logo-t">The Art of Artisan Gifting</span></a></div>
-  <nav>
-    <a href="shop.html">Shop All</a>
-    <a href="shop.html">Curated Boxes</a>
-    <a href="build.html">Build Your Box</a>
-    <a href="corporate.html" class="active">Corporate</a>
-    <a href="about.html">Our Story</a>
-  </nav>
+  <div class="logo"><a href="julia-wisteria.html"><span class="logo-n">Julia Wisteria</span><span class="logo-t">Crafted with love · Curated with purpose</span></a></div>
+  <nav><a href="shop.html">Christmas Boxes</a><a href="build.html">Customize</a><a href="corporate.html" class="active">Corporate</a><a href="about.html">Our Story</a></nav>
   <div class="icons">
-    <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></a>
-    <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
-    <a href="cart.html" style="display:flex;align-items:flex-start"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cbadge">2</span></a>
-    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+    <a href="cart.html" aria-label="Quote list" style="display:flex;align-items:flex-start">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span class="cbadge" id="qbadge" style="display:none">0</span>
+    </a>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </div></div>
-
-<!-- MOBILE NAV -->
-<div class="mob-nav" id="mob-nav">
-  <button class="mob-nav-close" id="mob-close">✕</button>
-  <a href="julia-wisteria.html" onclick="closeMobNav()">Home</a>
-  <a href="shop.html" onclick="closeMobNav()">Shop All</a>
-  <a href="build.html" onclick="closeMobNav()">Build Your Box</a>
-  <a href="corporate.html" onclick="closeMobNav()">Corporate</a>
-  <a href="about.html" onclick="closeMobNav()">Our Story</a>
-  <a href="cart.html" onclick="closeMobNav()">Cart</a>
+<div class="mob-nav" id="mob-nav"><button class="mob-nav-close" id="mob-close">✕</button><a href="julia-wisteria.html" onclick="closeMobNav()">Home</a><a href="shop.html" onclick="closeMobNav()">Christmas Boxes</a><a href="build.html" onclick="closeMobNav()">Customize</a><a href="corporate.html" onclick="closeMobNav()">Corporate</a><a href="about.html" onclick="closeMobNav()">Our Story</a><a href="cart.html" onclick="closeMobNav()">Quote List</a></div>
+<section class="ph">
+  <div class="x-hero-bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grain"></div></div>
+  <div class="crumbs rv"><a href="julia-wisteria.html">Home</a> &nbsp;/&nbsp; Corporate</div>
+  <span class="x-script rv">For businesses</span>
+  <h1 class="x-h1 split">Corporate gifting, crafted with <em>meaning</em></h1>
+  <p class="x-lead rv" style="--d:.4s">Curated artisan gifts for corporate events, VIP experiences, employee recognition, incentive travel and destination programs.</p>
+  <div class="x-cta rv" style="--d:.55s;justify-content:center;margin-top:34px"><a href="#quote" class="btn-x solid">Request a quote <span class="ar">→</span></a><a href="shop.html" class="btn-x">See the boxes</a></div>
+</section>
+<div class="wrap"><div class="occg">
+  <div class="oc rv"><b>01</b><h3>Corporate events</h3></div><div class="oc rv" style="--d:.08s"><b>02</b><h3>VIP experiences</h3></div><div class="oc rv" style="--d:.16s"><b>03</b><h3>Employee recognition</h3></div><div class="oc rv" style="--d:.24s"><b>04</b><h3>Incentive travel</h3></div><div class="oc rv" style="--d:.32s"><b>05</b><h3>Destination programs</h3></div>
+</div></div>
+<section class="symb" style="margin-top:100px"><div class="symb-in">
+  <div class="sh" style="text-align:left;max-width:760px"><span class="sh-eye rv" style="text-align:left">Simple process</span><h2 class="sh-h2 split" style="text-align:left">Three steps to a gift that tells a story</h2></div>
+  <div class="proc">
+    <div class="pr rv"><b>01</b><h3>Consult</h3><p>Tell us your vision, occasion and group size. We help you choose the right box and the right personal touches.</p></div>
+    <div class="pr rv" style="--d:.1s"><b>02</b><h3>Curate</h3><p>We assemble each box with products made with love, creativity and craftsmanship — locally made whenever possible.</p></div>
+    <div class="pr rv" style="--d:.2s"><b>03</b><h3>Deliver</h3><p>Luxury packaging, a personalized card and optional custom branding, ready to make every recipient feel remembered.</p></div>
+  </div>
+</div></section>
+<section class="qsec" id="quote">
+  <div class="sh"><span class="sh-eye rv">Let's create something beautiful</span><h2 class="sh-h2 split">Request a custom quote</h2><p class="sh-p rv">Tell us about your gifting vision and we'll be in touch</p></div>
+  <div class="ok" id="ok"><span class="x-script">Thank you</span><h3 class="sec-h">We received your request.</h3><p style="color:var(--muted)">Our team will get back to you very soon.</p></div>
+  <form class="qform" id="qf">
+    <div class="qsel" id="qsel"></div>
+    <div><label>First name</label><input required placeholder="Julia"></div>
+    <div><label>Last name</label><input required placeholder="Smith"></div>
+    <div class="full"><label>Company</label><input placeholder="Your Company, LLC"></div>
+    <div><label>Email</label><input type="email" required placeholder="julia@yourcompany.com"></div>
+    <div><label>Phone</label><input type="tel" placeholder="(407) 000-0000"></div>
+    <div><label>Event / occasion</label><select><option>Corporate event</option><option>VIP experience</option><option>Employee recognition</option><option>Incentive travel</option><option>Destination program</option><option>Other</option></select></div>
+    <div><label>Needed by</label><input type="date"></div>
+    <div class="full"><label>Message</label><textarea rows="5" placeholder="Tell us about your brand, timeline or special requests…"></textarea></div>
+    <div class="full"><button type="submit" class="btn-x solid">Send request <span class="ar">→</span></button></div>
+  </form>
+</section>
+<div class="nl">
+  <h3 class="nl-h">Join the Julia Wisteria World</h3>
+  <p class="nl-p">Early access to new collections, seasonal boxes &amp; gifting inspiration</p>
+  <div class="nl-form"><input class="nl-i" type="email" placeholder="your@email.com" aria-label="Email"><button class="nl-btn">Subscribe</button></div>
 </div>
-
-<!-- BREADCRUMB -->
-<div style="background:var(--cream-d);border-bottom:1px solid rgba(90,70,66,.06)">
-  <div class="bc">
-    <a href="julia-wisteria.html">Home</a>
-    <span style="color:var(--rose-l)">›</span>
-    <span style="color:var(--brown)">Corporate Gifts</span>
-  </div>
-</div>
-
-<!-- HERO -->
-<section class="corp-hero">
-  <div class="corp-hero-txt">
-    <span class="ch-eye">For Businesses</span>
-    <h1 class="ch-h1">Elevate Your Corporate <em>Gifting</em></h1>
-    <p class="ch-p">Transform your corporate relationships into unforgettable experiences. From client appreciation to employee milestones, Julia Wisteria curates premium artisan gift boxes that speak volumes — branded, beautiful, and delivered with white-glove care across Orlando and beyond.</p>
-    <div class="ch-btns">
-      <a href="#quote" class="btn-cream">Request a Quote</a>
-      <a href="#packages" class="btn-gl">View Packages</a>
-    </div>
-  </div>
-</section>
-
-<!-- STATS BAR -->
-<div class="stats-bar">
-  <div class="stats-inner">
+<footer>
+  <div class="fg">
     <div>
-      <span class="stat-n">500+</span>
-      <span class="stat-l">Boxes Delivered</span>
+      <span class="fb-n">Julia Wisteria</span><span class="fb-t">Corporate Gifting, Crafted with Meaning</span>
+      <p class="fb-p">Curated artisan gifts for corporate events, VIP experiences, employee recognition, incentive travel and destination programs. Orlando, Florida.</p>
+      <div class="fsoc"><a href="#">ig</a><a href="#">fb</a><a href="#">in</a></div>
     </div>
-    <div>
-      <span class="stat-n">98%</span>
-      <span class="stat-l">Client Satisfaction</span>
-    </div>
-    <div>
-      <span class="stat-n">48h</span>
-      <span class="stat-l">Average Turnaround</span>
-    </div>
-    <div>
-      <span class="stat-n">10+</span>
-      <span class="stat-l">Minimum Order</span>
-    </div>
+    <div class="fc"><h4>Boxes</h4><ul><li><a href="product.html?box=0">Coffee &amp; Planning</a></li><li><a href="product.html?box=1">Unwind &amp; Recharge</a></li><li><a href="product.html?box=2">Teatime Delight</a></li><li><a href="product.html?box=3">Light Up Your Day</a></li><li><a href="product.html?box=4">Serenity Sleep</a></li></ul></div>
+    <div class="fc"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="corporate.html">Corporate Gifting</a></li><li><a href="build.html">Customize a Box</a></li></ul></div>
+    <div class="fc"><h4>Contact</h4><ul><li><a href="corporate.html#quote">Request a Quote</a></li><li><a href="cart.html">Quote List</a></li></ul></div>
   </div>
-</div>
-
-<!-- HOW IT WORKS -->
-<section class="hiw">
-  <div class="sh">
-    <span class="sh-eye">Effortless from Start to Finish</span>
-    <h2 class="sh-h2">Simple Process</h2>
-    <p class="sh-p">Three steps to extraordinary gifting</p>
-  </div>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">01</div>
-      <h3>Consult</h3>
-      <p>Tell us your vision, budget, and occasion. Our corporate gifting specialists will guide you through every option and help you define the perfect gifting strategy for your brand.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">02</div>
-      <h3>Curate</h3>
-      <p>We handcraft your custom box selection, sourcing only the finest artisan products from our trusted Orlando partners. Every element is chosen with intention and precision.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">03</div>
-      <h3>Deliver</h3>
-      <p>White-glove delivery to your recipients — whether across Orlando or nationwide. Each box arrives pristine, on time, and wrapped in the unmistakable Julia Wisteria elegance.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PACKAGES -->
-<section class="pkgs-wrap" id="packages">
-  <div style="max-width:1440px;margin:0 auto">
-    <div class="sh">
-      <span class="sh-eye">Designed for Every Budget</span>
-      <h2 class="sh-h2">Corporate Packages</h2>
-      <p class="sh-p">All packages include professional packaging & handwritten notecards</p>
-    </div>
-    <div class="pkgs">
-
-      <!-- Essential -->
-      <div class="pkg">
-        <div class="pkg-name">Essential</div>
-        <div class="pkg-sub">Perfect for small teams</div>
-        <div class="pkg-price">From $75</div>
-        <div class="pkg-price-note">Per box · Min. 10 units</div>
-        <hr class="pkg-divider">
-        <div class="pkg-item">Branded tissue paper</div>
-        <div class="pkg-item">Handwritten notecards</div>
-        <div class="pkg-item">Standard gift box</div>
-        <div class="pkg-item">5 product slots</div>
-        <div class="pkg-item">Email delivery confirmation</div>
-        <button class="pkg-btn">Get Started</button>
-      </div>
-
-      <!-- Signature (featured) -->
-      <div class="pkg featured">
-        <div class="pkg-badge">Most Popular</div>
-        <div class="pkg-name">Signature</div>
-        <div class="pkg-sub">Our most loved package</div>
-        <div class="pkg-price">From $120</div>
-        <div class="pkg-price-note">Per box · Min. 25 units</div>
-        <hr class="pkg-divider">
-        <div class="pkg-item">Custom branded box</div>
-        <div class="pkg-item">Satin ribbon in brand colors</div>
-        <div class="pkg-item">Premium product selection</div>
-        <div class="pkg-item">Handwritten notecards</div>
-        <div class="pkg-item">Personalized inserts</div>
-        <div class="pkg-item">Same-day Orlando delivery</div>
-        <div class="pkg-item">Dedicated account manager</div>
-        <div class="pkg-item">Digital gift tracking</div>
-        <button class="pkg-btn">Get Started</button>
-      </div>
-
-      <!-- Prestige -->
-      <div class="pkg">
-        <div class="pkg-name">Prestige</div>
-        <div class="pkg-sub">The ultimate impression</div>
-        <div class="pkg-price">From $185</div>
-        <div class="pkg-price-note">Per box · Min. 10 units</div>
-        <hr class="pkg-divider">
-        <div class="pkg-item">Fully custom packaging</div>
-        <div class="pkg-item">Gold foil embossing</div>
-        <div class="pkg-item">Luxury product curation</div>
-        <div class="pkg-item">Premium courier delivery</div>
-        <div class="pkg-item">Brand experience consultation</div>
-        <div class="pkg-item">Nationwide shipping</div>
-        <div class="pkg-item">Post-delivery report</div>
-        <button class="pkg-btn">Get Started</button>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- QUOTE FORM -->
-<section class="qsect" id="quote">
-  <div class="qinner">
-    <div class="sh">
-      <span class="sh-eye">Let's Create Something Beautiful</span>
-      <h2 class="sh-h2">Request a Custom Quote</h2>
-      <p class="sh-p">Tell us about your gifting vision and we'll be in touch within 24 hours</p>
-    </div>
-    <form class="qform">
-      <div class="fg2">
-        <label>First Name</label>
-        <input type="text" placeholder="Julia">
-      </div>
-      <div class="fg2">
-        <label>Last Name</label>
-        <input type="text" placeholder="Smith">
-      </div>
-      <div class="fg2 full">
-        <label>Company Name</label>
-        <input type="text" placeholder="Your Company, LLC">
-      </div>
-      <div class="fg2 full">
-        <label>Email Address</label>
-        <input type="email" placeholder="julia@yourcompany.com">
-      </div>
-      <div class="fg2">
-        <label>Phone Number</label>
-        <input type="tel" placeholder="(407) 000-0000">
-      </div>
-      <div class="fg2">
-        <label>Number of Boxes</label>
-        <input type="number" placeholder="e.g. 50" min="10">
-      </div>
-      <div class="fg2">
-        <label>Budget per Box</label>
-        <input type="text" placeholder="e.g. $100–$150">
-      </div>
-      <div class="fg2">
-        <label>Event / Occasion</label>
-        <input type="text" placeholder="e.g. Client Appreciation, Holiday">
-      </div>
-      <div class="fg2 full">
-        <label>Message</label>
-        <textarea rows="5" placeholder="Tell us more about your vision, brand, timeline, or any special requests..."></textarea>
-      </div>
-      <button type="submit" class="qsubmit">Send Inquiry</button>
-    </form>
-  </div>
-</section>
-
-<!-- CLIENT LOGOS -->
-<section class="clients">
-  <p>Trusted by Orlando's finest</p>
-  <div class="client-logos">
-    <span class="cl">Marriott Hotels</span>
-    <span class="cl">Orlando Health</span>
-    <span class="cl">KPMG</span>
-    <span class="cl">Advent Health</span>
-    <span class="cl">Universal</span>
-    <span class="cl">Disney</span>
-  </div>
-</section>
-
-<!-- CORPORATE TESTIMONIAL -->
-<section class="corp-testi">
-  <div class="corp-testi-inner">
-    <div style="font-family:'Sacramento',cursive;font-size:64px;color:var(--rose-l);line-height:.5;margin-bottom:8px">"</div>
-    <blockquote class="ct-quote">
-      "Julia Wisteria transformed the way we think about corporate gifting. Our clients were genuinely moved — not by the price tag, but by the intention behind every single item in the box. It's the kind of detail that builds loyalty. We've been ordering every quarter since our first experience, and the quality never wavers."
-    </blockquote>
-    <p class="ct-author">— James R., CEO &nbsp;·&nbsp; Florida Tech Group</p>
-  </div>
-</section>
-
-<!-- NEWSLETTER -->
-<div class="nl"><h3 class="nl-h">Join the Julia Wisteria World</h3><p class="nl-p">Early access to new collections, seasonal boxes & gifting inspiration</p><div class="nl-form"><input class="nl-i" type="email" placeholder="your@email.com"><button class="nl-btn">Subscribe</button></div></div>
-
-<!-- FOOTER -->
-<footer><div class="fg">
-  <div><span class="fb-n">Julia Wisteria</span><span class="fb-t">The Art of Artisan Gifting</span><p class="fb-p">Thoughtfully crafted gift boxes celebrating life's most meaningful moments, delivered across Orlando, FL.</p><div class="fsoc"><a href="#">ig</a><a href="#">fb</a><a href="#">pi</a><a href="#">in</a></div><div class="pay"><span>VISA</span><span>MC</span><span>AMEX</span><span>PayPal</span></div></div>
-  <div class="fc"><h4>Shop</h4><ul><li><a href="shop.html">All Collections</a></li><li><a href="shop.html">Gift Boxes</a></li><li><a href="corporate.html">Corporate Gifts</a></li><li><a href="build.html">Custom Orders</a></li></ul></div>
-  <div class="fc"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="#">Our Artisans</a></li><li><a href="#">Contact Us</a></li></ul></div>
-  <div class="fc"><h4>Support</h4><ul><li><a href="#">Shipping & Delivery</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQ</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
-</div><div class="fbot"><span class="fcp">© 2025 Julia Wisteria LLC · All rights reserved · Orlando, Florida</span><span class="flo">Orlando, Florida ✦</span></div></footer>
-
+  <div class="fbot"><span class="fcp">© 2026 Julia Wisteria · Orlando, FL</span><span class="flo">Crafted with love. Inspired by family.</span></div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/motion.js"></script>
 <script>
-const ham=document.getElementById('ham'),mobNav=document.getElementById('mob-nav'),mobClose=document.getElementById('mob-close');
-function openMobNav(){ham.classList.add('open');mobNav.classList.add('open');document.body.style.overflow='hidden'}
-function closeMobNav(){ham.classList.remove('open');mobNav.classList.remove('open');document.body.style.overflow=''}
-ham.addEventListener('click',()=>ham.classList.contains('open')?closeMobNav():openMobNav());
-mobClose.addEventListener('click',closeMobNav);
+(function(){
+  var l=JW.get(),el=document.getElementById('qsel');
+  var pre=new URLSearchParams(location.search).get('box');
+  if(pre!==null&&BOXES[+pre]&&!l.length)l=[{id:+pre,qty:10,brand:false,note:''}];
+  el.innerHTML=l.length?'<b>Boxes in your request:</b><br>'+l.map(function(x){return '• '+JW.esc(BOXES[x.id].t)+' × '+x.qty+(x.brand?' (custom branding)':'')}).join('<br>')+'<br><a href="cart.html">Edit quote list</a>':'<b>No boxes selected yet.</b> <a href="shop.html">Browse the five Christmas boxes</a> or just tell us what you need below.';
+  document.getElementById('qf').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.querySelector('.qsec .sh').style.display='none';document.getElementById('ok').classList.add('on');JW.set([])});
+})();
 </script>
 </body>
 </html>
