@@ -4,17 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Story — Julia Wisteria</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Sacramento&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Sacramento&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#F9F2EB;--cream-d:#F0E6D9;--brown:#5A4642;--brown-l:#7A6460;--rose:#B88889;--rose-l:#D4B4B5;--sage:#C1C099;--white:#fff;--muted:#8B7B78}
+:root{
+  --cream:#F9F2EB;--cream-d:#F0E6D9;--brown:#5A4642;--brown-l:#7A6460;
+  --rose:#B88889;--rose-l:#D4B4B5;--lav:#A89A9E;--sage:#C1C099;
+  --white:#fff;--muted:#8B7B78;
+}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--white);color:var(--brown);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
+
+/* ── ANNOUNCEMENT ── */
 .ann{background:var(--brown);color:var(--cream);text-align:center;padding:9px;font-size:10.5px;letter-spacing:2.5px;text-transform:uppercase}
 .ann b{color:var(--rose-l);font-weight:400}
+
+/* ── HEADER ── */
 .hdr-wrap{position:sticky;top:0;z-index:200;background:rgba(249,242,235,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(90,70,66,.07)}
 .hdr{max-width:1440px;margin:0 auto;padding:0 52px;height:74px;display:flex;align-items:center}
 .logo{flex-shrink:0;margin-right:auto}
@@ -22,22 +28,137 @@ a{text-decoration:none;color:inherit}
 .logo-t{font-family:'Sacramento',cursive;font-size:12px;color:var(--rose);display:block;margin-top:2px}
 nav{display:flex;align-items:center;gap:32px;margin:0 auto}
 nav a{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;color:var(--brown);transition:color .25s;white-space:nowrap}
-nav a:hover,nav a.active{color:var(--rose)}
+nav a:hover{color:var(--rose)}
 .icons{display:flex;align-items:center;gap:18px;margin-left:auto;flex-shrink:0}
 .icons a,.icons button{background:none;border:none;cursor:pointer;color:var(--brown);display:flex;align-items:center;transition:color .25s}
 .icons a:hover,.icons button:hover{color:var(--rose)}
 .icons svg{width:20px;height:20px}
 .cbadge{background:var(--rose);color:#fff;border-radius:50%;font-size:8px;font-weight:700;width:14px;height:14px;display:flex;align-items:center;justify-content:center;margin-left:-5px;margin-top:-12px}
-.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;margin-left:16px}
-.ham span{display:block;width:22px;height:1.5px;background:var(--brown);transition:all .3s}
-.ham.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
-.ham.open span:nth-child(2){opacity:0}
-.ham.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-.mob-nav{display:none;position:fixed;inset:0;z-index:190;background:rgba(249,242,235,.98);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:36px}
-.mob-nav.open{display:flex}
-.mob-nav a{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--brown);letter-spacing:1px;transition:color .25s}
-.mob-nav a:hover{color:var(--rose)}
-.mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;cursor:pointer;font-size:28px;color:var(--brown);line-height:1}
+
+/* ── HERO ── */
+.hero{position:relative;height:90vh;min-height:600px;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(120deg,#EDD9C6 0%,#DEC8B0 35%,#CEAE98 65%,#BAA088 100%)}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,28,26,.58) 0%,rgba(40,28,26,.22) 52%,transparent 78%)}
+.hero-scene{position:absolute;right:0;top:0;width:62%;height:100%}
+.hero-txt{position:relative;z-index:10;padding:0 80px;max-width:620px}
+.h-eye{font-family:'Sacramento',cursive;font-size:34px;color:rgba(249,242,235,.85);display:block;margin-bottom:8px}
+.h1{font-family:'Cormorant Garamond',serif;font-size:68px;font-weight:300;line-height:1.06;letter-spacing:-1px;color:#fff;margin-bottom:22px;text-shadow:0 2px 28px rgba(40,28,26,.45)}
+.h1 em{font-style:italic;color:rgba(255,255,255,.82)}
+.h-sub{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(249,242,235,.72);line-height:2.1;max-width:380px;margin-bottom:36px}
+.btns{display:flex;gap:14px}
+.btn-w{background:#fff;color:var(--brown);padding:15px 40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
+.btn-w:hover{background:var(--rose);color:#fff}
+.btn-wg{border:1px solid rgba(255,255,255,.55);color:rgba(255,255,255,.85);padding:15px 38px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
+.btn-wg:hover{border-color:#fff;color:#fff}
+
+/* ── TRUST BAR ── */
+.trust{background:var(--brown);padding:12px 0;overflow:hidden}
+.tt{display:flex;gap:56px;animation:sl 22s linear infinite;white-space:nowrap}
+.ti{font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--cream);display:flex;align-items:center;gap:12px}
+.ti::before{content:'✦';color:var(--rose-l);font-size:7px}
+@keyframes sl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── PILLARS ── */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid rgba(90,70,66,.08)}
+.pill{padding:52px 48px;border-right:1px solid rgba(90,70,66,.08);transition:background .3s;cursor:pointer}
+.pill:last-child{border-right:none}
+.pill:hover{background:var(--cream)}
+.pill-ico{width:38px;height:38px;margin-bottom:16px;color:var(--rose)}
+.pill h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;margin-bottom:10px}
+.pill p{font-size:12.5px;line-height:1.88;color:var(--muted);max-width:280px;margin-bottom:20px}
+.pill-lk{font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;border-bottom:1px solid var(--brown);padding-bottom:2px;display:inline-block;transition:color .25s,border-color .25s}
+.pill-lk:hover{color:var(--rose);border-color:var(--rose)}
+
+/* ── SECTION HEADER ── */
+.sh{text-align:center;padding:80px 48px 52px}
+.sh-eye{font-family:'Sacramento',cursive;font-size:28px;color:var(--rose);display:block;margin-bottom:4px}
+.sh-h2{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;letter-spacing:-.5px;margin-bottom:12px}
+.sh-p{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);line-height:2}
+
+/* ── COLLECTIONS TILES (4 col, demisdos style) ── */
+.ctiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:0 48px 80px;max-width:1440px;margin:0 auto}
+.ctile{position:relative;overflow:hidden;cursor:pointer;display:block}
+.ctile-img{aspect-ratio:1;overflow:hidden;position:relative}
+.ctile-img svg{width:100%;height:100%;display:block;transition:transform .6s ease}
+.ctile:hover .ctile-img svg{transform:scale(1.05)}
+.ctile-lbl{padding:14px 0 4px}
+.ctile-name{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;margin-bottom:4px}
+.ctile-sub{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted)}
+
+/* ── PRODUCT GRID ── */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:0 48px 16px;max-width:1440px;margin:0 auto}
+.pcard{cursor:pointer}
+.pimg{position:relative;overflow:hidden;aspect-ratio:3/4}
+.pimg svg{width:100%;height:100%;display:block;transition:transform .7s ease}
+.pcard:hover .pimg svg{transform:scale(1.04)}
+.ptag{position:absolute;top:16px;left:16px;font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:5px 11px;font-weight:500;z-index:2}
+.tg-d{background:var(--brown);color:var(--cream)}
+.tg-r{background:var(--rose);color:#fff}
+.tg-s{background:var(--sage);color:var(--brown)}
+.pinfo{padding:16px 2px 0}
+.pname{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;margin-bottom:4px}
+.psub{font-size:9.5px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.pprice{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500}
+.view-all{text-align:center;padding:48px 0 80px}
+.btn-b{background:var(--brown);color:var(--cream);padding:15px 44px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s}
+.btn-b:hover{background:var(--rose)}
+
+/* ── FEATURED PRODUCT ── */
+.feat{display:grid;grid-template-columns:1.15fr 1fr;background:var(--cream)}
+.feat-vis{position:relative;overflow:hidden;min-height:580px;display:flex;align-items:center;justify-content:center;padding:60px;background:linear-gradient(145deg,#EAD6C2,#D8C0A8,#C6AA90)}
+.feat-content{padding:80px 72px 80px 60px;display:flex;flex-direction:column;justify-content:center}
+.feat-badge{display:flex;align-items:center;gap:8px;margin-bottom:20px}
+.feat-dot{width:6px;height:6px;background:var(--rose);border-radius:50%}
+.feat-badge span{font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);font-weight:500}
+.feat-script{font-family:'Sacramento',cursive;font-size:28px;color:var(--rose);display:block;margin-bottom:4px}
+.feat-h2{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;line-height:1.12;letter-spacing:-.5px;margin-bottom:18px}
+.feat-p{font-size:13.5px;line-height:1.95;color:var(--muted);margin-bottom:22px;max-width:400px}
+.feat-inc h4{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;margin-bottom:12px}
+.feat-item{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.fid{width:4px;height:4px;background:var(--rose);border-radius:50%;flex-shrink:0}
+.feat-item span{font-size:12.5px;color:var(--muted)}
+.feat-price{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;margin:22px 0}
+.feat-btns{display:flex;gap:12px}
+.btn-br{background:var(--brown);color:var(--cream);padding:15px 36px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s}
+.btn-br:hover{background:var(--rose)}
+.btn-ol{border:1px solid var(--brown);color:var(--brown);padding:15px 36px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
+.btn-ol:hover{background:var(--brown);color:var(--cream)}
+
+/* ── ABOUT ── */
+.about{display:grid;grid-template-columns:1fr 1fr}
+.about-vis{min-height:500px;background:linear-gradient(145deg,#CABAAE,#B8A49A,#A89086);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.about-txt{padding:80px;background:var(--cream-d);display:flex;flex-direction:column;justify-content:center}
+.ab-eye{font-family:'Sacramento',cursive;font-size:28px;color:var(--rose);display:block;margin-bottom:6px}
+.ab-h2{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;line-height:1.12;margin-bottom:18px}
+.ab-h2 em{font-style:italic;color:var(--brown-l)}
+.ab-p{font-size:13.5px;line-height:1.95;color:var(--muted);max-width:400px;margin-bottom:28px}
+.stats{display:flex;gap:44px;margin-bottom:32px}
+.sn{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:var(--brown);display:block;line-height:1}
+.sl{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);display:block;margin-top:4px}
+
+/* ── TESTIMONIALS ── */
+.testi{background:var(--white);padding:88px 0}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(90,70,66,.08);margin-top:52px}
+.tc{background:var(--white);padding:40px 36px;position:relative}
+.tc::before{content:'\201C';font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:300;color:rgba(184,136,137,.13);position:absolute;top:-6px;left:22px;line-height:1;pointer-events:none}
+.ts{color:var(--sage);font-size:12px;letter-spacing:3px;margin-bottom:16px}
+.tq{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:300;line-height:1.78;color:var(--brown);font-style:italic;margin-bottom:20px}
+.ta{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted)}
+
+/* ── CORPORATE CTA ── */
+.corp{background:var(--brown);padding:96px 48px;text-align:center;position:relative;overflow:hidden}
+.corp::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 25% 50%,rgba(184,136,137,.12) 0%,transparent 65%),radial-gradient(ellipse at 75% 50%,rgba(193,192,153,.08) 0%,transparent 65%)}
+.corp>*{position:relative;z-index:1}
+.c-eye{font-family:'Sacramento',cursive;font-size:30px;color:var(--sage);display:block;margin-bottom:8px}
+.c-h2{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:var(--cream);letter-spacing:-.5px;margin-bottom:16px}
+.c-p{font-size:13px;line-height:1.9;color:rgba(249,242,235,.62);max-width:560px;margin:0 auto 36px}
+.c-btns{display:flex;gap:14px;justify-content:center}
+.btn-ro{background:var(--rose);color:#fff;padding:15px 40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s}
+.btn-ro:hover{background:#9e7373}
+.btn-gl{border:1px solid rgba(249,242,235,.4);color:rgba(249,242,235,.8);padding:15px 40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s}
+.btn-gl:hover{border-color:var(--cream);color:var(--cream)}
+
+/* ── NEWSLETTER ── */
 .nl{background:var(--cream);padding:72px 48px;text-align:center}
 .nl-h{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;margin-bottom:8px}
 .nl-p{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
@@ -46,6 +167,8 @@ nav a:hover,nav a.active{color:var(--rose)}
 .nl-i::placeholder{color:var(--muted)}
 .nl-btn{background:var(--brown);color:var(--cream);border:none;padding:14px 22px;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;cursor:pointer;transition:background .25s;white-space:nowrap}
 .nl-btn:hover{background:var(--rose)}
+
+/* ── FOOTER ── */
 footer{background:var(--cream-d);padding:72px 52px 36px}
 .fg{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;padding-bottom:52px;border-bottom:1px solid rgba(90,70,66,.1)}
 .fb-n{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--brown);display:block;line-height:1}
@@ -55,341 +178,280 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
 .fsoc a{width:32px;height:32px;border:1px solid rgba(90,70,66,.18);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--brown);transition:all .25s}
 .fsoc a:hover{background:var(--brown);color:var(--cream)}
 .fc h4{font-size:9px;letter-spacing:3px;text-transform:uppercase;font-weight:600;color:var(--brown);margin-bottom:20px}
-.fc ul{list-style:none}.fc li{margin-bottom:10px}
+.fc ul{list-style:none}
+.fc li{margin-bottom:10px}
 .fc a{font-size:12.5px;color:var(--muted);transition:color .25s}
 .fc a:hover{color:var(--brown)}
 .fbot{max-width:1440px;margin:0 auto;padding-top:28px;display:flex;justify-content:space-between;align-items:center}
 .fcp{font-size:11px;color:var(--muted)}
 .flo{font-family:'Sacramento',cursive;font-size:20px;color:var(--rose)}
+
+/* ── PAYMENT ICONS ── */
 .pay{display:flex;gap:8px;margin-top:16px}
 .pay span{border:1px solid rgba(90,70,66,.15);border-radius:3px;padding:4px 8px;font-size:9px;letter-spacing:1px;color:var(--muted);font-weight:500}
-.btn-b{background:var(--brown);color:var(--cream);padding:15px 44px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s;cursor:pointer;border:none}
-.btn-b:hover{background:var(--rose)}
-.btn-ro{background:var(--rose);color:#fff;padding:15px 40px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:background .25s;cursor:pointer;border:none}
-.btn-ro:hover{background:#9e7373}
-.btn-ol{border:1px solid var(--brown);color:var(--brown);padding:15px 36px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;display:inline-block;transition:all .25s;background:none;cursor:pointer}
-.btn-ol:hover{background:var(--brown);color:var(--cream)}
-.bc{max-width:1440px;margin:0 auto;padding:20px 52px;display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
-.bc a{color:var(--muted);transition:color .25s}.bc a:hover{color:var(--brown)}
-@media(max-width:1024px){.hdr{padding:0 32px}nav{display:none}.ham{display:flex}.icons a:first-child,.icons a:nth-child(2){display:none}footer{padding:56px 36px 32px}.fg{grid-template-columns:1fr 1fr;gap:40px}}
-@media(max-width:768px){.ann{font-size:9px;padding:8px 16px}.hdr{padding:0 20px;height:64px}.logo-n{font-size:14px;letter-spacing:3px}.nl{padding:52px 24px}.nl-h{font-size:28px}.nl-form{flex-direction:column;max-width:320px}.nl-i{border-right:1px solid rgba(90,70,66,.2);border-bottom:none}footer{padding:48px 20px 28px}.fg{grid-template-columns:1fr 1fr;gap:32px;padding-bottom:40px}.fbot{flex-direction:column;gap:12px;text-align:center}.bc{padding:16px 20px}}
-@media(max-width:480px){.fg{grid-template-columns:1fr}}
 
-/* PAGE HERO */
-.ab-hero{min-height:58vh;background:linear-gradient(145deg,#EDD9C6 0%,#DEC8B0 40%,#CEAE98 100%);position:relative;overflow:hidden;display:flex;align-items:center}
-.ab-hero-txt{position:relative;z-index:2;padding:80px 52px;max-width:660px}
-.ab-hero-ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,28,26,.45) 0%,rgba(40,28,26,.1) 70%,transparent 100%)}
-.ah-eye{font-family:'Sacramento',cursive;font-size:32px;color:rgba(249,242,235,.85);display:block;margin-bottom:8px}
-.ah-h1{font-family:'Cormorant Garamond',serif;font-size:62px;font-weight:300;line-height:1.08;letter-spacing:-.5px;color:#fff;margin-bottom:22px;text-shadow:0 2px 20px rgba(40,28,26,.3)}
-.ah-h1 em{font-style:italic;color:rgba(255,255,255,.8)}
-.ah-p{font-size:13px;line-height:1.95;color:rgba(249,242,235,.75);max-width:420px}
-/* MISSION */
-.mission{max-width:800px;margin:0 auto;padding:96px 48px;text-align:center}
-.m-eye{font-family:'Sacramento',cursive;font-size:26px;color:var(--rose);display:block;margin-bottom:6px}
-.m-h2{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;letter-spacing:-.5px;margin-bottom:24px}
-.m-p{font-size:15px;line-height:2;color:var(--muted)}
-/* FOUNDER */
-.founder{display:grid;grid-template-columns:1fr 1fr}
-.founder-vis{min-height:540px;background:linear-gradient(145deg,#C8B8AC,#B4A09A,#A08E86);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.founder-txt{padding:80px 72px;background:var(--cream-d);display:flex;flex-direction:column;justify-content:center}
-.ft-eye{font-family:'Sacramento',cursive;font-size:26px;color:var(--rose);display:block;margin-bottom:6px}
-.ft-h2{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;line-height:1.12;margin-bottom:20px}
-.ft-h2 em{font-style:italic;color:var(--brown-l)}
-.ft-p{font-size:13.5px;line-height:1.95;color:var(--muted);margin-bottom:16px;max-width:420px}
-.ft-sig{font-family:'Sacramento',cursive;font-size:36px;color:var(--rose);margin-top:12px}
-/* VALUES */
-.values{background:var(--white);padding:80px 52px}
-.vals-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(90,70,66,.08);margin-top:52px}
-.val{background:var(--white);padding:44px 32px}
-.val-ico{font-size:28px;margin-bottom:16px;display:block}
-.val h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;margin-bottom:10px}
-.val p{font-size:12.5px;line-height:1.88;color:var(--muted)}
-/* TIMELINE */
-.timeline{background:var(--cream);padding:80px 52px}
-.tl-inner{max-width:800px;margin:0 auto;margin-top:52px}
-.tl-item{display:grid;grid-template-columns:100px 1fr;gap:32px;margin-bottom:48px;align-items:start}
-.tl-year{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--rose);line-height:1;padding-top:4px}
-.tl-content h4{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;margin-bottom:8px}
-.tl-content p{font-size:13px;line-height:1.88;color:var(--muted)}
-/* ARTISANS */
-.artisans{background:var(--cream-d);padding:80px 52px}
-.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
-.art-card{background:var(--white);padding:36px}
-.art-img{width:72px;height:72px;border-radius:50%;margin-bottom:16px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:rgba(249,242,235,.8)}
-.art-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;margin-bottom:4px}
-.art-craft{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-bottom:10px}
-.art-bio{font-size:12.5px;line-height:1.85;color:var(--muted)}
-/* STATS */
-.ab-stats{background:var(--brown);padding:64px 52px}
-.ab-stats-inner{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
-.abs-n{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:var(--cream);display:block;line-height:1}
-.abs-l{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:rgba(249,242,235,.55);display:block;margin-top:6px}
+/* ── HAMBURGER BUTTON ── */
+.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;margin-left:16px}
+.ham span{display:block;width:22px;height:1.5px;background:var(--brown);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
 
-.sh{text-align:center}
-.sh-eye{font-family:'Sacramento',cursive;font-size:28px;color:var(--rose);display:block;margin-bottom:4px}
-.sh-h2{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;letter-spacing:-.5px;margin-bottom:12px}
-.sh-p{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);line-height:2}
+/* Mobile nav overlay */
+.mob-nav{display:none;position:fixed;inset:0;z-index:190;background:rgba(249,242,235,.98);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:36px}
+.mob-nav.open{display:flex}
+.mob-nav a{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--brown);letter-spacing:1px;transition:color .25s}
+.mob-nav a:hover{color:var(--rose)}
+.mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;cursor:pointer;font-size:28px;color:var(--brown);line-height:1}
 
-@media(max-width:1024px){.ab-hero-txt{padding:60px 32px}.ah-h1{font-size:46px}.founder{grid-template-columns:1fr}.founder-vis{min-height:320px}.founder-txt{padding:60px 40px}.values{padding:60px 32px}.vals-grid{grid-template-columns:repeat(2,1fr)}.timeline{padding:60px 32px}.artisans{padding:60px 32px}.art-grid{grid-template-columns:1fr 1fr}.ab-stats{padding:48px 32px}.ab-stats-inner{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.ab-hero-txt{padding:48px 20px}.ah-h1{font-size:34px}.mission{padding:60px 24px}.ft-p{font-size:13px}.founder-txt{padding:40px 24px}.values{padding:48px 20px}.vals-grid{grid-template-columns:1fr}.timeline{padding:48px 20px}.artisans{padding:48px 20px}.art-grid{grid-template-columns:1fr}.ab-stats{padding:40px 20px}.ab-stats-inner{grid-template-columns:1fr 1fr}}
+/* ════════════════════════════════════════
+   RESPONSIVE — TABLET (≤1024px)
+════════════════════════════════════════ */
+@media(max-width:1024px){
+  /* Header */
+  .hdr{padding:0 32px}
+  nav{display:none}
+  .ham{display:flex}
+  .icons a:first-child,.icons a:nth-child(2){display:none}
+
+  /* Hero */
+  .hero{height:72vh;min-height:520px}
+  .hero-txt{padding:0 48px;max-width:520px}
+  .h1{font-size:54px}
+  .hero-scene{width:52%}
+
+  /* Pillars */
+  .pillars{grid-template-columns:1fr}
+  .pill{border-right:none;border-bottom:1px solid rgba(90,70,66,.08);padding:40px 36px}
+  .pill:last-child{border-bottom:none}
+
+  /* Collections */
+  .ctiles{grid-template-columns:repeat(2,1fr);padding:0 32px 60px}
+
+  /* Products */
+  .pgrid{grid-template-columns:repeat(2,1fr);gap:20px;padding:0 32px 16px}
+
+  /* Featured */
+  .feat{grid-template-columns:1fr}
+  .feat-vis{min-height:400px}
+  .feat-content{padding:52px 48px}
+
+  /* About */
+  .about{grid-template-columns:1fr}
+  .about-vis{min-height:320px}
+  .about-txt{padding:56px 48px}
+
+  /* Testimonials */
+  .tgrid{grid-template-columns:1fr}
+
+  /* Corporate */
+  .corp{padding:72px 36px}
+  .c-h2{font-size:38px}
+
+  /* Section headers */
+  .sh{padding:60px 32px 40px}
+  .sh-h2{font-size:36px}
+
+  /* Footer */
+  footer{padding:56px 36px 32px}
+  .fg{grid-template-columns:1fr 1fr;gap:40px}
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — MOBILE (≤768px)
+════════════════════════════════════════ */
+@media(max-width:768px){
+  /* Announcement */
+  .ann{font-size:9px;letter-spacing:1.5px;padding:8px 16px}
+
+  /* Header */
+  .hdr{padding:0 20px;height:64px}
+  .logo-n{font-size:14px;letter-spacing:3px}
+  .logo-t{font-size:11px}
+
+  /* Hero */
+  .hero{height:auto;min-height:0;padding:100px 0 60px}
+  .hero-bg{background:linear-gradient(160deg,#DEC8B0 0%,#CEAE98 50%,#BAA088 100%)}
+  .hero-ov{background:linear-gradient(180deg,rgba(40,28,26,.5) 0%,rgba(40,28,26,.35) 100%)}
+  .hero-scene{display:none}
+  .hero-txt{padding:0 24px;max-width:100%}
+  .h-eye{font-size:26px}
+  .h1{font-size:42px;letter-spacing:-.5px}
+  .h-sub{font-size:10px;max-width:100%;margin-bottom:28px}
+  .btns{flex-direction:column;gap:10px;max-width:260px}
+  .btn-w,.btn-wg{padding:14px 24px;text-align:center;font-size:9.5px}
+
+  /* Trust bar */
+  .trust{padding:10px 0}
+  .ti{font-size:8.5px;letter-spacing:2px}
+
+  /* Pillars */
+  .pill{padding:32px 24px}
+  .pill h3{font-size:22px}
+
+  /* Section headers */
+  .sh{padding:52px 20px 36px}
+  .sh-eye{font-size:24px}
+  .sh-h2{font-size:30px}
+  .sh-p{font-size:10px;letter-spacing:1.5px}
+
+  /* Collections tiles */
+  .ctiles{grid-template-columns:repeat(2,1fr);gap:10px;padding:0 20px 52px}
+  .ctile-name{font-size:15px}
+
+  /* Product grid */
+  .pgrid{grid-template-columns:repeat(2,1fr);gap:14px;padding:0 20px 16px}
+  .pname{font-size:16px}
+  .pprice{font-size:15px}
+  .view-all{padding:36px 0 52px}
+
+  /* Featured */
+  .feat{grid-template-columns:1fr}
+  .feat-vis{min-height:280px}
+  .feat-content{padding:40px 24px}
+  .feat-h2{font-size:34px}
+  .feat-p{font-size:13px}
+  .feat-price{font-size:26px}
+  .feat-btns{flex-direction:column;gap:10px}
+  .btn-br,.btn-ol{padding:14px 24px;text-align:center}
+
+  /* About */
+  .about{grid-template-columns:1fr}
+  .about-vis{min-height:200px}
+  .about-txt{padding:40px 24px}
+  .ab-h2{font-size:32px}
+  .ab-p{font-size:13px}
+  .stats{gap:28px}
+  .sn{font-size:30px}
+
+  /* Testimonials */
+  .testi{padding:52px 0}
+  .tgrid{grid-template-columns:1fr}
+  .tc{padding:32px 24px}
+
+  /* Corporate CTA */
+  .corp{padding:56px 24px}
+  .c-eye{font-size:24px}
+  .c-h2{font-size:30px}
+  .c-p{font-size:12.5px}
+  .c-btns{flex-direction:column;align-items:center;gap:10px}
+  .btn-ro,.btn-gl{padding:14px 32px;text-align:center;width:100%;max-width:280px}
+
+  /* Newsletter */
+  .nl{padding:52px 24px}
+  .nl-h{font-size:28px}
+  .nl-form{flex-direction:column;max-width:320px}
+  .nl-i{border-right:1px solid rgba(90,70,66,.2);border-bottom:none}
+  .nl-btn{padding:14px;font-size:9px}
+
+  /* Footer */
+  footer{padding:48px 20px 28px}
+  .fg{grid-template-columns:1fr 1fr;gap:32px;padding-bottom:40px}
+  .fb-n{font-size:14px}
+  .fbot{flex-direction:column;gap:12px;text-align:center}
+}
+
+/* ════════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (≤480px)
+════════════════════════════════════════ */
+@media(max-width:480px){
+  .h1{font-size:36px}
+  .ctiles{grid-template-columns:1fr}
+  .pgrid{grid-template-columns:1fr;max-width:340px;margin:0 auto}
+  .sh-h2{font-size:26px}
+  .fg{grid-template-columns:1fr}
+  .stats{flex-wrap:wrap;gap:20px}
+}
 </style>
+<link rel="stylesheet" href="assets/motion.css">
 </head>
 <body>
-
-<!-- ANNOUNCEMENT BAR -->
-<div class="ann">Free local delivery in Orlando on orders over $75 &nbsp;<b>·</b>&nbsp; Same-day gifting available <b>·</b>&nbsp; Corporate gifting specialists</div>
-
-<!-- HEADER -->
+<div class="progress"></div><div class="glow"></div><div class="fall" aria-hidden="true"></div>
+<div class="ann">Christmas Season 2026 &nbsp;<b>·</b>&nbsp; Corporate gifting, crafted with meaning <b>·</b>&nbsp; Orlando, Florida</div>
 <div class="hdr-wrap"><div class="hdr">
-  <div class="logo"><a href="julia-wisteria.html"><span class="logo-n">Julia Wisteria</span><span class="logo-t">The Art of Artisan Gifting</span></a></div>
-  <nav>
-    <a href="shop.html">Shop All</a>
-    <a href="shop.html">Curated Boxes</a>
-    <a href="build.html">Build Your Box</a>
-    <a href="corporate.html">Corporate</a>
-    <a href="about.html" class="active">Our Story</a>
-  </nav>
+  <div class="logo"><a href="julia-wisteria.html"><span class="logo-n">Julia Wisteria</span><span class="logo-t">Crafted with love · Curated with purpose</span></a></div>
+  <nav><a href="shop.html">Christmas Boxes</a><a href="build.html">Customize</a><a href="corporate.html">Corporate</a><a href="about.html" class="active">Our Story</a></nav>
   <div class="icons">
-    <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></a>
-    <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
-    <a href="cart.html" style="display:flex;align-items:flex-start"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cbadge">2</span></a>
-    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+    <a href="cart.html" id="cartlink" aria-label="Cart" style="display:flex;align-items:flex-start">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span class="cbadge" id="qbadge" style="display:none">0</span>
+    </a>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </div></div>
-
-<!-- MOBILE NAV -->
-<div class="mob-nav" id="mob-nav">
-  <button class="mob-nav-close" id="mob-close">✕</button>
-  <a href="julia-wisteria.html" onclick="closeMobNav()">Home</a>
-  <a href="shop.html" onclick="closeMobNav()">Shop All</a>
-  <a href="build.html" onclick="closeMobNav()">Build Your Box</a>
-  <a href="corporate.html" onclick="closeMobNav()">Corporate</a>
-  <a href="about.html" onclick="closeMobNav()">Our Story</a>
-  <a href="cart.html" onclick="closeMobNav()">Cart</a>
-</div>
-
+<div class="mob-nav" id="mob-nav"><button class="mob-nav-close" id="mob-close">✕</button><a href="julia-wisteria.html" onclick="closeMobNav()">Home</a><a href="shop.html" onclick="closeMobNav()">Christmas Boxes</a><a href="build.html" onclick="closeMobNav()">Customize</a><a href="corporate.html" onclick="closeMobNav()">Corporate</a><a href="about.html" onclick="closeMobNav()">Our Story</a><a href="cart.html" onclick="closeMobNav()">Cart</a></div>
 <!-- HERO -->
-<section class="ab-hero">
-  <div class="ab-hero-ov"></div>
-  <div class="ab-hero-txt">
-    <span class="ah-eye">Our Journey</span>
-    <h1 class="ah-h1">Crafted with <em>Purpose</em></h1>
-    <p class="ah-p">Julia Wisteria began as a simple idea — that a gift should feel like an embrace. Born in Orlando, Florida, our story is one of passion, artisanship, and the belief that every moment deserves to be celebrated beautifully.</p>
+<section class="ab2-hero">
+  <div class="x-hero-bg"><div class="blob b1"></div><div class="blob b2"></div><div class="grain"></div></div>
+  <span class="x-script rv">Our Story</span>
+  <h1 class="x-h1 split">Julia Wisteria was born from love, family, and <em>a gift that tells a story.</em></h1>
+  <p class="x-lead rv" style="--d:.4s">Crafted with love. Curated with purpose. Inspired by family.</p>
+</section>
+
+<section class="story" style="padding-top:90px">
+  <div class="story-l">
+    <span class="story-num rv" data-par=".05">J</span>
+    <span class="sh-eye rv">Meet Julia</span>
+    <h2 class="story-h2 split">The woman who taught us <em>to give from the heart.</em></h2>
+  </div>
+  <div class="story-r">
+    <p class="big rv">Julia is our grandmother — the woman who raised us, cared for us, and taught us the importance of love, patience, dedication, and giving from the heart.</p>
+    <p class="rv">Her values became the inspiration behind everything we want this company to represent.</p>
+    <p class="rv">Our small company was created with a simple purpose: to turn gifting into something meaningful while supporting local makers, artisans, and small entrepreneurs.</p>
+    <p class="rv">We carefully curate products made with love, creativity, and craftsmanship, bringing them together in beautiful gifts for companies, events, celebrations, and special moments. Whenever possible, we choose locally made products and collaborate with small businesses, giving their creations an opportunity to become part of someone else's story.</p>
   </div>
 </section>
 
-<!-- MISSION -->
-<section class="mission">
-  <span class="m-eye">Our Mission</span>
-  <h2 class="m-h2">More Than a Gift Box</h2>
-  <p class="m-p">We exist to make people feel seen, celebrated, and loved — through the art of thoughtful gifting. Every ribbon tied, every item curated, every box sealed with intention is our way of helping you speak when words fall short.</p>
-</section>
-
-<!-- FOUNDER -->
-<section class="founder">
-  <!-- Decorative Visual Side -->
-  <div class="founder-vis">
-    <svg viewBox="0 0 440 540" width="340" height="420" xmlns="http://www.w3.org/2000/svg" style="position:relative;z-index:1">
-      <!-- Outer rings -->
-      <circle cx="220" cy="270" r="190" fill="none" stroke="rgba(249,242,235,.12)" stroke-width="1"/>
-      <circle cx="220" cy="270" r="168" fill="none" stroke="rgba(249,242,235,.09)" stroke-width="1"/>
-      <circle cx="220" cy="270" r="145" fill="none" stroke="rgba(249,242,235,.07)" stroke-width="1"/>
-      <circle cx="220" cy="270" r="120" fill="none" stroke="rgba(184,136,137,.25)" stroke-width="1"/>
-      <!-- Petal shapes -->
-      <ellipse cx="220" cy="155" rx="18" ry="48" fill="rgba(184,136,137,.18)" transform="rotate(0 220 270)"/>
-      <ellipse cx="220" cy="155" rx="18" ry="48" fill="rgba(193,192,153,.14)" transform="rotate(45 220 270)"/>
-      <ellipse cx="220" cy="155" rx="18" ry="48" fill="rgba(184,136,137,.12)" transform="rotate(90 220 270)"/>
-      <ellipse cx="220" cy="155" rx="18" ry="48" fill="rgba(193,192,153,.1)" transform="rotate(135 220 270)"/>
-      <ellipse cx="220" cy="155" rx="18" ry="48" fill="rgba(184,136,137,.16)" transform="rotate(180 220 270)"/>
-      <ellipse cx="220" cy="155" rx="18" ry="48" fill="rgba(193,192,153,.12)" transform="rotate(225 220 270)"/>
-      <ellipse cx="220" cy="155" rx="18" ry="48" fill="rgba(184,136,137,.1)" transform="rotate(270 220 270)"/>
-      <ellipse cx="220" cy="155" rx="18" ry="48" fill="rgba(193,192,153,.14)" transform="rotate(315 220 270)"/>
-      <!-- Inner decorative circle -->
-      <circle cx="220" cy="270" r="72" fill="rgba(249,242,235,.06)" stroke="rgba(249,242,235,.2)" stroke-width="1"/>
-      <!-- Monogram J -->
-      <text x="220" y="260" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="52" font-weight="300" fill="rgba(249,242,235,.75)" letter-spacing="2">J</text>
-      <!-- Script label -->
-      <text x="220" y="308" text-anchor="middle" font-family="Sacramento, cursive" font-size="18" fill="rgba(212,180,181,.7)">Wisteria</text>
-      <!-- Small botanical dots -->
-      <circle cx="220" cy="82" r="3.5" fill="rgba(193,192,153,.4)"/>
-      <circle cx="307" cy="127" r="3" fill="rgba(184,136,137,.35)"/>
-      <circle cx="338" cy="222" r="2.5" fill="rgba(193,192,153,.3)"/>
-      <circle cx="307" cy="317" r="3" fill="rgba(184,136,137,.35)"/>
-      <circle cx="220" cy="458" r="3.5" fill="rgba(193,192,153,.4)"/>
-      <circle cx="133" cy="413" r="3" fill="rgba(184,136,137,.35)"/>
-      <circle cx="102" cy="318" r="2.5" fill="rgba(193,192,153,.3)"/>
-      <circle cx="133" cy="223" r="3" fill="rgba(184,136,137,.35)"/>
-    </svg>
-    <!-- Subtle label overlay -->
-    <div style="position:absolute;bottom:36px;left:0;right:0;text-align:center">
-      <span style="font-family:'Sacramento',cursive;font-size:22px;color:rgba(249,242,235,.45)">Orlando, Florida</span>
+<section class="symb">
+  <div class="symb-in">
+    <div class="sh" style="text-align:left;max-width:760px">
+      <span class="sh-eye rv" style="text-align:left">Why Wisteria</span>
+      <h2 class="sh-h2 split" style="text-align:left">The flower that reminds us of Julia</h2>
+      <p class="sh-p rv" style="text-transform:none;letter-spacing:0;font-size:15px;line-height:1.95;color:rgba(249,242,235,.65)">The Wisteria flower symbolizes love, longevity, patience, and devotion — qualities that remind us of Julia and the legacy she created within our family. That is why Julia Wisteria felt like the perfect name.</p>
     </div>
-  </div>
-
-  <!-- Text Side -->
-  <div class="founder-txt">
-    <span class="ft-eye">Meet the Founder</span>
-    <h2 class="ft-h2">Julia's <em>Vision</em></h2>
-    <p class="ft-p">Julia grew up surrounded by the warmth of handmade things — her grandmother's kitchen, her mother's garden, the artisan markets of downtown Orlando. When she began creating gift boxes in 2020, it wasn't a business plan. It was a love language made tangible.</p>
-    <p class="ft-p">Today, Julia Wisteria is a reflection of everything she believed a gift could be: intentional, beautiful, and deeply personal. Every artisan partner is chosen by Julia herself, every product tested at her own table, every box approved before it leaves the studio. Her standard is simple — if she wouldn't be moved to receive it, it doesn't ship.</p>
-    <p class="ft-p">Based in Orlando, Florida, Julia's mission is to keep gifting local, keep it artisan, and keep it extraordinary — one perfectly tied ribbon at a time.</p>
-    <div class="ft-sig">Julia</div>
-  </div>
-</section>
-
-<!-- VALUES -->
-<section class="values">
-  <div style="max-width:1440px;margin:0 auto">
-    <div class="sh">
-      <span class="sh-eye">The Heart of Everything We Do</span>
-      <h2 class="sh-h2">What We Stand For</h2>
-      <p class="sh-p">Four principles that guide every box we build</p>
-    </div>
-    <div class="vals-grid">
-      <div class="val">
-        <span class="val-ico">🌸</span>
-        <h3>Intentionality</h3>
-        <p>Every item is chosen with purpose. We believe in quality over quantity and meaning over trends. Nothing enters a Julia Wisteria box by accident.</p>
-      </div>
-      <div class="val">
-        <span class="val-ico">🤝</span>
-        <h3>Connection</h3>
-        <p>Gifts are bridges between hearts. We help you strengthen relationships that matter most — with clients, colleagues, family, and friends.</p>
-      </div>
-      <div class="val">
-        <span class="val-ico">🌿</span>
-        <h3>Local Love</h3>
-        <p>We partner exclusively with Orlando-based artisans, keeping our community thriving. Every purchase supports a local maker and their craft.</p>
-      </div>
-      <div class="val">
-        <span class="val-ico">✦</span>
-        <h3>Excellence</h3>
-        <p>From packaging to product, we hold every detail to the highest standard of luxury. Because you deserve to give — and receive — nothing less.</p>
-      </div>
+    <div class="symb-grid">
+      <div class="sy rv"><b>01</b><h3>Love</h3><p>Every gift begins with care for the person receiving it.</p></div>
+      <div class="sy rv" style="--d:.08s"><b>02</b><h3>Longevity</h3><p>The smallest gestures can leave the longest-lasting memories.</p></div>
+      <div class="sy rv" style="--d:.16s"><b>03</b><h3>Patience</h3><p>Thoughtful curation takes time, and we take it.</p></div>
+      <div class="sy rv" style="--d:.24s"><b>04</b><h3>Devotion</h3><p>To our family, to local makers, and to every story we help tell.</p></div>
     </div>
   </div>
 </section>
 
-<!-- TIMELINE -->
-<section class="timeline">
-  <div style="max-width:1440px;margin:0 auto">
-    <div class="sh">
-      <span class="sh-eye">Then &amp; Now</span>
-      <h2 class="sh-h2">Our Journey</h2>
-      <p class="sh-p">From a kitchen table in Orlando to gifting over 500 families</p>
-    </div>
-    <div class="tl-inner">
-
-      <div class="tl-item">
-        <div class="tl-year">2020</div>
-        <div class="tl-content">
-          <h4>The First Box</h4>
-          <p>Julia assembles the very first gift box in her Orlando kitchen, gifting it to a friend who had just gone through a difficult month. The response changes everything — three orders follow within a week, all from word of mouth alone.</p>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-year">2021</div>
-        <div class="tl-content">
-          <h4>Going Official</h4>
-          <p>Julia Wisteria is born as a formal business. The first 50 orders are hand-delivered across Orlando in Julia's own car, each box accompanied by a personally written card. The brand's voice — warm, artisan, intentional — is established from day one.</p>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-year">2022</div>
-        <div class="tl-content">
-          <h4>Corporate Discovery</h4>
-          <p>Local businesses begin requesting custom branded boxes for client gifts and employee milestones. Corporate gifting becomes a pillar of the brand, opening a new chapter of scale without ever sacrificing the handmade touch.</p>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-year">2024</div>
-        <div class="tl-content">
-          <h4>Growing Family</h4>
-          <p>The team expands to 8 artisans — each a specialist in their craft, each sharing Julia's obsession with quality. Over 500 boxes delivered. Still every box made with the same love as the first one assembled on that kitchen table.</p>
-        </div>
-      </div>
-
-    </div>
+<section class="purpose">
+  <div class="purpose-img rv rv-l"><img data-par=".05" src="images/christmas/teatime-delight.jpg" alt="Teatime Delight gift box" loading="lazy"></div>
+  <div>
+    <span class="sh-eye rv" style="text-align:left">More than an object</span>
+    <h2 class="story-h2 split" style="margin-bottom:26px">A way to say thank you, to celebrate, to connect.</h2>
+    <p class="rv">For us, a gift is more than an object. It is a way to say thank you, to celebrate, to connect, and to make someone feel remembered.</p>
+    <p class="rv">Julia taught us that the smallest gestures, when made with love, can leave the longest-lasting memories.</p>
+    <a href="julia-wisteria.html#boxes" class="btn-x solid rv">Discover the Christmas boxes <span class="ar">→</span></a>
   </div>
 </section>
 
-<!-- ARTISANS -->
-<section class="artisans">
-  <div style="max-width:1440px;margin:0 auto">
-    <div class="sh">
-      <span class="sh-eye">The Hands Behind the Magic</span>
-      <h2 class="sh-h2">Our Local Artisans</h2>
-      <p class="sh-p">Every product inside a Julia Wisteria box is made by someone you can name</p>
-    </div>
-    <div class="art-grid">
+<div class="ab2-quote"><p class="split">That is the heart of <em>Julia Wisteria.</em></p></div>
+<div class="motto"><span class="rv">Crafted with love.</span><span class="rv" style="--d:.1s">Curated with purpose.</span><span class="rv" style="--d:.2s">Inspired by family.</span></div>
 
-      <div class="art-card">
-        <div class="art-img" style="background:#D4A4A6">M</div>
-        <div class="art-name">Maria C.</div>
-        <div class="art-craft">Candle Maker</div>
-        <p class="art-bio">Maria hand-pours each soy candle using locally sourced botanical oils and vintage molds from her studio in Winter Park. Each scent is a seasonal ode to Central Florida's natural landscape.</p>
-      </div>
 
-      <div class="art-card">
-        <div class="art-img" style="background:#C1C099">D</div>
-        <div class="art-name">Daniela R.</div>
-        <div class="art-craft">Floral Curator</div>
-        <p class="art-bio">Daniela sources dried florals from sustainable Florida farms, crafting each arrangement with delicate botanical precision. Her work transforms every box into a small gallery of nature.</p>
-      </div>
-
-      <div class="art-card">
-        <div class="art-img" style="background:#A89A9E">C</div>
-        <div class="art-name">Carlos M.</div>
-        <div class="art-craft">Artisan Chocolatier</div>
-        <p class="art-bio">Carlos trained in Belgium and now creates our signature truffle collections from his Lake Eola workshop. Each truffle is hand-rolled and finished with single-origin cocoa sourced from small farms.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- STATS BAR -->
-<section class="ab-stats">
-  <div class="ab-stats-inner">
+<div class="nl">
+  <h3 class="nl-h">Join the Julia Wisteria World</h3>
+  <p class="nl-p">Early access to new collections, seasonal boxes &amp; gifting inspiration</p>
+  <div class="nl-form"><input class="nl-i" type="email" placeholder="your@email.com" aria-label="Email"><button class="nl-btn">Subscribe</button></div>
+</div>
+<footer>
+  <div class="fg">
     <div>
-      <span class="abs-n">500+</span>
-      <span class="abs-l">Boxes Gifted</span>
+      <span class="fb-n">Julia Wisteria</span><span class="fb-t">Corporate Gifting, Crafted with Meaning</span>
+      <p class="fb-p">Curated artisan gifts for corporate events, VIP experiences, employee recognition, incentive travel and destination programs. Orlando, Florida.</p>
+      <div class="fsoc"><a href="#">ig</a><a href="#">fb</a><a href="#">in</a></div>
     </div>
-    <div>
-      <span class="abs-n">8</span>
-      <span class="abs-l">Local Artisans</span>
-    </div>
-    <div>
-      <span class="abs-n">4</span>
-      <span class="abs-l">Years of Craft</span>
-    </div>
-    <div>
-      <span class="abs-n">100%</span>
-      <span class="abs-l">Handmade</span>
-    </div>
+    <div class="fc"><h4>Boxes</h4><ul><li><a href="product.html?box=0">Coffee &amp; Planning</a></li><li><a href="product.html?box=1">Unwind &amp; Recharge</a></li><li><a href="product.html?box=2">Teatime Delight</a></li><li><a href="product.html?box=3">Light Up Your Day</a></li><li><a href="product.html?box=4">Serenity Sleep</a></li></ul></div>
+    <div class="fc"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="corporate.html">Corporate Gifting</a></li><li><a href="build.html">Customize a Box</a></li></ul></div>
+    <div class="fc"><h4>Contact</h4><ul><li><a href="corporate.html#quote">Request a Quote</a></li><li><a href="cart.html">Cart</a></li><li><a href="checkout.html">Checkout</a></li></ul></div>
   </div>
-</section>
-
-<!-- NEWSLETTER -->
-<div class="nl"><h3 class="nl-h">Join the Julia Wisteria World</h3><p class="nl-p">Early access to new collections, seasonal boxes & gifting inspiration</p><div class="nl-form"><input class="nl-i" type="email" placeholder="your@email.com"><button class="nl-btn">Subscribe</button></div></div>
-
-<!-- FOOTER -->
-<footer><div class="fg">
-  <div><span class="fb-n">Julia Wisteria</span><span class="fb-t">The Art of Artisan Gifting</span><p class="fb-p">Thoughtfully crafted gift boxes celebrating life's most meaningful moments, delivered across Orlando, FL.</p><div class="fsoc"><a href="#">ig</a><a href="#">fb</a><a href="#">pi</a><a href="#">in</a></div><div class="pay"><span>VISA</span><span>MC</span><span>AMEX</span><span>PayPal</span></div></div>
-  <div class="fc"><h4>Shop</h4><ul><li><a href="shop.html">All Collections</a></li><li><a href="shop.html">Gift Boxes</a></li><li><a href="corporate.html">Corporate Gifts</a></li><li><a href="build.html">Custom Orders</a></li></ul></div>
-  <div class="fc"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="#">Our Artisans</a></li><li><a href="#">Contact Us</a></li></ul></div>
-  <div class="fc"><h4>Support</h4><ul><li><a href="#">Shipping & Delivery</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQ</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
-</div><div class="fbot"><span class="fcp">© 2025 Julia Wisteria LLC · All rights reserved · Orlando, Florida</span><span class="flo">Orlando, Florida ✦</span></div></footer>
-
-<script>
-const ham=document.getElementById('ham'),mobNav=document.getElementById('mob-nav'),mobClose=document.getElementById('mob-close');
-function openMobNav(){ham.classList.add('open');mobNav.classList.add('open');document.body.style.overflow='hidden'}
-function closeMobNav(){ham.classList.remove('open');mobNav.classList.remove('open');document.body.style.overflow=''}
-ham.addEventListener('click',()=>ham.classList.contains('open')?closeMobNav():openMobNav());
-mobClose.addEventListener('click',closeMobNav);
-</script>
+  <div class="fbot"><span class="fcp">© 2026 Julia Wisteria · Orlando, FL</span><span class="flo">Crafted with love. Inspired by family.</span></div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/motion.js"></script>
 </body>
 </html>
