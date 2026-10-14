@@ -54,6 +54,21 @@ body{overflow-x:hidden;background:#fff}
 .jw-c2 img{rotate:-5deg;animation:jwFloat 11s ease-in-out -3s infinite}
 .jw-c3 img{rotate:-2deg;animation:jwFloat 10s ease-in-out -6s infinite}
 @keyframes jwFloat{50%{translate:0 -18px}}
+
+/* ---------- entrada de imágenes con blur ----------
+   Se dispara cuando Elementor añade .animated al widget o contenedor (Entrance Animation). */
+@keyframes jwBlurIn{from{filter:blur(18px) saturate(.7);opacity:.35}to{filter:blur(0) saturate(1);opacity:1}}
+.elementor-widget-image.animated img,
+.animated .jw-bx-img img,
+.jw-pdp-img.animated img,
+.jw-shop.animated li.product a img,
+.jw-related.animated li.product a img{animation:jwBlurIn 1.3s var(--jw-ease) both}
+.jw-shop.animated li.product:nth-child(3n+2) a img{animation-delay:.12s}
+.jw-shop.animated li.product:nth-child(3n) a img{animation-delay:.24s}
+.jw-c1.animated img{animation:jwBlurIn 1.3s var(--jw-ease) both,jwFloat 9s ease-in-out infinite}
+.jw-c2.animated img{animation:jwBlurIn 1.3s var(--jw-ease) .2s both,jwFloat 11s ease-in-out -3s infinite}
+.jw-c3.animated img{animation:jwBlurIn 1.3s var(--jw-ease) .4s both,jwFloat 10s ease-in-out -6s infinite}
+
 .jw-badge{border-radius:50%!important;box-shadow:0 20px 40px -12px rgba(74,29,39,.5)}
 .jw-badge .elementor-widget-text-path{position:absolute!important;inset:0;width:100%!important}
 .jw-badge .e-text-path{animation:jwSpin 18s linear infinite}
