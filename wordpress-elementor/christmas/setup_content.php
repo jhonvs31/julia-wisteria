@@ -70,7 +70,7 @@ foreach ($boxes as $n => $b) {
     $product->set_catalog_visibility('visible');
     $product->set_description($desc);
     $product->set_short_description('<p>' . esc_html($b['s']) . '</p>');
-    $product->set_regular_price((string) $b['price']);   // PRECIO DE EJEMPLO — confirmar con la cliente
+    $product->set_regular_price((string) $b['price']);   // precio del catálogo de la cliente (boxes.json)
     $product->set_image_id($ids['img'][$b['i']]);
     $product->set_category_ids([$ids['cat'][$b['cat']], $ids['cat']['Christmas Season']]);
     $product->set_menu_order($n);

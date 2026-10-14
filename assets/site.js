@@ -1,20 +1,101 @@
 /* Julia Wisteria — shared data + helpers */
 window.BOXES=[
- {i:'coffee-planning',price:95,cat:'Corporate',k:'Corporate',t:'The Coffee & Planning Gift Box',s:'Fresh starts, productive mornings, inspired plans.',
-  d:'A thoughtful gift designed for fresh starts, productive mornings, and inspired plans. It pairs premium specialty coffee with an artisan ceramic mug, an elegant gold coffee scoop, and a 2027 dated planner — a beautiful daily ritual for planning goals while enjoying a favorite cup of coffee. Complete with mini sticky notes and a personalized welcome card, this elevated collection is ideal for employee appreciation, client gifting, executive gifts, onboarding, welcome programs, and New Year celebrations.',
-  inc:['Premium specialty coffee','Artisan ceramic mug','Gold coffee scoop','2027 Dated Planner – classic, simple, and playful, designed to keep you organized and inspired all year','Mini sticky notes','Pens','Personalized welcome card','Luxury gift box packaging','Optional custom branding'],q:'Plan the year. Enjoy the moment. Start with great coffee.'},
- {i:'unwind-recharge',price:85,cat:'Wellness',k:'Wellness Gift Collection',t:'Unwind & Recharge Box',s:'A restorative moment of self-care.',
-  d:'A thoughtful invitation to slow down, breathe, and enjoy a restorative moment of self-care. It combines artisan body-care essentials with calming organic tea and an aromatherapy shower steamer. Rose & lime soap, grapefruit lip balm, nourishing hand cream, and the soothing notes of lavender, chamomile, and cedar create a comforting ritual for both body and mind. Perfect for wellness programs, executive retreats, employee appreciation, conference speakers, VIP guests, and thoughtful client gifting.',
-  inc:['Artisan Rose & Lime Soap','Natural Grapefruit Lip Balm','Luxury Hand Cream','Meditative Mind organic tea','Peace Shower Steamer – a steam-activated aromatherapy blend of organic lavender, chamomile, and cedar essential oils designed to promote relaxation and tranquility','Towel','Personalized welcome card','Luxury gift box packaging'],q:'Sip. Breathe. Recharge.'},
- {i:'teatime-delight',price:75,cat:'Tea',k:'Tea, Honey & Mug Gift Experience',t:'Teatime Delight Box',s:'Tea, honey, candlelight — and a moment to unwind.',
-  d:'A cozy gift created for slow, comforting moments. The Teatime Delight Box pairs a premium tea selection with artisan honey and a signature ceramic mug, while a Blooming Lilacs candle adds a soft floral touch to the experience. Together, these pieces create a warm ritual to sip, unwind, and enjoy. Perfect for conference speakers, VIP guests, executive retreats, wellness programs, hotel arrivals, employee appreciation, and client gifting.',
-  inc:['Premium tea selection','Artisan honey jar','Honey dipper','Signature ceramic mug','Blooming Lilacs candle','Personalized welcome card','Luxury gift packaging'],q:'Tea, honey, candlelight — and a moment to unwind.'},
- {i:'light-up-your-day',price:80,cat:'Desk',k:'Candle, Planner & Desk Gift Experience',t:'Light Up Your Day Box',s:'Inspiration, greenery, and a little sweetness.',
-  d:'Brighten the day with a gift that blends inspiration, greenery, and a little sweetness. It combines a hand-poured artisan candle with a mini succulent, a 2027 dated planner, and bear gummies — a cheerful collection for the desk, home, or office. Thoughtful and practical, this box is perfect for employee appreciation, client thank-yous, onboarding, New Year gifting, speakers, and corporate celebrations.',
-  inc:['Hand-poured artisan candle','Mini succulent','2027 Dated Planner – classic, simple, and playful, designed to keep you organized and inspired all year','Gummy bears','Premium gift box packaging','Personalized message card'],q:'Light the candle. Make a plan. Grow something beautiful.'},
- {i:'serenity-sleep',price:90,cat:'Rest',k:'Relaxation & Rest Wellness Gift Box',t:'Serenity Sleep Box',s:'A calming end-of-day ritual.',
-  d:'Create a calming end-of-day ritual. Thoughtfully curated for rest and relaxation, this collection combines a therapeutic eye mask, lavender body scrub, botanical body oil, natural lip balm, organic tea, and a playful beaded daisy keychain. From soothing body care to a comforting cup of tea, every element is selected to encourage the recipient to slow down, recharge, and enjoy a well-deserved moment of calm. Perfect for wellness programs, VIP guests, employee appreciation, retreats, speakers, and holiday gifting.',
-  inc:['Beaded Daisy Keychain','Meditative Mind organic tea','Therapeutic Eye Mask','Lavender Body Scrub','Relaxing Botanical Body Oil','Natural Lip Balm','Personalized gift card'],q:'Rest. Relax. Recharge.'}
+ {
+  "i": "coffee-planning",
+  "price": 125,
+  "cat": "Corporate",
+  "k": "Corporate",
+  "t": "The Coffee & Planning Gift Box",
+  "s": "Fresh starts, productive mornings, inspired plans.",
+  "d": "A thoughtful gift designed for fresh starts, productive mornings, and inspired plans. It pairs Main Street Roaster French Roast coffee with an embossed ceramic mug, an elegant gold coffee scoop, and a signature lined journal — a beautiful daily ritual for planning goals while enjoying a favorite cup of coffee. Complete with mini sticky notes, a set of gel pens, and artisan gourmet popcorn, this elevated collection is ideal for employee appreciation, client gifting, executive gifts, onboarding, welcome programs, and New Year celebrations.",
+  "inc": [
+   "Main Street Roaster French Roast coffee",
+   "Embossed Wheat ceramic mug with lid and spoon",
+   "Gold coffee scoop",
+   "Signature Journal: lined notebook",
+   "Mini sticky notes",
+   "The Goals Jotter gel pens (set of 3)",
+   "Artisan gourmet popcorn",
+   "Premium gift box, elegant ribbon, personalized card & decorative tissue paper"
+  ],
+  "q": "Plan the year. Enjoy the moment. Start with great coffee."
+ },
+ {
+  "i": "unwind-recharge",
+  "price": 135,
+  "cat": "Wellness",
+  "k": "Wellness Gift Collection",
+  "t": "Unwind & Recharge Box",
+  "s": "A restorative moment of self-care.",
+  "d": "A thoughtful invitation to slow down, breathe, and enjoy a restorative moment of self-care. It combines artisan body-care essentials with calming organic tea and an aromatherapy shower steamer. A Mimosa handcrafted soap, natural beeswax lip balm, nourishing hand cream, an organic cotton face towel, and the soothing notes of lavender, chamomile, and cedar create a comforting ritual for both body and mind — with a sweet touch of chocolate chip cookies. Perfect for wellness programs, executive retreats, employee appreciation, conference speakers, VIP guests, and thoughtful client gifting.",
+  "inc": [
+   "Mimosa handcrafted artisan soap bar",
+   "Natural beeswax lip balm with essential oils",
+   "Luxury hand cream",
+   "Meditative Mind organic tea",
+   "Peace Shower Steamer – a steam-activated aromatherapy blend of organic lavender, chamomile, and cedar essential oils designed to promote relaxation and tranquility",
+   "Fall & Christmas chocolate chip crunchy cookies",
+   "Nawrap organic cotton face towel",
+   "Premium gift box, elegant ribbon, personalized card & decorative tissue paper"
+  ],
+  "q": "Sip. Breathe. Recharge."
+ },
+ {
+  "i": "teatime-delight",
+  "price": 125,
+  "cat": "Tea",
+  "k": "Tea, Honey & Mug Gift Experience",
+  "t": "Teatime Delight Box",
+  "s": "Tea, honey, candlelight — and a moment to unwind.",
+  "d": "A cozy gift created for slow, comforting moments. The Teatime Delight Box pairs Meditative Mind organic tea with natural raw honey, a wooden honey dipper, and an organic striped mug, while a Stress Relief soy candle adds a calming touch to the experience. Together with crunchy chocolate chip cookies, these pieces create a warm ritual to sip, unwind, and enjoy. Perfect for conference speakers, VIP guests, executive retreats, wellness programs, hotel arrivals, employee appreciation, and client gifting.",
+  "inc": [
+   "Meditative Mind organic tea",
+   "Natural raw honey (6 oz jar)",
+   "Wooden honey dipper",
+   "Organic striped mug",
+   "Stress Relief 9 oz soy candle",
+   "Fall & Christmas chocolate chip crunchy cookies",
+   "Premium gift box, elegant ribbon, personalized card & decorative tissue paper"
+  ],
+  "q": "Tea, honey, candlelight — and a moment to unwind."
+ },
+ {
+  "i": "light-up-your-day",
+  "price": 105,
+  "cat": "Desk",
+  "k": "Candle, Planner & Desk Gift Experience",
+  "t": "Light Up Your Day Box",
+  "s": "Inspiration, greenery, and a little sweetness.",
+  "d": "Brighten the day with a gift that blends inspiration, greenery, and a little sweetness. It combines a Merry and Bright soy candle with a concrete \"Tea & Coffee\" cup planter, a Create Sketch Craft dot grid journal, and Champagne Bears® gummies — a cheerful collection for the desk, home, or office. Thoughtful and practical, this box is perfect for employee appreciation, client thank-yous, onboarding, New Year gifting, speakers, and corporate celebrations.",
+  "inc": [
+   "Merry and Bright 11 oz soy candle",
+   "Concrete \"Tea & Coffee\" cup planter",
+   "Create Sketch Craft Journal: dot grid notebook",
+   "Champagne Bears® (small)",
+   "Premium gift box, elegant ribbon, personalized card & decorative tissue paper"
+  ],
+  "q": "Light the candle. Make a plan. Grow something beautiful."
+ },
+ {
+  "i": "serenity-sleep",
+  "price": 120,
+  "cat": "Rest",
+  "k": "Relaxation & Rest Wellness Gift Box",
+  "t": "Serenity Sleep Box",
+  "s": "A calming end-of-day ritual.",
+  "d": "Create a calming end-of-day ritual. Thoughtfully curated for rest and relaxation, this collection combines a weighted aromatherapy eye pillow, WildFlora bath salts, a lavender handmade soap, an infused body & face oil bundle, natural lip balm, organic tea, and a crystal cherry keychain. From soothing body care to a comforting cup of tea, every element is selected to encourage the recipient to slow down, recharge, and enjoy a well-deserved moment of calm. Perfect for wellness programs, VIP guests, employee appreciation, retreats, speakers, and holiday gifting.",
+  "inc": [
+   "WildFlora bath salts (single splash packets)",
+   "Meditative Mind organic tea",
+   "Weighted aromatherapy eye pillow",
+   "Lavender handmade soap bar",
+   "Crystal Cherry decorative metal keychain with clip",
+   "Assorted infused body & face oil bundle",
+   "Natural beeswax lip balm with essential oils",
+   "Premium gift box, elegant ribbon, personalized card & decorative tissue paper"
+  ],
+  "q": "Rest. Relax. Recharge."
+ }
 ];
 window.JW=(function(){
   var K='jw_cart';

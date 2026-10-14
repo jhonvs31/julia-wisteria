@@ -79,7 +79,7 @@ Pasarela: **WooCommerce Stripe Payment Gateway** (plugin oficial gratuito). `set
 
 ## Pendiente antes de publicar
 
-- **Precios**: $95 / $85 / $75 / $80 / $90 son **de ejemplo**. Confírmalos con la cliente (Productos › editar).
+- **Precios**: Coffee & Planning $125 · Unwind & Recharge $135 · Teatime Delight $125 · Light Up Your Day $105 · Serenity Sleep $120 (catálogo de la cliente, oct. 2026).
 - **Stripe**: conectar la cuenta de la cliente (ver arriba).
 - **Impuestos (sales tax)**: configurar WooCommerce Tax o Stripe Tax según los estados donde venda.
 - **Email de formularios**: Corporate y Customize envían al email de administración de WordPress.

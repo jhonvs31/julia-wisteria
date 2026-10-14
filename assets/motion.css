@@ -410,3 +410,6 @@ footer .fsoc a{border-color:rgba(255,255,255,.2)!important;color:var(--cream)!im
 .logo a:hover .logo-img{transform:scale(1.04) rotate(-1deg)}
 .fb-logo{width:230px;height:auto;display:block;margin-bottom:18px}
 @media(max-width:768px){.hdr{height:70px!important}.logo-img{height:50px}.fb-logo{width:190px}}
+footer .fsoc{align-items:center}
+footer .fsoc a.fsoc-t{width:auto;height:auto;border:0!important;border-radius:0;font-size:12.5px;font-weight:400;letter-spacing:.3px;padding:0 4px}
+footer .fsoc a.fsoc-t:hover{background:none!important;color:#fff!important}

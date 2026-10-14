@@ -159,13 +159,15 @@ def image(img_id, url=None, cls='', extra=None, size='large', h=None, ht=None, h
 
 def spacer(n): return W('spacer', {'space': u(n)})
 
+EMAIL = 'kangulo@juliawisteria.com'
+INSTAGRAM = 'https://www.instagram.com/juliawisteriagifts/'
 PRODUCT_URL = {b['i']: '/product/%s/' % b['slug'] for b in BOXES}
 
 # ════════════════════════════════════════════════════════════════════
 def build_header():
     ann = section({'content_width': 'full', 'background_background': 'classic', 'background_color': C['brown'],
                    **pad(9, 16, 9, 16)}, [
-        heading('Christmas Season 2026 &nbsp;<b>·</b>&nbsp; Corporate gifting, crafted with meaning &nbsp;<b>·</b>&nbsp; Orlando, Florida',
+        heading('Christmas Season 2026 &nbsp;<b>·</b>&nbsp; Free delivery in Orlando, Florida &nbsp;<b>·</b>&nbsp; Corporate gifting, crafted with meaning',
                 'div', C['cream'], 'center', 'jw-ann', family=SANS, size=10.5, weight=400, transform='uppercase', spacing=2.5, m=9),
         W('progress-tracker', {'type': 'horizontal', 'relative_to': 'entire_page', 'direction': 'ltr', 'percentage': '',
                                'horizontal_height': u(2), 'progress_color': C['wine'],
@@ -247,9 +249,8 @@ def build_footer():
         text('Curated artisan gifts for corporate events, VIP experiences, employee recognition, incentive travel and destination programs. Orlando, Florida.',
              'rgba(249,242,235,0.6)', size=12.5, lh=1.85, extra={'_element_width': 'initial', '_element_custom_width': u(280)}),
         W('social-icons', {'social_icon_list': [
-            {'_id': nid(), 'social_icon': {'value': 'fab fa-instagram', 'library': 'fa-brands'}, 'link': {'url': '#'}},
-            {'_id': nid(), 'social_icon': {'value': 'fab fa-facebook-f', 'library': 'fa-brands'}, 'link': {'url': '#'}},
-            {'_id': nid(), 'social_icon': {'value': 'fab fa-linkedin-in', 'library': 'fa-brands'}, 'link': {'url': '#'}}],
+            {'_id': nid(), 'social_icon': {'value': 'fab fa-instagram', 'library': 'fa-brands'},
+             'link': {'url': INSTAGRAM, 'is_external': 'on', 'nofollow': ''}}],
             'shape': 'circle', 'align': 'left', 'icon_color': 'custom', 'icon_primary_color': 'rgba(0,0,0,0)',
             'icon_secondary_color': C['cream'], 'icon_size': u(13), 'icon_padding': u(10, 'em') | {'size': .8},
             'border_border': 'solid', 'border_width': radius(1), 'border_color': 'rgba(255,255,255,0.2)',
@@ -259,7 +260,8 @@ def build_footer():
     grid = row([brand,
                 links('Boxes', [(b['t'].replace('The ', '').replace(' Gift Box', '').replace(' Box', ''), PRODUCT_URL[b['i']]) for b in BOXES]),
                 links('Company', [('Our Story', '/our-story/'), ('Corporate Gifting', '/corporate/'), ('Customize a Box', '/customize/')]),
-                links('Shop', [('Christmas Boxes', '/shop/'), ('Cart', '/cart/'), ('Request a Quote', '/corporate/#quote')])],
+                links('Contact', [(EMAIL, 'mailto:' + EMAIL), ('@juliawisteriagifts', INSTAGRAM), ('Request a Quote', '/corporate/#quote'),
+                                  ('Cart', '/cart/')])],
                48, {'flex_wrap_tablet': 'wrap', 'flex_wrap_mobile': 'wrap', 'flex_direction_mobile': 'row'}, stack=False)
     bottom = row([
         col([text('© 2026 Julia Wisteria · Orlando, FL', 'rgba(249,242,235,0.6)', size=11, lh=1.6)], 60),
@@ -586,7 +588,7 @@ def build_corporate():
                    rows=5)],
         'button_text': 'Send request', 'button_width': '100', 'button_align': 'start',
         'selected_button_icon': {'value': 'fas fa-arrow-right', 'library': 'fa-solid'}, 'button_icon_align': 'right',
-        'submit_actions': ['email'], 'email_subject': 'New corporate quote request — Julia Wisteria',
+        'submit_actions': ['email'], 'email_to': EMAIL, 'email_subject': 'New corporate quote request — Julia Wisteria',
         'success_message': 'Thank you! We received your request and will get back to you very soon.',
         **form_style()}, 'jw-form', anim('fadeInUp', 200))
     quote = section({'flex_align_items': 'center', '_element_id': 'quote', 'flex_gap': gap(10), **pad(120, 24, 120, 24)}, [
@@ -616,7 +618,7 @@ def build_customize():
         form_field('email', 'email', 'Email', required=True),
         form_field('phone', 'tel', 'Phone')],
         'step_type': 'progress_bar', 'button_text': 'Send request', 'button_width': '100',
-        'submit_actions': ['email'], 'email_subject': 'New custom box request — Julia Wisteria',
+        'submit_actions': ['email'], 'email_to': EMAIL, 'email_subject': 'New custom box request — Julia Wisteria',
         'success_message': 'Thank you! We will prepare your proposal and get back to you very soon.',
         **form_style()}, 'jw-form', anim('fadeInUp', 300))
     body = section({'flex_align_items': 'center', **pad(40, 24, 120, 24)}, [con({'width': u(860), 'width_tablet': u(100, '%')}, [form])])
