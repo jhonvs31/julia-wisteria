@@ -60,11 +60,24 @@ FAVICONS='''<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/f
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
 <meta name="theme-color" content="#F9F2EB">
 '''
+TOAST='''<script src="assets/toast.js"></script>
+<script>
+(function(){
+  var list=BOXES.map(function(b,n){return {kicker:'Featured this season',title:b.t,sub:JW.money(b.price)+' · '+b.s,img:'images/christmas/'+b.i+'.jpg',href:'product.html?box='+n}});
+  list.push({icon:'🚚',kicker:'Good to know',title:'Free delivery in Orlando, Florida',sub:'On every Christmas box',href:'shop.html'});
+  list.push({icon:'✉️',kicker:'Corporate gifting',title:'Personalized cards & custom branding',sub:'Request a quote for your team',href:'corporate.html#quote'});
+  var d=JWToast.daysToChristmas();
+  if(d>0)list.push({icon:'🎄',kicker:'Christmas Season',title:d+(d===1?' day':' days')+' until Christmas',sub:'Order early so your gifts arrive on time',href:'shop.html'});
+  JWToast.start(list);
+})();
+</script>
+'''
 def page(fn,title,active,body,js=''):
     h=HEAD.replace('@@TITLE@@',title)
     if 'rel="icon"' not in h:
         h=h.replace('</head>',FAVICONS+'</head>',1)
-    out=h+top(active)+body+BOT+'<script src="assets/site.js"></script>\n<script src="assets/motion.js"></script>\n'+js+'</body>\n</html>\n'
+    toast='' if fn=='checkout.html' else TOAST
+    out=h+top(active)+body+BOT+'<script src="assets/site.js"></script>\n<script src="assets/motion.js"></script>\n'+js+toast+'</body>\n</html>\n'
     open(R+fn,'w',encoding='utf8').write(out)
 
 # ---------- HOME ----------

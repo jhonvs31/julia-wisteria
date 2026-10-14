@@ -448,5 +448,16 @@ footer{background:var(--cream-d);padding:72px 52px 36px}
   document.getElementById('qf').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.querySelector('.qsec .sh').style.display='none';document.getElementById('ok').classList.add('on')});
 })();
 </script>
+<script src="assets/toast.js"></script>
+<script>
+(function(){
+  var list=BOXES.map(function(b,n){return {kicker:'Featured this season',title:b.t,sub:JW.money(b.price)+' · '+b.s,img:'images/christmas/'+b.i+'.jpg',href:'product.html?box='+n}});
+  list.push({icon:'🚚',kicker:'Good to know',title:'Free delivery in Orlando, Florida',sub:'On every Christmas box',href:'shop.html'});
+  list.push({icon:'✉️',kicker:'Corporate gifting',title:'Personalized cards & custom branding',sub:'Request a quote for your team',href:'corporate.html#quote'});
+  var d=JWToast.daysToChristmas();
+  if(d>0)list.push({icon:'🎄',kicker:'Christmas Season',title:d+(d===1?' day':' days')+' until Christmas',sub:'Order early so your gifts arrive on time',href:'shop.html'});
+  JWToast.start(list);
+})();
+</script>
 </body>
 </html>

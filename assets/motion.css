@@ -431,3 +431,20 @@ footer .fsoc a.fsoc-t:hover{background:none!important;color:#fff!important}
 .mdl.open.closing .mdl-c{transform:translateY(30px) scale(.95);filter:blur(12px);opacity:0;transition:transform .5s var(--ease),filter .5s var(--ease),opacity .45s ease}
 .mdl.open.closing .mdl-b>*,.mdl.open.closing .mdl-c>img{animation:none}
 @media (prefers-reduced-motion:reduce){.mob-nav,.mob-nav a{transition:none!important;clip-path:none!important}}
+
+/* ===== avisos emergentes (información real) ===== */
+.jwt{position:fixed;left:22px;bottom:22px;z-index:550;display:grid;grid-template-columns:56px 1fr 26px;gap:14px;align-items:center;width:min(360px,calc(100vw - 32px));padding:12px 12px 12px 12px;border-radius:20px;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(90,70,66,.08);box-shadow:0 30px 60px -28px rgba(74,29,39,.45);opacity:0;visibility:hidden;transform:translateY(24px) scale(.96);filter:blur(10px);pointer-events:none}
+.jwt.in{visibility:visible;pointer-events:auto;animation:jwtIn .7s var(--ease) both}
+.jwt.out{visibility:visible;animation:jwtOut .5s var(--ease) both}
+@keyframes jwtIn{from{opacity:0;transform:translateY(24px) scale(.96);filter:blur(10px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes jwtOut{from{opacity:1;transform:none;filter:blur(0)}to{opacity:0;transform:translateY(16px) scale(.97);filter:blur(8px)}}
+.jwt-i{width:56px;height:56px;border-radius:14px;object-fit:cover}
+.jwt-ic{width:56px;height:56px;border-radius:14px;background:var(--lilac-l);display:flex;align-items:center;justify-content:center;font-size:24px}
+.jwt-b{display:flex;flex-direction:column;gap:2px;min-width:0;color:var(--brown)}
+.jwt-k{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);font-weight:500}
+.jwt-t{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;line-height:1.15}
+.jwt-s{font-size:12px;color:var(--brown-l);line-height:1.4}
+.jwt-x{align-self:start;width:26px;height:26px;border-radius:50%;border:none;background:var(--cream);color:var(--brown);font-size:11px;cursor:pointer;transition:transform .3s var(--ease)}
+.jwt-x:hover{transform:rotate(90deg)}
+@media(max-width:768px){.jwt{left:16px;right:16px;bottom:16px;width:auto}}
+@media (prefers-reduced-motion:reduce){.jwt.in,.jwt.out{animation-duration:.01s}}
